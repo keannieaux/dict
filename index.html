@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Словарь</title>
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#E8EAE3" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14161E" media="(prefers-color-scheme: dark)">
 <meta name="mobile-web-app-capable" content="yes">
@@ -13,290 +14,86 @@
 <meta name="apple-mobile-web-app-title" content="Словарь">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
-<style>
-:root{
-  --ink:#191C2B;
-  --ink-soft:#5C6274;
-  --paper:#E8EAE3;
-  --slip:#FCFCFA;
-  --rule:#C9CCC1;
-  --mark:#D9E84B;
-  --tab-on:#191C2B;
-  --safe-r: env(safe-area-inset-right, 0px);
-  --rail-w: 30px;
-}
-@media (prefers-color-scheme: dark){
-  :root{
-    --ink:#E7E8E2;
-    --ink-soft:#9AA0AE;
-    --paper:#14161E;
-    --slip:#1C1F2A;
-    --rule:#333849;
-    --mark:#B9C935;
-    --tab-on:#E7E8E2;
-  }
-}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;padding:0}
-body{
-  background:var(--paper);
-  color:var(--ink);
-  font-family:"Charter","Iowan Old Style",Georgia,"Times New Roman",serif;
-  font-size:17px;
-  line-height:1.45;
-  -webkit-text-size-adjust:100%;
-  overscroll-behavior-y:none;
-}
-button,input{font:inherit;color:inherit}
-
-/* ---------- шапка: колонтитул печатного словаря ---------- */
-.masthead{
-  position:sticky;top:0;z-index:10;
-  background:var(--paper);
-  padding:calc(env(safe-area-inset-top,0px) + 10px) 14px 8px;
-  border-bottom:1px solid var(--rule);
-}
-.guide{
-  display:flex;justify-content:space-between;align-items:baseline;
-  font-family:"Avenir Next Condensed","Avenir Next",-apple-system,sans-serif;
-  font-weight:600;letter-spacing:.14em;text-transform:uppercase;
-  font-size:11px;color:var(--ink-soft);
-  height:14px;margin-bottom:8px;
-}
-.guide b{font-weight:600}
-.searchrow{display:flex;align-items:center;gap:8px;
-  border-bottom:2px solid var(--ink);padding-bottom:5px}
-.searchrow input{
-  flex:1;min-width:0;background:none;border:0;outline:none;
-  font-size:26px;font-weight:600;letter-spacing:-.01em;padding:2px 0;
-}
-.searchrow input::placeholder{color:var(--ink-soft);font-weight:400;opacity:.65}
-.iconbtn{
-  background:none;border:0;padding:6px;cursor:pointer;color:var(--ink-soft);
-  font-size:20px;line-height:1;border-radius:50%;
-}
-.iconbtn:active{color:var(--ink)}
-.iconbtn[hidden]{display:none}
-.toolbar{
-  display:flex;justify-content:space-between;align-items:center;
-  margin-top:7px;
-  font-family:"Avenir Next Condensed","Avenir Next",-apple-system,sans-serif;
-  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);
-}
-.toolbar button{
-  background:none;border:1px solid var(--rule);border-radius:999px;
-  padding:3px 11px;letter-spacing:.08em;text-transform:uppercase;font-size:12px;
-  cursor:pointer;
-}
-.toolbar button:active{background:var(--mark);border-color:var(--mark);color:#191C2B}
-
-/* ---------- боковой указатель: вырубные закладки ---------- */
-.rail{
-  position:fixed;z-index:11;
-  right:calc(2px + var(--safe-r));
-  top:50%;transform:translateY(-50%);
-  display:flex;flex-direction:column;align-items:stretch;
-  width:var(--rail-w);
-  padding:4px 0;
-}
-.rail button{
-  background:none;border:0;padding:0;cursor:pointer;
-  font-family:"Avenir Next Condensed","Avenir Next",-apple-system,sans-serif;
-  font-weight:600;font-size:11px;line-height:1;
-  color:var(--ink-soft);
-  height:16px;display:flex;align-items:center;justify-content:center;
-  border-radius:4px 0 0 4px;
-}
-.rail button.on{background:var(--tab-on);color:var(--paper)}
-
-/* ---------- статьи ---------- */
-main{padding:10px 0 60px;margin-right:var(--rail-w)}
-.entry{
-  background:var(--slip);
-  border-bottom:1px solid var(--rule);
-  padding:12px 14px;
-  cursor:pointer;
-}
-.entry:first-child{border-top:1px solid var(--rule)}
-.line1{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
-.hw{
-  margin:0;font-size:23px;font-weight:700;letter-spacing:-.015em;
-}
-.pos{
-  font-family:"Avenir Next Condensed","Avenir Next",-apple-system,sans-serif;
-  font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);
-}
-.ipa{
-  font-family:ui-monospace,Menlo,monospace;font-size:12.5px;
-  color:var(--ink-soft);margin-top:1px;
-}
-.tr{margin-top:3px;font-size:17px}
-.detail{
-  display:none;
-  margin-top:9px;padding-left:11px;border-left:2px solid var(--mark);
-}
-.entry.open .detail{display:block}
-.def{margin:0;font-size:15.5px;color:var(--ink)}
-.ex{margin:6px 0 0;font-size:15.5px;font-style:italic;color:var(--ink-soft)}
-mark{
-  background:linear-gradient(var(--mark),var(--mark)) no-repeat center/100% 62%;
-  color:inherit;padding:0 1px;border-radius:1px;
-}
-.blank{
-  margin:60px 26px;text-align:center;color:var(--ink-soft);font-size:16px;
-}
-.blank b{display:block;color:var(--ink);font-size:19px;margin-bottom:6px}
-:focus-visible{outline:2px solid var(--mark);outline-offset:2px}
-@media (prefers-reduced-motion:no-preference){
-  .entry .detail{animation:in .16s ease-out}
-  @keyframes in{from{opacity:0}to{opacity:1}}
-}
-</style>
 </head>
 <body>
 
-<header class="masthead">
-  <div class="guide"><b id="gFirst"></b><b id="gLast"></b></div>
-  <div class="searchrow">
-    <input id="q" type="search" placeholder="Найти слово" autocomplete="off"
-           autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="search">
-    <button class="iconbtn" id="clear" hidden aria-label="Очистить поиск">✕</button>
-  </div>
-  <div class="toolbar">
-    <span id="count"></span>
-    <button id="rand">Наугад</button>
-  </div>
-</header>
+<!-- ============ СЛОВАРЬ ============ -->
+<section class="view" id="view-dict">
+  <header class="masthead">
+    <div class="eyebrow"><b id="gFirst"></b><b id="gLast"></b></div>
+    <div class="searchrow">
+      <input id="q" type="search" placeholder="Найти слово" autocomplete="off"
+             autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="search">
+      <button class="iconbtn" id="clear" hidden aria-label="Очистить поиск">✕</button>
+    </div>
+    <div class="toolbar">
+      <span id="count"></span>
+      <button class="pill" id="rand">Наугад</button>
+    </div>
+  </header>
+  <nav class="rail" id="rail" aria-label="Указатель по буквам"></nav>
+  <main id="list"></main>
+</section>
 
-<nav class="rail" id="rail" aria-label="Указатель по буквам"></nav>
-<main id="list"></main>
+<!-- ============ УРОК ============ -->
+<section class="view" id="view-lesson" hidden>
+  <header class="masthead">
+    <div class="eyebrow"><b>Урок</b><b id="lessonStat"></b></div>
+    <h1 class="h1" id="lessonTitle">Занятие на сегодня</h1>
+    <p class="sub" id="lessonSub"></p>
+  </header>
+  <div class="pad" id="lessonBody"></div>
+</section>
 
-<script>
-const $ = s => document.querySelector(s);
-const list = $('#list'), q = $('#q'), rail = $('#rail');
-let words = [], letter = null;
+<!-- ============ ТЕСТ ============ -->
+<section class="view" id="view-test" hidden>
+  <header class="masthead">
+    <div class="eyebrow"><b>Тест</b><b id="testStat"></b></div>
+    <h1 class="h1">Проверка слов</h1>
+    <p class="sub" id="testSub">Выберите направление перевода</p>
+  </header>
+  <div class="pad" id="testBody"></div>
+</section>
 
-const norm = s => s.toLowerCase().replace(/ё/g,'е').trim();
+<!-- ============ ПРАВИЛА ============ -->
+<section class="view" id="view-rules" hidden>
+  <header class="masthead">
+    <div class="eyebrow"><b>Правила</b><b id="rulesCount"></b></div>
+    <h1 class="h1">Грамматика</h1>
+    <p class="sub">Коротко о том, что чаще всего путают</p>
+  </header>
+  <div class="pad" id="rulesBody"></div>
+</section>
 
-function esc(s){
-  return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-}
-function hl(text, term){
-  const safe = esc(text);
-  if (!term) return safe;
-  const i = norm(safe).indexOf(term);
-  if (i < 0) return safe;
-  return safe.slice(0,i) + '<mark>' + safe.slice(i, i+term.length) + '</mark>' + safe.slice(i+term.length);
-}
+<!-- ============ МАТЕРИАЛЫ ============ -->
+<section class="view" id="view-more" hidden>
+  <header class="masthead">
+    <div class="eyebrow"><b>Материалы</b><b></b></div>
+    <h1 class="h1">Читать и смотреть</h1>
+    <p class="sub">Внешние источники, бесплатные и по уровням</p>
+  </header>
+  <div class="pad" id="moreBody"></div>
+</section>
 
-function render(){
-  const term = norm(q.value);
-  $('#clear').hidden = !q.value;
+<!-- ============ ПАНЕЛЬ ============ -->
+<nav class="tabbar" id="tabbar">
+  <button data-v="dict" class="on">
+    <svg viewBox="0 0 24 24"><path d="M4 4h10a3 3 0 013 3v13H7a3 3 0 01-3-3z"/><path d="M17 7h3v13H7"/></svg>
+    Словарь</button>
+  <button data-v="lesson">
+    <svg viewBox="0 0 24 24"><path d="M12 5v15"/><path d="M3 5h6a3 3 0 013 3"/><path d="M21 5h-6a3 3 0 00-3 3"/><path d="M3 5v13h6"/><path d="M21 5v13h-6"/></svg>
+    Урок</button>
+  <button data-v="test">
+    <svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M9 10h6"/><path d="M9 14h4"/></svg>
+    Тест</button>
+  <button data-v="rules">
+    <svg viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h13"/></svg>
+    Правила</button>
+  <button data-v="more">
+    <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M10 9l5 3-5 3z"/></svg>
+    Материалы</button>
+</nav>
 
-  let items = words;
-  if (term) items = items.filter(e => norm(e.w).includes(term) || norm(e.tr).includes(term));
-  else if (letter) items = items.filter(e => e.w[0].toUpperCase() === letter);
-
-  $('#count').textContent = items.length
-    ? items.length + ' ' + plural(items.length)
-    : '';
-
-  if (!items.length){
-    list.innerHTML = '<p class="blank"><b>Ничего не нашлось</b>' +
-      (term ? 'Попробуйте часть слова или перевод.' : 'На эту букву статей пока нет.') + '</p>';
-    updateGuide();
-    return;
-  }
-
-  list.innerHTML = items.map(e => `
-    <article class="entry" data-w="${esc(e.w)}">
-      <div class="line1">
-        <h2 class="hw">${hl(e.w, term)}</h2>
-        <span class="pos">${esc(e.pos||'')}</span>
-      </div>
-      ${e.ipa ? `<div class="ipa">${esc(e.ipa)}</div>` : ''}
-      <div class="tr">${hl(e.tr, term)}</div>
-      <div class="detail">
-        ${e.def ? `<p class="def">${esc(e.def)}</p>` : ''}
-        ${e.ex ? `<p class="ex">${esc(e.ex)}</p>` : ''}
-      </div>
-    </article>`).join('');
-  updateGuide();
-}
-
-function plural(n){
-  const a = n % 100, b = n % 10;
-  if (a > 10 && a < 20) return 'слов';
-  if (b === 1) return 'слово';
-  if (b >= 2 && b <= 4) return 'слова';
-  return 'слов';
-}
-
-/* колонтитул: первое и последнее видимое слово, как на странице бумажного словаря */
-function updateGuide(){
-  const items = [...list.querySelectorAll('.entry')];
-  if (!items.length){ $('#gFirst').textContent = $('#gLast').textContent = ''; return; }
-  const top = document.querySelector('.masthead').getBoundingClientRect().bottom;
-  const vis = items.filter(el => {
-    const r = el.getBoundingClientRect();
-    return r.bottom > top && r.top < window.innerHeight;
-  });
-  const f = vis[0] || items[0], l = vis[vis.length-1] || items[0];
-  $('#gFirst').textContent = f.dataset.w;
-  $('#gLast').textContent  = l.dataset.w;
-}
-
-function buildRail(){
-  const letters = [...new Set(words.map(e => e.w[0].toUpperCase()))].sort();
-  rail.innerHTML = letters.map(L => `<button data-l="${L}">${L}</button>`).join('');
-}
-
-/* --- события --- */
-q.addEventListener('input', () => { letter = null; syncRail(); render(); });
-$('#clear').addEventListener('click', () => { q.value=''; q.focus(); render(); });
-
-rail.addEventListener('click', e => {
-  const b = e.target.closest('button'); if (!b) return;
-  letter = (letter === b.dataset.l) ? null : b.dataset.l;
-  q.value = ''; syncRail(); render();
-  window.scrollTo({top:0});
-});
-function syncRail(){
-  rail.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.l === letter));
-}
-
-list.addEventListener('click', e => {
-  const card = e.target.closest('.entry'); if (!card) return;
-  card.classList.toggle('open');
-});
-
-$('#rand').addEventListener('click', () => {
-  if (!words.length) return;
-  const pick = words[Math.floor(Math.random()*words.length)];
-  letter = null; syncRail();
-  q.value = pick.w; render();
-  const card = list.querySelector('.entry'); if (card) card.classList.add('open');
-});
-
-let tick = false;
-addEventListener('scroll', () => {
-  if (tick) return; tick = true;
-  requestAnimationFrame(() => { updateGuide(); tick = false; });
-}, {passive:true});
-
-/* --- загрузка словаря --- */
-fetch('words.json')
-  .then(r => r.json())
-  .then(data => {
-    words = data.sort((a,b) => a.w.localeCompare(b.w));
-    buildRail(); render();
-  })
-  .catch(() => {
-    list.innerHTML = '<p class="blank"><b>Словарь не загрузился</b>' +
-      'Файл words.json должен лежать рядом с index.html, а сайт — открываться по http или https.</p>';
-  });
-
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
-</script>
+<script src="app.js"></script>
 </body>
 </html>

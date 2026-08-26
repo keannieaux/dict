@@ -1,0 +1,180 @@
+:root{
+  --ink:#191C2B;
+  --ink-soft:#5C6274;
+  --paper:#E8EAE3;
+  --slip:#FCFCFA;
+  --rule:#C9CCC1;
+  --mark:#D9E84B;
+  --wrong:#B3402C;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+  --rail-w: 30px;
+  --bar-h: 54px;
+  --serif:"Charter","Iowan Old Style",Georgia,"Times New Roman",serif;
+  --cond:"Avenir Next Condensed","Avenir Next",-apple-system,sans-serif;
+  --mono:ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#E7E8E2; --ink-soft:#9AA0AE; --paper:#14161E;
+    --slip:#1C1F2A; --rule:#333849; --mark:#B9C935; --wrong:#E0705A;
+  }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:17px;line-height:1.45;
+  -webkit-text-size-adjust:100%;overscroll-behavior-y:none;
+}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--mark);outline-offset:2px}
+[hidden]{display:none !important}
+
+/* ===== общая шапка ===== */
+.masthead{
+  position:sticky;top:0;z-index:10;background:var(--paper);
+  padding:calc(env(safe-area-inset-top,0px) + 10px) 14px 8px;
+  border-bottom:1px solid var(--rule);
+}
+.eyebrow{
+  display:flex;justify-content:space-between;align-items:baseline;
+  font-family:var(--cond);font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;font-size:11px;color:var(--ink-soft);
+  height:14px;margin-bottom:8px;
+}
+.h1{margin:0;font-size:27px;font-weight:700;letter-spacing:-.015em}
+.sub{margin:3px 0 0;font-size:15px;color:var(--ink-soft)}
+
+/* ===== поиск ===== */
+.searchrow{display:flex;align-items:center;gap:8px;border-bottom:2px solid var(--ink);padding-bottom:5px}
+.searchrow input{flex:1;min-width:0;background:none;border:0;outline:none;
+  font-size:26px;font-weight:600;letter-spacing:-.01em;padding:2px 0}
+.searchrow input::placeholder{color:var(--ink-soft);font-weight:400;opacity:.65}
+.iconbtn{background:none;border:0;padding:6px;cursor:pointer;color:var(--ink-soft);
+  font-size:19px;line-height:1;border-radius:50%}
+.iconbtn:active{color:var(--ink)}
+.toolbar{display:flex;justify-content:space-between;align-items:center;margin-top:7px;
+  font-family:var(--cond);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+.pill{background:none;border:1px solid var(--rule);border-radius:999px;padding:3px 11px;
+  font-family:var(--cond);letter-spacing:.08em;text-transform:uppercase;font-size:12px;cursor:pointer}
+.pill:active,.pill.on{background:var(--mark);border-color:var(--mark);color:#191C2B}
+
+/* ===== буквенный указатель ===== */
+.rail{position:fixed;z-index:11;right:calc(2px + var(--safe-r));top:50%;transform:translateY(-50%);
+  display:flex;flex-direction:column;width:var(--rail-w);padding:4px 0}
+.rail button{background:none;border:0;padding:0;cursor:pointer;font-family:var(--cond);
+  font-weight:600;font-size:11px;line-height:1;color:var(--ink-soft);height:16px;
+  display:flex;align-items:center;justify-content:center;border-radius:4px 0 0 4px}
+.rail button.on{background:var(--ink);color:var(--paper)}
+
+/* ===== статьи словаря ===== */
+.view{padding-bottom:calc(var(--bar-h) + var(--safe-b) + 20px)}
+#view-dict main{padding:10px 0 0;margin-right:var(--rail-w)}
+.entry{background:var(--slip);border-bottom:1px solid var(--rule);padding:12px 14px;cursor:pointer}
+.entry:first-child{border-top:1px solid var(--rule)}
+.line1{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.hw{margin:0;font-size:23px;font-weight:700;letter-spacing:-.015em}
+.pos,.lvl{font-family:var(--cond);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.lvl{border:1px solid var(--rule);border-radius:3px;padding:1px 4px;letter-spacing:.06em}
+.ipa{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);margin-top:1px}
+.tr{margin-top:3px;font-size:17px}
+.detail{display:none;margin-top:9px;padding-left:11px;border-left:2px solid var(--mark)}
+.entry.open .detail{display:block}
+.def{margin:0;font-size:15.5px}
+.ex{margin:6px 0 0;font-size:15.5px;font-style:italic;color:var(--ink-soft)}
+mark{background:linear-gradient(var(--mark),var(--mark)) no-repeat center/100% 62%;
+  color:inherit;padding:0 1px;border-radius:1px}
+
+/* ===== карточки заданий ===== */
+.pad{padding:16px 14px}
+.card{background:var(--slip);border:1px solid var(--rule);border-radius:10px;padding:18px 16px;margin-bottom:14px}
+.prompt-label{font-family:var(--cond);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px}
+.prompt{font-size:29px;font-weight:700;line-height:1.2;letter-spacing:-.02em;margin:0}
+.prompt.ru{font-weight:600}
+.answer{width:100%;background:none;border:0;border-bottom:2px solid var(--rule);
+  outline:none;font-size:23px;padding:8px 0;margin-top:16px}
+.answer:focus{border-bottom-color:var(--ink)}
+.answer::placeholder{color:var(--ink-soft);opacity:.55;font-size:17px}
+.verdict{margin-top:14px;font-size:16px}
+.verdict.ok{color:var(--ink)}
+.verdict.no{color:var(--wrong)}
+.verdict b{font-family:var(--cond);letter-spacing:.1em;text-transform:uppercase;font-size:12px;
+  display:block;margin-bottom:4px}
+.right{display:block;font-size:22px;font-weight:700;margin-top:2px}
+.btnrow{display:flex;gap:9px;margin-top:16px;flex-wrap:wrap}
+.btn{flex:1;min-width:120px;background:var(--ink);color:var(--paper);border:0;border-radius:8px;
+  padding:13px 14px;font-family:var(--cond);font-size:14px;letter-spacing:.08em;
+  text-transform:uppercase;cursor:pointer}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--rule)}
+.btn.mark{background:var(--mark);color:#191C2B}
+.btn:active{opacity:.75}
+.speak{background:none;border:1px solid var(--rule);border-radius:999px;padding:5px 13px;
+  font-family:var(--cond);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  cursor:pointer;color:var(--ink-soft);margin-top:12px}
+.speak:active{background:var(--mark);color:#191C2B;border-color:var(--mark)}
+
+/* прогресс урока */
+.progress{display:flex;gap:3px;margin-bottom:14px}
+.progress i{flex:1;height:3px;background:var(--rule);border-radius:2px}
+.progress i.done{background:var(--mark)}
+.progress i.now{background:var(--ink)}
+
+/* сборка предложения */
+.slot{min-height:64px;border-bottom:2px solid var(--rule);padding:6px 0 10px;
+  display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start}
+.bank{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.chip{background:var(--paper);border:1px solid var(--rule);border-radius:7px;
+  padding:7px 11px;font-size:17px;cursor:pointer}
+.chip:active{background:var(--mark);border-color:var(--mark);color:#191C2B}
+.slot .chip{background:var(--slip);border-color:var(--ink)}
+.slot .chip.bad{border-color:var(--wrong);color:var(--wrong)}
+
+/* ===== грамматика ===== */
+.rule{background:var(--slip);border:1px solid var(--rule);border-radius:10px;
+  margin-bottom:12px;overflow:hidden}
+.rule > summary{padding:14px 16px;cursor:pointer;list-style:none;
+  display:flex;align-items:baseline;gap:9px}
+.rule > summary::-webkit-details-marker{display:none}
+.rule h3{margin:0;font-size:19px;font-weight:700;flex:1}
+.rule-body{padding:0 16px 16px}
+.rule-body p{margin:0 0 12px;font-size:16px}
+.rule-ex{border-left:2px solid var(--mark);padding-left:12px;margin-bottom:9px}
+.rule-ex .en{font-size:17px;font-weight:600}
+.rule-ex .why{font-size:14px;color:var(--ink-soft);margin-top:1px}
+
+/* ===== материалы ===== */
+.cat{font-family:var(--cond);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-soft);margin:22px 0 9px}
+.cat:first-child{margin-top:4px}
+.link{display:block;background:var(--slip);border:1px solid var(--rule);border-radius:10px;
+  padding:13px 15px;margin-bottom:9px;text-decoration:none;color:inherit}
+.link:active{border-color:var(--ink)}
+.link .n{font-size:17px;font-weight:700}
+.link .d{font-size:14.5px;color:var(--ink-soft);margin-top:3px}
+
+/* ===== нижняя панель ===== */
+.tabbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:20;
+  display:flex;background:var(--paper);border-top:1px solid var(--rule);
+  padding-bottom:var(--safe-b);
+}
+.tabbar button{
+  flex:1;background:none;border:0;padding:9px 2px 8px;cursor:pointer;
+  font-family:var(--cond);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--ink-soft);display:flex;flex-direction:column;align-items:center;gap:3px;
+  height:var(--bar-h);
+}
+.tabbar button svg{width:20px;height:20px;stroke:currentColor;stroke-width:1.7;fill:none}
+.tabbar button.on{color:var(--ink)}
+.tabbar button.on svg{stroke-width:2.1}
+
+.blank{margin:60px 26px;text-align:center;color:var(--ink-soft);font-size:16px}
+.blank b{display:block;color:var(--ink);font-size:19px;margin-bottom:6px}
+.stat{font-family:var(--cond);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
+@media (prefers-reduced-motion:no-preference){
+  .entry .detail,.card{animation:fade .16s ease-out}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+}

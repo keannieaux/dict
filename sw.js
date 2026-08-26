@@ -1,10 +1,14 @@
-/* Меняйте номер версии каждый раз, когда правите words.json или index.html —
+/* Меняйте номер версии каждый раз, когда правите любой файл —
    иначе iPhone продолжит показывать старую сохранённую копию. */
-const VERSION = 'dict-v1';
+const VERSION = 'dict-v2';
 const ASSETS = [
   './',
   './index.html',
+  './style.css',
+  './app.js',
   './words.json',
+  './grammar.json',
+  './links.json',
   './manifest.webmanifest',
   './icon-180.png',
   './icon-192.png',
@@ -23,10 +27,11 @@ self.addEventListener('activate', e => {
   );
 });
 
-/* Сначала сеть, при неудаче — сохранённая копия. Так правки подхватываются
-   сразу онлайн, а без интернета словарь всё равно открывается. */
+/* Сначала сеть, при неудаче — сохранённая копия. Правки подхватываются
+   сразу онлайн, а без интернета приложение всё равно открывается. */
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
+  if (new URL(e.request.url).origin !== location.origin) return;
   e.respondWith(
     fetch(e.request)
       .then(res => {
