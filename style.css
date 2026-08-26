@@ -292,3 +292,29 @@ mark{background:linear-gradient(var(--mark),var(--mark)) no-repeat center/100% 6
   font-family:var(--cond);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
   color:var(--ink-soft);text-align:center;margin:26px 0 4px;opacity:.7;
 }
+
+/* ===== разговорник (Practical English) ===== */
+.ep{
+  display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+  background:none;border:1px dashed var(--rule);border-radius:10px;
+  padding:11px 14px;margin:-4px 0 10px 34px;cursor:pointer;color:inherit;
+}
+.ep:active{border-color:var(--ink);border-style:solid}
+.ep-tag{
+  font-family:var(--cond);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:#191C2B;background:var(--mark);border-radius:3px;padding:2px 6px;flex:none;
+}
+.ep-t{font-size:16px;flex:1}
+
+.ph{border-top:1px solid var(--rule);padding:9px 0}
+.ph:first-child{border-top:0;padding-top:0}
+.ph-en{font-size:17px;font-weight:600;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.ph-ru{font-size:15px;color:var(--ink-soft);margin-top:2px}
+
+.dl{margin-bottom:11px;padding-left:11px;border-left:2px solid var(--rule)}
+.dl.me{border-left-color:var(--mark)}
+.dl-who{
+  font-family:var(--cond);font-size:10.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-soft);margin-bottom:1px;
+}
+.dl-line{font-size:16.5px}

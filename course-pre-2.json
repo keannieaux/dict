@@ -1845,5 +1845,333 @@
         "d": "Как меняются времена и порядок слов при пересказе чужих вопросов, с упражнениями."
       }
     }
+  ],
+  "episodes": [
+    {
+      "n": 4,
+      "after": 7,
+      "title": "В аптеке",
+      "situation": "Описать симптомы и получить лекарство без рецепта.",
+      "phrases": [
+        [
+          "I'm not feeling very well.",
+          "Мне нездоровится."
+        ],
+        [
+          "I've got a sore throat and a headache.",
+          "У меня болит горло и голова."
+        ],
+        [
+          "How long have you had it?",
+          "Как давно это у вас?"
+        ],
+        [
+          "Since yesterday morning.",
+          "Со вчерашнего утра."
+        ],
+        [
+          "Have you taken anything for it?",
+          "Вы что-нибудь принимали?"
+        ],
+        [
+          "Do I need a prescription?",
+          "Нужен рецепт?"
+        ],
+        [
+          "Take one every four hours.",
+          "Принимайте по одной каждые четыре часа."
+        ],
+        [
+          "You should see a doctor if it doesn't improve.",
+          "Если не станет лучше, обратитесь к врачу."
+        ]
+      ],
+      "dialogue": [
+        [
+          "Pharmacist",
+          "Hello, how can I help?"
+        ],
+        [
+          "You",
+          "I'm not feeling very well. I've got a sore throat and a bad headache."
+        ],
+        [
+          "Pharmacist",
+          "How long have you had it?"
+        ],
+        [
+          "You",
+          "Since yesterday morning."
+        ],
+        [
+          "Pharmacist",
+          "Have you taken anything for it?"
+        ],
+        [
+          "You",
+          "Only paracetamol, last night."
+        ],
+        [
+          "Pharmacist",
+          "These should help. Take one every four hours, with food."
+        ],
+        [
+          "You",
+          "Do I need a prescription for anything stronger?"
+        ],
+        [
+          "Pharmacist",
+          "Yes. And you should see a doctor if it doesn't improve in three days."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Почему 'How long have you had it?' в Present Perfect?",
+          "options": [
+            "Состояние началось в прошлом и длится сейчас",
+            "Это прошедшее время",
+            "Ошибка"
+          ],
+          "a": 0,
+          "why": "Present Perfect с how long считает время от начала до настоящего момента."
+        },
+        {
+          "q": "Как ответить на этот вопрос?",
+          "options": [
+            "Since yesterday",
+            "For yesterday",
+            "From yesterday"
+          ],
+          "a": 0,
+          "why": "yesterday — точка начала, значит since. for назвал бы длину отрезка: for two days."
+        },
+        {
+          "q": "Что значит prescription?",
+          "options": [
+            "Инструкция",
+            "Рецепт от врача",
+            "Аннотация"
+          ],
+          "a": 1,
+          "why": "prescription — рецепт, выписанный врачом. Кулинарный рецепт — recipe, их часто путают."
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "after": 9,
+      "title": "Как туда попасть",
+      "situation": "Спросить дорогу в незнакомом городе и уточнить детали маршрута.",
+      "phrases": [
+        [
+          "Could you tell me how to get to the old town?",
+          "Не подскажете, как добраться до старого города?"
+        ],
+        [
+          "Is it within walking distance?",
+          "Туда можно дойти пешком?"
+        ],
+        [
+          "You're better off taking the metro.",
+          "Вам лучше поехать на метро."
+        ],
+        [
+          "Get off at the third stop.",
+          "Выходите на третьей остановке."
+        ],
+        [
+          "It's just around the corner.",
+          "Это прямо за углом."
+        ],
+        [
+          "You can't miss it.",
+          "Вы не пройдёте мимо."
+        ],
+        [
+          "I'm afraid I'm not from here.",
+          "Извините, я сама не местная."
+        ],
+        [
+          "Whereabouts exactly?",
+          "А где именно?"
+        ]
+      ],
+      "dialogue": [
+        [
+          "You",
+          "Excuse me, could you tell me how to get to the old town?"
+        ],
+        [
+          "Local",
+          "Whereabouts exactly? It's quite big."
+        ],
+        [
+          "You",
+          "The cathedral, I think."
+        ],
+        [
+          "Local",
+          "Right. Is it within walking distance? Not really, it's about half an hour."
+        ],
+        [
+          "You",
+          "Is there a bus?"
+        ],
+        [
+          "Local",
+          "You're better off taking the metro. Line 2, and get off at the third stop."
+        ],
+        [
+          "You",
+          "And from the station?"
+        ],
+        [
+          "Local",
+          "Follow the signs. It's just around the corner. You can't miss it."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Что значит 'You're better off taking the metro'?",
+          "options": [
+            "Метро дешевле",
+            "Вам лучше поехать на метро",
+            "Метро уже закрыто"
+          ],
+          "a": 1,
+          "why": "be better off doing something — вам выгоднее или удобнее сделать так. После оборота идёт форма с -ing."
+        },
+        {
+          "q": "'You can't miss it' — что имеется в виду?",
+          "options": [
+            "Это очень заметно",
+            "Нельзя опаздывать",
+            "Это далеко"
+          ],
+          "a": 0,
+          "why": "Устойчивая фраза: место настолько заметное, что не пройдёте мимо."
+        },
+        {
+          "q": "Зачем спрашивают 'Whereabouts exactly?'",
+          "options": [
+            "Уточняют место",
+            "Спрашивают когда",
+            "Спрашивают зачем"
+          ],
+          "a": 0,
+          "why": "whereabouts — разговорное «где именно». Часто звучит в ответ на слишком общий вопрос."
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "after": 11,
+      "title": "По телефону",
+      "situation": "Позвонить, попросить нужного человека, оставить сообщение.",
+      "phrases": [
+        [
+          "Could I speak to Anna, please?",
+          "Можно Анну, пожалуйста?"
+        ],
+        [
+          "Who's calling, please?",
+          "Кто её спрашивает?"
+        ],
+        [
+          "Hold on a moment.",
+          "Подождите минутку."
+        ],
+        [
+          "I'm afraid she's not available.",
+          "К сожалению, её сейчас нет."
+        ],
+        [
+          "Can I take a message?",
+          "Что-нибудь передать?"
+        ],
+        [
+          "Could you ask her to call me back?",
+          "Попросите её мне перезвонить."
+        ],
+        [
+          "I think you've got the wrong number.",
+          "Кажется, вы ошиблись номером."
+        ],
+        [
+          "Sorry, the line is bad.",
+          "Извините, плохая связь."
+        ]
+      ],
+      "dialogue": [
+        [
+          "Office",
+          "Good morning, Brightwood Design."
+        ],
+        [
+          "You",
+          "Good morning. Could I speak to Anna Weber, please?"
+        ],
+        [
+          "Office",
+          "Who's calling, please?"
+        ],
+        [
+          "You",
+          "It's Elena Petrova, about the contract."
+        ],
+        [
+          "Office",
+          "Hold on a moment, please. I'm afraid she's not available right now."
+        ],
+        [
+          "You",
+          "Do you know when she'll be back?"
+        ],
+        [
+          "Office",
+          "After lunch. Can I take a message?"
+        ],
+        [
+          "You",
+          "Could you ask her to call me back on 06 12 34 56 78?"
+        ],
+        [
+          "Office",
+          "Of course. I'll pass that on."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Как ответить на 'Who's calling, please?'",
+          "options": [
+            "It's Elena Petrova",
+            "I am Elena Petrova",
+            "My name Elena"
+          ],
+          "a": 0,
+          "why": "По телефону англичане говорят It's плюс имя. This is тоже подойдёт, особенно в США."
+        },
+        {
+          "q": "Что значит 'Can I take a message?'",
+          "options": [
+            "Могу передать сообщение",
+            "Можно записать номер",
+            "Можно перезвонить"
+          ],
+          "a": 0,
+          "why": "take a message — принять сообщение для отсутствующего. Передать позже — pass it on."
+        },
+        {
+          "q": "Как вежливо сказать, что человека нет на месте?",
+          "options": [
+            "She's not here",
+            "I'm afraid she's not available",
+            "She doesn't want to talk"
+          ],
+          "a": 1,
+          "why": "I'm afraid смягчает плохую новость, available звучит нейтральнее прямого not here."
+        }
+      ]
+    }
   ]
 }

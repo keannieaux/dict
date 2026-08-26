@@ -1867,5 +1867,333 @@
         "d": "Чем отличаются три способа говорить о будущем, с примерами и упражнениями."
       }
     }
+  ],
+  "episodes": [
+    {
+      "n": 1,
+      "after": 1,
+      "title": "Звонок на ресепшен",
+      "situation": "Позвонить из номера и решить проблему: не работает интернет, шумно, нужна помощь.",
+      "phrases": [
+        [
+          "Hello, this is room 312.",
+          "Здравствуйте, это номер 312."
+        ],
+        [
+          "I'm having a problem with the wifi.",
+          "У меня проблема с вайфаем."
+        ],
+        [
+          "The heating doesn't seem to be working.",
+          "Отопление, похоже, не работает."
+        ],
+        [
+          "Could someone come and have a look?",
+          "Может кто-нибудь подойти посмотреть?"
+        ],
+        [
+          "I'll send someone up right away.",
+          "Сейчас же кого-нибудь пришлю."
+        ],
+        [
+          "Sorry to bother you, but…",
+          "Извините за беспокойство, но…"
+        ],
+        [
+          "Would it be possible to change rooms?",
+          "Можно ли поменять номер?"
+        ],
+        [
+          "Thanks, that's very kind.",
+          "Спасибо, очень любезно."
+        ]
+      ],
+      "dialogue": [
+        [
+          "Reception",
+          "Reception, how can I help?"
+        ],
+        [
+          "You",
+          "Hello, this is room 312. Sorry to bother you, but the wifi isn't working."
+        ],
+        [
+          "Reception",
+          "I'm sorry about that. Have you tried the password on the card?"
+        ],
+        [
+          "You",
+          "Yes, I've tried it three times. It says the password is wrong."
+        ],
+        [
+          "Reception",
+          "Let me check. Ah, we changed it this morning. It's 'garden2024', all lower case."
+        ],
+        [
+          "You",
+          "Let me try. No, still nothing."
+        ],
+        [
+          "Reception",
+          "I'll send someone up right away."
+        ],
+        [
+          "You",
+          "Thanks, that's very kind."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Почему 'I'm having a problem', а не 'I have a problem'?",
+          "options": [
+            "Проблема временная, прямо сейчас",
+            "Так вежливее",
+            "Разницы нет"
+          ],
+          "a": 0,
+          "why": "Present Continuous подчёркивает, что это происходит в данный момент. Обе формы верны, но Continuous звучит естественнее в жалобе."
+        },
+        {
+          "q": "Зачем нужна фраза 'Sorry to bother you'?",
+          "options": [
+            "Чтобы извиниться заранее",
+            "Чтобы поздороваться",
+            "Чтобы попрощаться"
+          ],
+          "a": 0,
+          "why": "Смягчает просьбу или жалобу. В английском такие вводные обороты обязательны там, где в русском можно обойтись."
+        },
+        {
+          "q": "'I'll send someone up right away' — когда придут?",
+          "options": [
+            "Завтра",
+            "Прямо сейчас",
+            "Когда освободятся"
+          ],
+          "a": 1,
+          "why": "right away значит немедленно. up — потому что в номер, то есть наверх."
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "after": 3,
+      "title": "В ресторане",
+      "situation": "Разобраться в меню, попросить замену и решить вопрос со счётом.",
+      "phrases": [
+        [
+          "Do you have a table for two?",
+          "У вас есть столик на двоих?"
+        ],
+        [
+          "We haven't booked, I'm afraid.",
+          "Мы не бронировали, к сожалению."
+        ],
+        [
+          "What's the soup of the day?",
+          "Какой суп дня?"
+        ],
+        [
+          "Does it come with anything?",
+          "К нему что-то подаётся?"
+        ],
+        [
+          "Could I have it without onions?",
+          "Можно без лука?"
+        ],
+        [
+          "I'm allergic to nuts.",
+          "У меня аллергия на орехи."
+        ],
+        [
+          "I think there's a mistake in the bill.",
+          "Кажется, в счёте ошибка."
+        ],
+        [
+          "Is service included?",
+          "Обслуживание включено?"
+        ]
+      ],
+      "dialogue": [
+        [
+          "Waiter",
+          "Have you booked?"
+        ],
+        [
+          "You",
+          "No, we haven't, I'm afraid. Do you have a table for two?"
+        ],
+        [
+          "Waiter",
+          "We do, but you'll have to be finished by nine."
+        ],
+        [
+          "You",
+          "That's fine. What's the soup of the day?"
+        ],
+        [
+          "Waiter",
+          "Pumpkin. It comes with bread."
+        ],
+        [
+          "You",
+          "I'll have that. Could I have the salad without onions?"
+        ],
+        [
+          "Waiter",
+          "Of course. Anything to drink?"
+        ],
+        [
+          "You",
+          "Just tap water, thanks. And is service included?"
+        ],
+        [
+          "Waiter",
+          "Yes, it's on the bill."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Что значит 'Does it come with anything?'",
+          "options": [
+            "Это дорого?",
+            "Что подаётся к блюду?",
+            "Это готовится долго?"
+          ],
+          "a": 1,
+          "why": "come with — что входит в блюдо как гарнир или дополнение."
+        },
+        {
+          "q": "Как сказать об аллергии?",
+          "options": [
+            "I don't eat nuts",
+            "I'm allergic to nuts",
+            "Nuts are bad for me"
+          ],
+          "a": 1,
+          "why": "Прямая формула, которую персонал воспримет серьёзно. Первая звучит как предпочтение, а не медицинское ограничение."
+        },
+        {
+          "q": "Как вежливо указать на ошибку в счёте?",
+          "options": [
+            "This is wrong",
+            "I think there's a mistake in the bill",
+            "You made a mistake"
+          ],
+          "a": 1,
+          "why": "I think смягчает и не обвиняет напрямую. Прямое обвинение в английском звучит резче, чем в русском."
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "after": 5,
+      "title": "Вернуть покупку",
+      "situation": "Обменять или сдать вещь обратно: не подошёл размер, брак, передумали.",
+      "phrases": [
+        [
+          "I'd like to return this, please.",
+          "Я хотела бы это вернуть."
+        ],
+        [
+          "Have you got the receipt?",
+          "Чек у вас есть?"
+        ],
+        [
+          "It doesn't fit.",
+          "Не подошло по размеру."
+        ],
+        [
+          "There's a hole in it.",
+          "Тут дырка."
+        ],
+        [
+          "Would you like a refund or an exchange?",
+          "Вернуть деньги или обменять?"
+        ],
+        [
+          "Can I have a refund?",
+          "Можно вернуть деньги?"
+        ],
+        [
+          "I bought it last Tuesday.",
+          "Я купила это в прошлый вторник."
+        ],
+        [
+          "It'll go back on the same card.",
+          "Деньги вернутся на ту же карту."
+        ]
+      ],
+      "dialogue": [
+        [
+          "Assistant",
+          "Hi, how can I help?"
+        ],
+        [
+          "You",
+          "I'd like to return this jumper, please."
+        ],
+        [
+          "Assistant",
+          "Is there something wrong with it?"
+        ],
+        [
+          "You",
+          "It doesn't fit. I bought it last Tuesday."
+        ],
+        [
+          "Assistant",
+          "No problem. Have you got the receipt?"
+        ],
+        [
+          "You",
+          "Here you are."
+        ],
+        [
+          "Assistant",
+          "Would you like a refund or an exchange?"
+        ],
+        [
+          "You",
+          "A refund, please. Can I have it in cash?"
+        ],
+        [
+          "Assistant",
+          "I'm afraid it'll go back on the same card."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Разница между refund и exchange?",
+          "options": [
+            "Деньги обратно или обмен на другое",
+            "Скидка или возврат",
+            "Ничего не значит"
+          ],
+          "a": 0,
+          "why": "refund — возврат денег, exchange — обмен на другой товар или размер."
+        },
+        {
+          "q": "Почему 'I'd like to return this', а не 'I want to return this'?",
+          "options": [
+            "I'd like звучит вежливее",
+            "Это разные вещи",
+            "I want грамматически неверно"
+          ],
+          "a": 0,
+          "why": "I'd like — стандартная вежливая форма. I want грамматически верно, но звучит требовательно."
+        },
+        {
+          "q": "'It doesn't fit' — что не так с вещью?",
+          "options": [
+            "Не нравится цвет",
+            "Не подошёл размер",
+            "Она бракованная"
+          ],
+          "a": 1,
+          "why": "fit относится только к размеру. О браке сказали бы it's faulty или there's a hole in it."
+        }
+      ]
+    }
   ]
 }

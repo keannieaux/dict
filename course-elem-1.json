@@ -1677,5 +1677,333 @@
         "d": "Уроки с тестами, в том числе про глаголы, после которых идёт -ing или инфинитив."
       }
     }
+  ],
+  "episodes": [
+    {
+      "n": 1,
+      "after": 1,
+      "title": "Заселение в отель",
+      "situation": "Вы приехали, у вас есть бронь. Нужно назвать себя, получить ключ и узнать про завтрак.",
+      "phrases": [
+        [
+          "I have a reservation.",
+          "У меня забронировано."
+        ],
+        [
+          "The name is Petrova.",
+          "Фамилия Петрова."
+        ],
+        [
+          "Could you spell that, please?",
+          "Продиктуйте по буквам, пожалуйста."
+        ],
+        [
+          "Here is your key card.",
+          "Вот ваша карта-ключ."
+        ],
+        [
+          "What time is breakfast?",
+          "Во сколько завтрак?"
+        ],
+        [
+          "It's on the third floor.",
+          "Это на третьем этаже."
+        ],
+        [
+          "Is breakfast included?",
+          "Завтрак включён?"
+        ],
+        [
+          "Enjoy your stay.",
+          "Приятного пребывания."
+        ]
+      ],
+      "dialogue": [
+        [
+          "Reception",
+          "Good evening. How can I help you?"
+        ],
+        [
+          "You",
+          "Hello. I have a reservation for two nights."
+        ],
+        [
+          "Reception",
+          "Of course. What's the name?"
+        ],
+        [
+          "You",
+          "Petrova. P-E-T-R-O-V-A."
+        ],
+        [
+          "Reception",
+          "Thank you. Room 204, on the second floor. Here is your key card."
+        ],
+        [
+          "You",
+          "Thank you. What time is breakfast?"
+        ],
+        [
+          "Reception",
+          "From seven to ten, in the room next to reception."
+        ],
+        [
+          "You",
+          "Is it included?"
+        ],
+        [
+          "Reception",
+          "Yes, it is. Enjoy your stay."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Как сказать, что у вас есть бронь?",
+          "options": [
+            "I have a reservation",
+            "I have a room",
+            "I book a room"
+          ],
+          "a": 0,
+          "why": "Устойчивое выражение — have a reservation. Book — это глагол «бронировать», для уже сделанной брони он не подходит."
+        },
+        {
+          "q": "Администратор спрашивает 'What's the name?'. Что ответить?",
+          "options": [
+            "My name is good",
+            "Petrova",
+            "I am Petrova's"
+          ],
+          "a": 1,
+          "why": "Достаточно назвать фамилию. Полное My name is Petrova тоже верно, но короткий вариант естественнее."
+        },
+        {
+          "q": "Как спросить про включённый завтрак?",
+          "options": [
+            "Is breakfast included?",
+            "Is breakfast free?",
+            "Do I pay breakfast?"
+          ],
+          "a": 0,
+          "why": "included значит «входит в стоимость». Free звучит как «бесплатно для всех»."
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "after": 3,
+      "title": "Кофейня и время",
+      "situation": "Заказать кофе навынос, спросить цену и узнать, сколько времени.",
+      "phrases": [
+        [
+          "A flat white, please.",
+          "Флэт уайт, пожалуйста."
+        ],
+        [
+          "To take away or to have here?",
+          "С собой или здесь?"
+        ],
+        [
+          "To take away, please.",
+          "С собой, пожалуйста."
+        ],
+        [
+          "Anything else?",
+          "Что-нибудь ещё?"
+        ],
+        [
+          "That's four fifty.",
+          "С вас четыре пятьдесят."
+        ],
+        [
+          "Can I pay by card?",
+          "Можно картой?"
+        ],
+        [
+          "Excuse me, what's the time?",
+          "Извините, сколько времени?"
+        ],
+        [
+          "It's half past ten.",
+          "Половина одиннадцатого."
+        ]
+      ],
+      "dialogue": [
+        [
+          "Barista",
+          "Hi, what can I get you?"
+        ],
+        [
+          "You",
+          "A large flat white, please."
+        ],
+        [
+          "Barista",
+          "To take away or to have here?"
+        ],
+        [
+          "You",
+          "To take away. And could I have a glass of water?"
+        ],
+        [
+          "Barista",
+          "Sure. Anything else?"
+        ],
+        [
+          "You",
+          "No, that's all, thanks. Can I pay by card?"
+        ],
+        [
+          "Barista",
+          "Of course. That's four fifty."
+        ],
+        [
+          "You",
+          "Sorry, what's the time?"
+        ],
+        [
+          "Barista",
+          "It's twenty past nine."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Что значит 'To take away or to have here?'",
+          "options": [
+            "С собой или на месте",
+            "Большой или маленький",
+            "С молоком или без"
+          ],
+          "a": 0,
+          "why": "take away — забрать с собой, have here — выпить в кафе. В США чаще говорят for here or to go."
+        },
+        {
+          "q": "Как вежливо попросить стакан воды?",
+          "options": [
+            "Give me water",
+            "Could I have a glass of water?",
+            "I want water"
+          ],
+          "a": 1,
+          "why": "Could I have — самая универсальная вежливая формула заказа."
+        },
+        {
+          "q": "'It's half past ten' — это сколько?",
+          "options": [
+            "10:30",
+            "11:30",
+            "09:30"
+          ],
+          "a": 0,
+          "why": "half past ten буквально «половина после десяти», то есть 10:30. В русском «половина одиннадцатого» — та же точка, но считается иначе."
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "after": 5,
+      "title": "Магазин одежды",
+      "situation": "Найти свой размер, примерить и решить, берёте или нет.",
+      "phrases": [
+        [
+          "Can I try this on?",
+          "Можно это примерить?"
+        ],
+        [
+          "The changing rooms are over there.",
+          "Примерочные вон там."
+        ],
+        [
+          "Do you have this in a medium?",
+          "У вас есть это в размере M?"
+        ],
+        [
+          "It's too small.",
+          "Слишком мало."
+        ],
+        [
+          "Have you got a bigger size?",
+          "Есть размер побольше?"
+        ],
+        [
+          "It fits perfectly.",
+          "Сидит идеально."
+        ],
+        [
+          "I'll take it.",
+          "Я возьму."
+        ],
+        [
+          "I'll leave it, thanks.",
+          "Пожалуй, нет, спасибо."
+        ]
+      ],
+      "dialogue": [
+        [
+          "Assistant",
+          "Hi, can I help you?"
+        ],
+        [
+          "You",
+          "Yes, can I try this jacket on?"
+        ],
+        [
+          "Assistant",
+          "Of course. The changing rooms are over there, on the left."
+        ],
+        [
+          "You",
+          "Thanks. Do you have it in a medium?"
+        ],
+        [
+          "Assistant",
+          "Let me check. Here you are."
+        ],
+        [
+          "You",
+          "This one is too small. Have you got a bigger size?"
+        ],
+        [
+          "Assistant",
+          "This is the last one, I'm afraid."
+        ],
+        [
+          "You",
+          "That's a shame. I'll leave it, then. Thanks anyway."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Как попросить примерить вещь?",
+          "options": [
+            "Can I try this on?",
+            "Can I try on this?",
+            "Can I wear this?"
+          ],
+          "a": 0,
+          "why": "С указательным местоимением this частица on идёт после: try this on."
+        },
+        {
+          "q": "'It fits perfectly' — о чём это?",
+          "options": [
+            "О цвете",
+            "О размере",
+            "О цене"
+          ],
+          "a": 1,
+          "why": "fit говорит именно о размере: сидит по фигуре. О внешнем виде сказали бы it suits you."
+        },
+        {
+          "q": "Как отказаться, не обидев продавца?",
+          "options": [
+            "No",
+            "I'll leave it, thanks",
+            "I don't want"
+          ],
+          "a": 1,
+          "why": "I'll leave it — стандартная мягкая формула отказа в магазине."
+        }
+      ]
+    }
   ]
 }

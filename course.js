@@ -1,5 +1,5 @@
 /* ============ КУРС: две книги, юниты по программе ============ */
-let course = null, curBook = 1, openUnit = null;   // curBook: 0 — Elementary, 1 — Pre-Intermediate
+let course = null, curBook = 1, openUnit = null, openEp = null;   // curBook: 0 — Elementary, 1 — Pre-Intermediate
 
 /* Слова всех юнитов вливаются в общий словарь: их подхватывают
    поиск, «Тест» и интервальное повторение. */
@@ -44,6 +44,7 @@ function renderCourse(){
       </div>` +
       bk.units.map(u => {
         const s = unitStats(u);
+        const ep = (bk.episodes || []).find(e => e.after === u.n);
         return `
         <button class="unit" data-unit="${u.n}">
           <div class="unit-n">${u.n}</div>
@@ -53,7 +54,11 @@ function renderCourse(){
             <div class="unit-bar"><i style="width:${Math.round(s.done / s.total * 100)}%"></i></div>
           </div>
           <div class="unit-c">${s.done}/${s.total}</div>
-        </button>`;
+        </button>` + (ep ? `
+        <button class="ep" data-ep="${ep.n}">
+          <span class="ep-tag">Разговорник</span>
+          <span class="ep-t">${esc(ep.title)}</span>
+        </button>` : '');
       }).join('') +
       `<p class="fineprint">${esc(course.note)}</p>`;
 
@@ -63,6 +68,58 @@ function renderCourse(){
       b.addEventListener('click', () => {
         openUnit = +b.dataset.unit; renderCourse(); window.scrollTo({top: 0});
       }));
+    body.querySelectorAll('[data-ep]').forEach(b =>
+      b.addEventListener('click', () => {
+        openEp = +b.dataset.ep; renderCourse(); window.scrollTo({top: 0});
+      }));
+    return;
+  }
+
+  /* ---------- эпизод разговорника ---------- */
+  if (openEp !== null){
+    const e = (bk.episodes || []).find(x => x.n === openEp);
+    if (!e){ openEp = null; renderCourse(); return; }
+    $('#courseTitle').textContent = e.title;
+    $('#courseSub').textContent = e.situation;
+    $('#courseStat').textContent = 'Разговорник ' + e.n;
+
+    body.innerHTML = `
+      <button class="btn ghost back" id="backFromEp">← Все юниты</button>
+
+      <details class="sec" open>
+        <summary><h3>Фразы</h3><span class="lvl">${e.phrases.length}</span></summary>
+        <div class="sec-body">
+          ${e.phrases.map(([en, ru]) => `
+            <div class="ph">
+              <div class="ph-en">${esc(en)}
+                <button class="speak tiny" data-say="${esc(en)}">▸</button>
+              </div>
+              <div class="ph-ru">${esc(ru)}</div>
+            </div>`).join('')}
+        </div>
+      </details>
+
+      <details class="sec">
+        <summary><h3>Диалог</h3></summary>
+        <div class="sec-body">
+          ${e.dialogue.map(([who, line]) => `
+            <div class="dl ${who === 'You' ? 'me' : ''}">
+              <div class="dl-who">${esc(who)}</div>
+              <div class="dl-line">${esc(line)}</div>
+            </div>`).join('')}
+          <button class="speak" data-say="${esc(e.dialogue.map(d => d[1]).join(' '))}">Прочитать диалог</button>
+        </div>
+      </details>
+
+      <details class="sec">
+        <summary><h3>Проверка</h3><span class="lvl">${e.quiz.length}</span></summary>
+        <div class="sec-body"><div class="quiz" data-quiz="ep"></div></div>
+      </details>`;
+
+    $('#backFromEp').addEventListener('click', () => {
+      openEp = null; renderCourse(); window.scrollTo({top: 0});
+    });
+    drawQuiz(body.querySelector('[data-quiz="ep"]'), e.quiz);
     return;
   }
 
@@ -148,7 +205,17 @@ function renderCourse(){
           <div class="d">${esc(u.video.d)}</div>
         </a>
       </div>
-    </details>`;
+    </details>
+
+    <div class="btnrow">
+      <button class="btn mark" id="testThisUnit">Тест по этому юниту</button>
+    </div>`;
+
+  $('#testThisUnit').addEventListener('click', () => {
+    scope.kind = 'unit'; scope.book = bk.id; scope.unit = u.n;
+    test = null;
+    show('test');
+  });
 
   $('#backToUnits').addEventListener('click', () => {
     openUnit = null; renderCourse(); window.scrollTo({top: 0});
@@ -201,8 +268,9 @@ const PARTS = ['course-elem-1.json', 'course-elem-2.json',
 function assemble(loaded){
   const byId = {};
   loaded.filter(Boolean).forEach(p => {
-    if (!byId[p.id]) byId[p.id] = { id: p.id, book: p.book, level: p.level, units: [] };
+    if (!byId[p.id]) byId[p.id] = { id: p.id, book: p.book, level: p.level, units: [], episodes: [] };
     byId[p.id].units.push(...p.units);
+    if (p.episodes) byId[p.id].episodes.push(...p.episodes);
   });
   const order = ['elem', 'pre'];
   return {
@@ -210,6 +278,7 @@ function assemble(loaded){
     missing: PARTS.length - loaded.filter(Boolean).length,
     courses: order.filter(id => byId[id]).map(id => {
       byId[id].units.sort((a, b) => a.n - b.n);
+      byId[id].episodes.sort((a, b) => a.n - b.n);
       return byId[id];
     })
   };

@@ -1677,5 +1677,329 @@
         "d": "Разбор с примерами и два теста: где стоит already, а где yet уходит в конец."
       }
     }
+  ],
+  "episodes": [
+    {
+      "n": 4,
+      "after": 7,
+      "title": "Как пройти",
+      "situation": "Спросить дорогу и понять ответ. Главное — распознать четыре-пять ключевых слов.",
+      "phrases": [
+        [
+          "Excuse me, how do I get to the station?",
+          "Извините, как добраться до вокзала?"
+        ],
+        [
+          "Is it far from here?",
+          "Это далеко отсюда?"
+        ],
+        [
+          "Go straight on.",
+          "Идите прямо."
+        ],
+        [
+          "Turn left at the traffic lights.",
+          "Поверните налево у светофора."
+        ],
+        [
+          "Take the second right.",
+          "Второй поворот направо."
+        ],
+        [
+          "It's on your left.",
+          "Это будет слева от вас."
+        ],
+        [
+          "It's about ten minutes on foot.",
+          "Это минут десять пешком."
+        ],
+        [
+          "Sorry, could you say that again?",
+          "Простите, повторите, пожалуйста."
+        ]
+      ],
+      "dialogue": [
+        [
+          "You",
+          "Excuse me, how do I get to the museum?"
+        ],
+        [
+          "Passer-by",
+          "Go straight on to the end of this street."
+        ],
+        [
+          "You",
+          "Straight on. And then?"
+        ],
+        [
+          "Passer-by",
+          "Then turn left at the traffic lights and take the second right."
+        ],
+        [
+          "You",
+          "Sorry, could you say that again? The second right?"
+        ],
+        [
+          "Passer-by",
+          "Yes. The museum is on your left, opposite a small park."
+        ],
+        [
+          "You",
+          "Is it far?"
+        ],
+        [
+          "Passer-by",
+          "No, about ten minutes on foot."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "'Take the second right' — что делать?",
+          "options": [
+            "Повернуть направо на втором повороте",
+            "Пройти два квартала",
+            "Повернуть направо дважды"
+          ],
+          "a": 0,
+          "why": "take the second right значит пропустить первый поворот направо и свернуть на втором."
+        },
+        {
+          "q": "Как переспросить, если не расслышали?",
+          "options": [
+            "What?",
+            "Sorry, could you say that again?",
+            "Repeat"
+          ],
+          "a": 1,
+          "why": "Самая вежливая форма. Repeat в приказном тоне звучит грубо."
+        },
+        {
+          "q": "'It's about ten minutes on foot' — как добираться?",
+          "options": [
+            "На автобусе",
+            "Пешком",
+            "На такси"
+          ],
+          "a": 1,
+          "why": "on foot значит пешком. Транспорт вводится через by: by bus, by car."
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "after": 9,
+      "title": "Заказ еды и меню",
+      "situation": "Понять меню, сделать заказ и попросить счёт.",
+      "phrases": [
+        [
+          "A table for two, please.",
+          "Столик на двоих, пожалуйста."
+        ],
+        [
+          "Are you ready to order?",
+          "Готовы сделать заказ?"
+        ],
+        [
+          "What do you recommend?",
+          "Что посоветуете?"
+        ],
+        [
+          "I'll have the soup, please.",
+          "Мне суп, пожалуйста."
+        ],
+        [
+          "What's in it?",
+          "Что туда входит?"
+        ],
+        [
+          "Is it spicy?",
+          "Это острое?"
+        ],
+        [
+          "Could we have the bill, please?",
+          "Можно счёт, пожалуйста?"
+        ],
+        [
+          "Starter, main course, dessert",
+          "Закуска, основное блюдо, десерт"
+        ]
+      ],
+      "dialogue": [
+        [
+          "Waiter",
+          "Good evening. A table for how many?"
+        ],
+        [
+          "You",
+          "For two, please."
+        ],
+        [
+          "Waiter",
+          "This way. Here's the menu."
+        ],
+        [
+          "You",
+          "Thank you. What do you recommend?"
+        ],
+        [
+          "Waiter",
+          "The fish is very good today."
+        ],
+        [
+          "You",
+          "What's in the vegetable soup?"
+        ],
+        [
+          "Waiter",
+          "Onions, potatoes and beans. It isn't spicy."
+        ],
+        [
+          "You",
+          "Then I'll have the soup and the fish, please."
+        ],
+        [
+          "Waiter",
+          "Certainly. And to drink?"
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Как сделать заказ?",
+          "options": [
+            "I want the soup",
+            "I'll have the soup",
+            "Give me the soup"
+          ],
+          "a": 1,
+          "why": "I'll have — стандартная формула заказа в ресторане. I want звучит требовательно."
+        },
+        {
+          "q": "Что такое starter?",
+          "options": [
+            "Основное блюдо",
+            "Закуска перед основным",
+            "Десерт"
+          ],
+          "a": 1,
+          "why": "Порядок такой: starter, main course, dessert. В США закуску чаще называют appetizer."
+        },
+        {
+          "q": "Как попросить счёт?",
+          "options": [
+            "Could we have the bill, please?",
+            "Give me the money",
+            "How much all?"
+          ],
+          "a": 0,
+          "why": "bill — счёт в британском варианте, check — в американском."
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "after": 11,
+      "title": "Транспорт до аэропорта",
+      "situation": "Купить билет, узнать платформу и не опоздать.",
+      "phrases": [
+        [
+          "A single to the airport, please.",
+          "Один билет до аэропорта в одну сторону."
+        ],
+        [
+          "Single or return?",
+          "В одну сторону или туда-обратно?"
+        ],
+        [
+          "Which platform is it?",
+          "С какой платформы?"
+        ],
+        [
+          "How often do the trains run?",
+          "Как часто ходят поезда?"
+        ],
+        [
+          "Every fifteen minutes.",
+          "Каждые пятнадцать минут."
+        ],
+        [
+          "How long does it take?",
+          "Сколько времени занимает?"
+        ],
+        [
+          "Do I need to change?",
+          "Нужно делать пересадку?"
+        ],
+        [
+          "The next train leaves at ten past.",
+          "Следующий поезд в десять минут."
+        ]
+      ],
+      "dialogue": [
+        [
+          "You",
+          "A ticket to the airport, please."
+        ],
+        [
+          "Clerk",
+          "Single or return?"
+        ],
+        [
+          "You",
+          "Single, please. How long does it take?"
+        ],
+        [
+          "Clerk",
+          "About forty minutes."
+        ],
+        [
+          "You",
+          "Do I need to change?"
+        ],
+        [
+          "Clerk",
+          "No, it's direct. Platform 4."
+        ],
+        [
+          "You",
+          "And how often do the trains run?"
+        ],
+        [
+          "Clerk",
+          "Every fifteen minutes. The next one leaves at ten past."
+        ]
+      ],
+      "quiz": [
+        {
+          "q": "Что такое 'return' в кассе?",
+          "options": [
+            "Возврат билета",
+            "Билет туда-обратно",
+            "Обратная дорога"
+          ],
+          "a": 1,
+          "why": "single — в одну сторону, return — туда и обратно. В США это one-way и round trip."
+        },
+        {
+          "q": "'Do I need to change?' — о чём вопрос?",
+          "options": [
+            "О пересадке",
+            "О сдаче",
+            "О смене билета"
+          ],
+          "a": 0,
+          "why": "change здесь значит пересадку. О сдаче спросили бы про change со словом money."
+        },
+        {
+          "q": "Как спросить, сколько ехать?",
+          "options": [
+            "How long does it take?",
+            "How much time?",
+            "How long is it?"
+          ],
+          "a": 0,
+          "why": "Устойчивая формула про длительность поездки — How long does it take?"
+        }
+      ]
+    }
   ]
 }
