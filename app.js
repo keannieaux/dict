@@ -201,13 +201,95 @@ addEventListener('scroll', () => {
   requestAnimationFrame(() => { guide(); tick = false; });
 }, {passive: true});
 
+
+/* ================= охват: всё, тема или уровень ================= */
+let scope = { kind: 'all', book: null, unit: null, level: null };
+
+function books(){
+  return (typeof course !== 'undefined' && course) ? course.courses : [];
+}
+function bookName(id){ return id === 'elem' ? 'Elementary' : 'Pre-Intermediate'; }
+
+function scopedWords(){
+  if (scope.kind === 'unit')  return words.filter(w => w.book === scope.book && w.unit === scope.unit);
+  if (scope.kind === 'level') return words.filter(w => w.lvl === scope.level);
+  return words;
+}
+function scopeLabel(){
+  if (scope.kind === 'unit'){
+    const bk = books().find(c => c.id === scope.book);
+    const u  = bk && bk.units.find(x => x.n === scope.unit);
+    return bookName(scope.book) + ', юнит ' + scope.unit + (u ? ': ' + u.title : '');
+  }
+  if (scope.kind === 'level') return 'Уровень ' + scope.level;
+  return 'Все слова';
+}
+function scopeDue(){
+  const now = Date.now();
+  return scopedWords().filter(w => { const p = store.data[w.w]; return !p || p.due <= now; }).length;
+}
+
+/* Рисует переключатель охвата и перерисовывает экран через onChange. */
+function drawScope(box, onChange){
+  const levels = [...new Set(words.map(w => w.lvl).filter(Boolean))].sort();
+  let inner = '';
+
+  if (scope.kind === 'unit'){
+    inner = books().map(bk => `
+      <div class="scope-group">${esc(bookName(bk.id))}</div>
+      <div class="chips">
+        ${bk.units.map(u => `
+          <button class="chip2 ${scope.book === bk.id && scope.unit === u.n ? 'on' : ''}"
+                  data-book="${bk.id}" data-unit="${u.n}">
+            <b>${u.n}</b> ${esc(u.title)}
+          </button>`).join('')}
+      </div>`).join('') || '<p class="fineprint">Курс ещё не загрузился.</p>';
+  }
+  if (scope.kind === 'level'){
+    inner = `<div class="chips">
+      ${levels.map(L => `
+        <button class="chip2 ${scope.level === L ? 'on' : ''}" data-level="${L}">
+          <b>${L}</b> ${words.filter(w => w.lvl === L).length}
+        </button>`).join('')}
+    </div>`;
+  }
+
+  box.innerHTML = `
+    <div class="scope">
+      <div class="scope-tabs">
+        <button data-k="all"   class="${scope.kind === 'all'   ? 'on' : ''}">Все слова</button>
+        <button data-k="unit"  class="${scope.kind === 'unit'  ? 'on' : ''}">По теме</button>
+        <button data-k="level" class="${scope.kind === 'level' ? 'on' : ''}">По уровню</button>
+      </div>
+      ${inner}
+    </div>`;
+
+  box.querySelectorAll('[data-k]').forEach(b => b.addEventListener('click', () => {
+    scope.kind = b.dataset.k;
+    if (scope.kind === 'unit' && scope.unit === null){
+      const bk = books()[0];
+      if (bk){ scope.book = bk.id; scope.unit = bk.units[0].n; }
+    }
+    if (scope.kind === 'level' && !scope.level){
+      scope.level = [...new Set(words.map(w => w.lvl).filter(Boolean))].sort()[0];
+    }
+    onChange();
+  }));
+  box.querySelectorAll('[data-unit]').forEach(b => b.addEventListener('click', () => {
+    scope.book = b.dataset.book; scope.unit = +b.dataset.unit; onChange();
+  }));
+  box.querySelectorAll('[data-level]').forEach(b => b.addEventListener('click', () => {
+    scope.level = b.dataset.level; onChange();
+  }));
+}
+
 /* ================= раздел: УРОК ================= */
 /* Урок = 4 слова, для каждого три шага: знакомство → перевод → предложение. */
 let lesson = null;
 
 function pickLesson(n = 4){
   const now = Date.now();
-  return words.map(w => {
+  return scopedWords().map(w => {
     const p = store.data[w.w];
     let pri;
     if (!p)            pri = 1;          // новое слово
@@ -237,21 +319,22 @@ function renderLesson(){
   $('#lessonSub').textContent = '';
 
   if (!lesson){
-    const due = dueCount(), done = learnedCount();
+    const pool = scopedWords(), due = scopeDue();
+    const done = pool.filter(w => (store.data[w.w]?.b || 0) >= 4).length;
     $('#lessonTitle').textContent = 'Занятие на сегодня';
-    $('#lessonStat').textContent = done + ' / ' + words.length + ' выучено';
-    $('#lessonSub').textContent = due
-      ? `${due} ${plural(due, 'слово ждёт', 'слова ждут', 'слов ждут')} повторения`
-      : 'Всё повторено. Можно взять новые слова.';
-    body.innerHTML = `
+    $('#lessonStat').textContent = done + ' / ' + pool.length + ' выучено';
+    $('#lessonSub').textContent = scopeLabel();
+    body.innerHTML = '<div id="lessonScope"></div>' + `
       <div class="card">
-        <div class="prompt-label">Как устроен урок</div>
-        <p class="def">Четыре слова, и каждое проходит три шага: сначала знакомство с
-        произношением, потом перевод с русского на английский, потом сборка предложения
-        из этого слова. Приложение само выбирает, что вам пора повторить.</p>
-        <div class="btnrow"><button class="btn" id="go">Начать урок</button></div>
+        <div class="prompt-label">${pool.length ? esc(scopeLabel()) : 'Пусто'}</div>
+        <p class="def">${pool.length
+          ? (due ? `${due} ${plural(due, 'слово ждёт', 'слова ждут', 'слов ждут')} повторения. ` : 'Всё повторено, возьмём новые слова. ')
+            + 'Четыре слова за урок, каждое проходит три шага: знакомство с произношением, перевод с русского, сборка предложения.'
+          : 'В этой теме пока нет слов. Выберите другую.'}</p>
+        <div class="btnrow"><button class="btn" id="go" ${pool.length ? '' : 'disabled'}>Начать урок</button></div>
       </div>`;
-    $('#go').addEventListener('click', startLesson);
+    drawScope($('#lessonScope'), renderLesson);
+    if (pool.length) $('#go').addEventListener('click', startLesson);
     return;
   }
 
@@ -414,21 +497,25 @@ function renderTest(){
   const body = $('#testBody');
 
   if (!test){
-    $('#testStat').textContent = '';
-    $('#testSub').textContent = 'Выберите направление перевода';
-    body.innerHTML = `
+    const pool = scopedWords();
+    const n = Math.min(10, pool.length);
+    $('#testStat').textContent = pool.length + ' ' + plural(pool.length, 'слово', 'слова', 'слов');
+    $('#testSub').textContent = scopeLabel();
+    body.innerHTML = '<div id="testScope"></div>' + `
       <div class="card">
         <div class="prompt-label">Направление</div>
         <div class="btnrow">
-          <button class="btn" data-dir="ru2en">Рус → Англ</button>
-          <button class="btn ghost" data-dir="en2ru">Англ → Рус</button>
+          <button class="btn" data-dir="ru2en" ${n ? '' : 'disabled'}>Рус → Англ</button>
+          <button class="btn ghost" data-dir="en2ru" ${n ? '' : 'disabled'}>Англ → Рус</button>
         </div>
-        <div class="btnrow"><button class="btn mark" data-dir="mix">Вперемешку</button></div>
-        <p class="def" style="margin-top:14px;color:var(--ink-soft)">
-        Десять слов. Мелкие опечатки засчитываются, но правильное написание показывается.</p>
+        <div class="btnrow"><button class="btn mark" data-dir="mix" ${n ? '' : 'disabled'}>Вперемешку</button></div>
+        <p class="def" style="margin-top:14px;color:var(--ink-soft)">${n
+          ? `${n} ${plural(n, 'слово', 'слова', 'слов')} из выбранного набора. Мелкие опечатки засчитываются, правильное написание всё равно показывается.`
+          : 'В этом наборе нет слов. Выберите другую тему или уровень.'}</p>
       </div>`;
+    drawScope($('#testScope'), renderTest);
     $$('#testBody [data-dir]').forEach(b =>
-      b.addEventListener('click', () => startTest(b.dataset.dir)));
+      b.addEventListener('click', () => { if (n) startTest(b.dataset.dir); }));
     return;
   }
 
@@ -475,7 +562,7 @@ function renderTest(){
 }
 
 function startTest(mode){
-  const pool = shuffle(words).slice(0, 10);
+  const pool = shuffle(scopedWords()).slice(0, 10);
   test = {
     qs: pool.map(w => ({
       kind: 'type', w,
