@@ -1679,6 +1679,843 @@
             "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
             "d": "Уроки с тестами, в том числе про глаголы, после которых идёт -ing или инфинитив."
           }
+        },
+        {
+          "n": 7,
+          "title": "Что было раньше",
+          "goal": "Рассказывать о прошлом: где вы были, что делали и когда именно.",
+          "map": [
+            {
+              "id": "7A",
+              "g": "Past Simple глагола be: was и were",
+              "v": "словообразование: write → writer"
+            },
+            {
+              "id": "7B",
+              "g": "Past Simple: правильные глаголы",
+              "v": "выражения прошедшего времени"
+            },
+            {
+              "id": "7C",
+              "g": "Past Simple: неправильные глаголы",
+              "v": "go, have, get"
+            }
+          ],
+          "words": [
+            {
+              "w": "ago",
+              "lvl": "A1",
+              "ipa": "/əˈɡəʊ/",
+              "pos": "нареч.",
+              "tr": "назад (о времени)",
+              "def": "Столько времени прошло с тех пор. Ставится после отрезка времени.",
+              "ex": "We moved here three years ago."
+            },
+            {
+              "w": "be born",
+              "lvl": "A1",
+              "ipa": "/biː bɔːn/",
+              "pos": "фраза",
+              "tr": "родиться",
+              "def": "Появиться на свет. Всегда с формой be, обычно was или were.",
+              "ex": "She was born in Kyiv."
+            },
+            {
+              "w": "actor",
+              "lvl": "A1",
+              "ipa": "/ˈæk.tər/",
+              "pos": "сущ.",
+              "tr": "актёр",
+              "def": "Тот, кто играет роли в кино или театре. От act плюс -or.",
+              "ex": "He was a famous actor once."
+            },
+            {
+              "w": "writer",
+              "lvl": "A1",
+              "ipa": "/ˈraɪ.tər/",
+              "pos": "сущ.",
+              "tr": "писатель",
+              "def": "Тот, кто пишет книги. От write плюс -er.",
+              "ex": "My grandmother was a writer."
+            },
+            {
+              "w": "painter",
+              "lvl": "A2",
+              "ipa": "/ˈpeɪn.tər/",
+              "pos": "сущ.",
+              "tr": "художник",
+              "def": "Тот, кто пишет картины. От paint плюс -er.",
+              "ex": "The painter lived in this house."
+            },
+            {
+              "w": "invent",
+              "lvl": "A2",
+              "ipa": "/ɪnˈvent/",
+              "pos": "глаг.",
+              "tr": "изобретать",
+              "def": "Создать то, чего раньше не было.",
+              "ex": "Who invented the telephone?"
+            },
+            {
+              "w": "discover",
+              "lvl": "A2",
+              "ipa": "/dɪˈskʌv.ər/",
+              "pos": "глаг.",
+              "tr": "открывать, обнаруживать",
+              "def": "Найти то, что уже существовало, но было неизвестно.",
+              "ex": "They discovered gold in 1848."
+            },
+            {
+              "w": "move",
+              "lvl": "A1",
+              "ipa": "/muːv/",
+              "pos": "глаг.",
+              "tr": "переезжать; двигать",
+              "def": "Сменить жильё; либо изменить положение предмета.",
+              "ex": "They moved to Berlin last year."
+            },
+            {
+              "w": "win",
+              "lvl": "A1",
+              "ipa": "/wɪn/",
+              "pos": "глаг.",
+              "tr": "выигрывать",
+              "def": "Оказаться первым в соревновании. Прошедшее — won.",
+              "ex": "Our team won the game yesterday."
+            },
+            {
+              "w": "lose",
+              "lvl": "A1",
+              "ipa": "/luːz/",
+              "pos": "глаг.",
+              "tr": "проигрывать; терять",
+              "def": "Не выиграть; либо потерять вещь. Прошедшее — lost.",
+              "ex": "I lost my keys last night."
+            }
+          ],
+          "rules": [
+            {
+              "t": "was и were",
+              "body": "Прошедшее время глагола be имеет всего две формы. was идёт с I, he, she, it. were — с you, we, they. Отрицание строится добавлением not: wasn't, weren't. Вопрос — перестановкой, без всякого did. Именно was и were используются в обороте be born.",
+              "ex": [
+                [
+                  "I was at home yesterday.",
+                  "С I идёт was"
+                ],
+                [
+                  "They were very tired.",
+                  "С they идёт were"
+                ],
+                [
+                  "She wasn't at work on Monday.",
+                  "Отрицание — wasn't"
+                ],
+                [
+                  "Where were you born?",
+                  "Вопрос перестановкой, без did"
+                ]
+              ]
+            },
+            {
+              "t": "Правильные и неправильные глаголы",
+              "body": "Правильные глаголы получают -ed: worked, played, moved. Если слово кончается на -e, добавляется только -d. Согласная плюс -y даёт -ied: study становится studied. Неправильные глаголы меняются целиком и запоминаются списком: go — went, have — had, get — got, win — won, lose — lost. В отрицании и вопросе форма прошедшего уходит к didn't и did, а сам глагол возвращается в начальную.",
+              "ex": [
+                [
+                  "We moved here in May.",
+                  "Правильный глагол, только -d"
+                ],
+                [
+                  "She studied medicine.",
+                  "Согласная плюс y даёт -ied"
+                ],
+                [
+                  "He went to Paris last week.",
+                  "Неправильный: go — went"
+                ],
+                [
+                  "I didn't go there.",
+                  "Форма ушла к didn't, глагол начальный"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "The House on the Corner",
+            "body": "The old house on the corner was empty for many years. A painter lived there a long time ago. He was born in this town, but he moved to Paris when he was twenty. He was not famous then. He painted the river and the bridge again and again, and nobody wanted his pictures. He died in 1961. Then, thirty years later, a student discovered forty paintings in the cellar. Now they are in a museum in the capital and the town is proud of him. Last summer I went inside the house for the first time. It was cold, small and completely empty.",
+            "glossary": [
+              [
+                "corner",
+                "угол улицы"
+              ],
+              [
+                "bridge",
+                "мост"
+              ],
+              [
+                "died",
+                "умер"
+              ],
+              [
+                "cellar",
+                "подвал"
+              ],
+              [
+                "capital",
+                "столица"
+              ],
+              [
+                "completely",
+                "совершенно"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "When did the painter move to Paris?",
+                "options": [
+                  "When he was twenty",
+                  "In 1961",
+                  "Thirty years later"
+                ],
+                "a": 0,
+                "why": "Прямо сказано: he moved to Paris when he was twenty."
+              },
+              {
+                "q": "Why is it 'he was born' and not 'he borned'?",
+                "options": [
+                  "Born is irregular",
+                  "Be born is always used with was or were",
+                  "It is a mistake"
+                ],
+                "a": 1,
+                "why": "Оборот be born всегда идёт с формой be: was born, were born."
+              },
+              {
+                "q": "Who found the paintings?",
+                "options": [
+                  "A museum",
+                  "A student",
+                  "The painter's family"
+                ],
+                "a": 1,
+                "why": "a student discovered forty paintings in the cellar."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "I ___ at the cinema yesterday.",
+              "options": [
+                "were",
+                "was",
+                "did"
+              ],
+              "a": 1,
+              "why": "С I в прошедшем времени идёт was."
+            },
+            {
+              "prompt": "They ___ not at home last night.",
+              "options": [
+                "was",
+                "were",
+                "did"
+              ],
+              "a": 1,
+              "why": "С they идёт were, отрицание — were not."
+            },
+            {
+              "prompt": "She ___ medicine at university.",
+              "options": [
+                "studyed",
+                "studied",
+                "studed"
+              ],
+              "a": 1,
+              "why": "Согласная плюс -y даёт -ied: studied."
+            },
+            {
+              "prompt": "We ___ to Italy last summer.",
+              "options": [
+                "goed",
+                "went",
+                "gone"
+              ],
+              "a": 1,
+              "why": "Неправильный глагол: go — went."
+            },
+            {
+              "prompt": "He didn't ___ the game.",
+              "options": [
+                "won",
+                "win",
+                "wins"
+              ],
+              "a": 1,
+              "why": "После didn't глагол возвращается в начальную форму."
+            }
+          ],
+          "video": {
+            "n": "Past Simple — разбор и тесты",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/past-continuous-past-simple",
+            "d": "Формы правильных и неправильных глаголов, отрицания и вопросы, два теста."
+          }
+        },
+        {
+          "n": 8,
+          "title": "Дом и что в нём есть",
+          "goal": "Описывать жильё: что где стоит, что есть и чего нет, что было раньше.",
+          "map": [
+            {
+              "id": "8A",
+              "g": "Past Simple: правильные и неправильные вместе",
+              "v": "неправильные глаголы"
+            },
+            {
+              "id": "8B",
+              "g": "there is / there are, some и any",
+              "v": "дом"
+            },
+            {
+              "id": "8C",
+              "g": "there was / there were",
+              "v": "предлоги места и движения"
+            }
+          ],
+          "words": [
+            {
+              "w": "bedroom",
+              "lvl": "A1",
+              "ipa": "/ˈbed.ruːm/",
+              "pos": "сущ.",
+              "tr": "спальня",
+              "def": "Комната, где спят.",
+              "ex": "There are two bedrooms upstairs."
+            },
+            {
+              "w": "kitchen",
+              "lvl": "A1",
+              "ipa": "/ˈkɪtʃ.ən/",
+              "pos": "сущ.",
+              "tr": "кухня",
+              "def": "Комната, где готовят еду.",
+              "ex": "The kitchen is very small."
+            },
+            {
+              "w": "balcony",
+              "lvl": "A2",
+              "ipa": "/ˈbæl.kə.ni/",
+              "pos": "сущ.",
+              "tr": "балкон",
+              "def": "Открытая площадка снаружи квартиры.",
+              "ex": "We have coffee on the balcony."
+            },
+            {
+              "w": "ceiling",
+              "lvl": "A2",
+              "ipa": "/ˈsiː.lɪŋ/",
+              "pos": "сущ.",
+              "tr": "потолок",
+              "def": "Верхняя поверхность комнаты.",
+              "ex": "The ceiling is very high here."
+            },
+            {
+              "w": "cupboard",
+              "lvl": "A1",
+              "ipa": "/ˈkʌb.əd/",
+              "pos": "сущ.",
+              "tr": "шкаф, буфет",
+              "def": "Мебель с дверцами для посуды или вещей. Буква p не читается.",
+              "ex": "The plates are in the cupboard."
+            },
+            {
+              "w": "stairs",
+              "lvl": "A1",
+              "ipa": "/steəz/",
+              "pos": "сущ.",
+              "tr": "лестница",
+              "def": "Ступеньки между этажами. Всегда во множественном числе.",
+              "ex": "The stairs are behind the door."
+            },
+            {
+              "w": "upstairs",
+              "lvl": "A1",
+              "ipa": "/ˌʌpˈsteəz/",
+              "pos": "нареч.",
+              "tr": "наверху, наверх",
+              "def": "На верхнем этаже. Предлог перед ним не нужен.",
+              "ex": "My room is upstairs on the left."
+            },
+            {
+              "w": "next to",
+              "lvl": "A1",
+              "ipa": "/nekst tuː/",
+              "pos": "предлог",
+              "tr": "рядом с",
+              "def": "Сбоку, вплотную к чему-то.",
+              "ex": "The lamp is next to the sofa."
+            },
+            {
+              "w": "between",
+              "lvl": "A1",
+              "ipa": "/bɪˈtwiːn/",
+              "pos": "предлог",
+              "tr": "между",
+              "def": "Посередине, с двух сторон что-то есть.",
+              "ex": "The table is between two windows."
+            },
+            {
+              "w": "opposite",
+              "lvl": "A2",
+              "ipa": "/ˈɒp.ə.zɪt/",
+              "pos": "предлог",
+              "tr": "напротив",
+              "def": "На противоположной стороне.",
+              "ex": "The bank is opposite the station."
+            }
+          ],
+          "rules": [
+            {
+              "t": "there is, there are, some и any",
+              "body": "Оборот сообщает, что где-то что-то имеется. Форма зависит от того, что стоит сразу после: одно — is, несколько — are. С множественным числом в утверждении идёт some, в отрицании и вопросе — any. Это не то же самое, что it is: там описывают уже известный предмет.",
+              "ex": [
+                [
+                  "There is a balcony in the flat.",
+                  "Один балкон"
+                ],
+                [
+                  "There are some chairs in the kitchen.",
+                  "Утверждение со множественным: some"
+                ],
+                [
+                  "Are there any shops near here?",
+                  "Вопрос: any"
+                ],
+                [
+                  "There aren't any cupboards.",
+                  "Отрицание: any"
+                ]
+              ]
+            },
+            {
+              "t": "there was, there were и предлоги места",
+              "body": "В прошедшем времени тот же оборот меняет форму be: there was для одного, there were для нескольких. Предлоги места отвечают на вопрос где: in, on, under, next to, between, opposite, behind, in front of. Слова upstairs, downstairs, home и there предлога перед собой не берут вообще.",
+              "ex": [
+                [
+                  "There was a big mirror here.",
+                  "Одно зеркало в прошлом"
+                ],
+                [
+                  "There were two beds in the room.",
+                  "Несколько — were"
+                ],
+                [
+                  "The chair is between the windows.",
+                  "between требует двух объектов"
+                ],
+                [
+                  "My room is upstairs.",
+                  "Перед upstairs предлога нет"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "The Flat We Almost Bought",
+            "body": "Last month we saw a flat on the fourth floor of an old building. There was a long corridor with three doors. The kitchen was tiny, and there were no cupboards at all, only a shelf next to the window. The bathroom was opposite the kitchen and the ceiling there was very low. But there was a balcony, and it was big enough for a table and two chairs. My husband stood on it for ten minutes and said nothing. In the end we did not buy the flat. There were too many problems and not enough light. But I still think about that balcony.",
+            "glossary": [
+              [
+                "floor",
+                "этаж"
+              ],
+              [
+                "corridor",
+                "коридор"
+              ],
+              [
+                "tiny",
+                "крошечная"
+              ],
+              [
+                "bathroom",
+                "ванная"
+              ],
+              [
+                "low",
+                "низкий"
+              ],
+              [
+                "light",
+                "свет"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "What was wrong with the kitchen?",
+                "options": [
+                  "It had no cupboards",
+                  "It had no window",
+                  "It was upstairs"
+                ],
+                "a": 0,
+                "why": "there were no cupboards at all — шкафов не было вообще."
+              },
+              {
+                "q": "Why 'there were two chairs' and not 'there was'?",
+                "options": [
+                  "Because chairs is plural",
+                  "Because it is the past",
+                  "Both forms work"
+                ],
+                "a": 0,
+                "why": "Форма зависит от того, что идёт следом: множественное число требует were."
+              },
+              {
+                "q": "Did they buy the flat?",
+                "options": [
+                  "Yes",
+                  "No",
+                  "They are still deciding"
+                ],
+                "a": 1,
+                "why": "In the end we did not buy the flat — из-за проблем и нехватки света."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "___ a balcony in this flat?",
+              "options": [
+                "Is there",
+                "There is",
+                "Are there"
+              ],
+              "a": 0,
+              "why": "Вопрос об одном предмете: Is there."
+            },
+            {
+              "prompt": "There ___ some cups in the cupboard.",
+              "options": [
+                "is",
+                "are",
+                "was"
+              ],
+              "a": 1,
+              "why": "Дальше идёт множественное число cups, значит are."
+            },
+            {
+              "prompt": "There aren't ___ chairs in the kitchen.",
+              "options": [
+                "some",
+                "any",
+                "a"
+              ],
+              "a": 1,
+              "why": "В отрицании со множественным числом идёт any."
+            },
+            {
+              "prompt": "There ___ two beds in the room before.",
+              "options": [
+                "was",
+                "were",
+                "are"
+              ],
+              "a": 1,
+              "why": "Прошедшее время плюс множественное число — were."
+            },
+            {
+              "prompt": "The bank is ___ the station.",
+              "options": [
+                "opposite",
+                "between",
+                "upstairs"
+              ],
+              "a": 0,
+              "why": "Напротив — opposite. between требует двух объектов."
+            }
+          ],
+          "video": {
+            "n": "Грамматика A1–A2: there is / there are и предлоги",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
+            "d": "Список коротких уроков с тестами, в том числе про there is и there are и предлоги места."
+          }
+        },
+        {
+          "n": 9,
+          "title": "Еда и количество",
+          "goal": "Говорить о еде: что считается штуками, а что нет, сколько чего есть и что вкуснее.",
+          "map": [
+            {
+              "id": "9A",
+              "g": "исчисляемое и неисчисляемое, a/an, some/any",
+              "v": "еда и напитки"
+            },
+            {
+              "id": "9B",
+              "g": "how much, how many, a lot of",
+              "v": "упаковки"
+            },
+            {
+              "id": "9C",
+              "g": "сравнительная степень прилагательных",
+              "v": "большие числа"
+            }
+          ],
+          "words": [
+            {
+              "w": "bottle",
+              "lvl": "A1",
+              "ipa": "/ˈbɒt.əl/",
+              "pos": "сущ.",
+              "tr": "бутылка",
+              "def": "Стеклянная или пластиковая ёмкость для жидкости.",
+              "ex": "We need a bottle of water."
+            },
+            {
+              "w": "packet",
+              "lvl": "A1",
+              "ipa": "/ˈpæk.ɪt/",
+              "pos": "сущ.",
+              "tr": "пачка, пакет",
+              "def": "Небольшая упаковка из бумаги или пластика.",
+              "ex": "She bought a packet of rice."
+            },
+            {
+              "w": "jar",
+              "lvl": "A2",
+              "ipa": "/dʒɑːr/",
+              "pos": "сущ.",
+              "tr": "банка",
+              "def": "Стеклянная ёмкость с широким горлом и крышкой.",
+              "ex": "There is a jar of honey here."
+            },
+            {
+              "w": "tin",
+              "lvl": "A2",
+              "ipa": "/tɪn/",
+              "pos": "сущ.",
+              "tr": "консервная банка",
+              "def": "Металлическая банка с едой. В США чаще can.",
+              "ex": "Open a tin of tomatoes, please."
+            },
+            {
+              "w": "slice",
+              "lvl": "A2",
+              "ipa": "/slaɪs/",
+              "pos": "сущ.",
+              "tr": "ломтик, кусок",
+              "def": "Тонкий плоский кусок хлеба, сыра или торта.",
+              "ex": "I ate two slices of bread."
+            },
+            {
+              "w": "vegetables",
+              "lvl": "A1",
+              "ipa": "/ˈvedʒ.tə.bəlz/",
+              "pos": "сущ.",
+              "tr": "овощи",
+              "def": "Съедобные растения: морковь, лук, картофель.",
+              "ex": "Eat more fresh vegetables every day."
+            },
+            {
+              "w": "onion",
+              "lvl": "A1",
+              "ipa": "/ˈʌn.jən/",
+              "pos": "сущ.",
+              "tr": "лук",
+              "def": "Круглый острый овощ со слоями.",
+              "ex": "Cut one onion into small pieces."
+            },
+            {
+              "w": "thirsty",
+              "lvl": "A1",
+              "ipa": "/ˈθɜː.sti/",
+              "pos": "прил.",
+              "tr": "испытывающий жажду",
+              "def": "Хочет пить.",
+              "ex": "I am very thirsty after running."
+            },
+            {
+              "w": "delicious",
+              "lvl": "A2",
+              "ipa": "/dɪˈlɪʃ.əs/",
+              "pos": "прил.",
+              "tr": "очень вкусный",
+              "def": "Настолько вкусный, что хочется ещё.",
+              "ex": "That soup was absolutely delicious."
+            },
+            {
+              "w": "taste",
+              "lvl": "A2",
+              "ipa": "/teɪst/",
+              "pos": "глаг./сущ.",
+              "tr": "пробовать; вкус",
+              "def": "Определять вкус языком; либо сам вкус.",
+              "ex": "This bread tastes very good."
+            }
+          ],
+          "rules": [
+            {
+              "t": "Исчисляемое и неисчисляемое",
+              "body": "Исчисляемые слова можно посчитать штуками: an apple, two apples. Неисчисляемые считать нельзя, у них нет множественного числа и артикля a: water, bread, rice, money, cheese. Чтобы посчитать неисчисляемое, добавляют упаковку или порцию: a bottle of water, two slices of bread. В вопросах и отрицаниях со всеми ними идёт any.",
+              "ex": [
+                [
+                  "I bought an onion.",
+                  "Исчисляемое, можно с a или an"
+                ],
+                [
+                  "We need some rice.",
+                  "Неисчисляемое, только some"
+                ],
+                [
+                  "Is there any milk left?",
+                  "Вопрос — any"
+                ],
+                [
+                  "Three slices of bread, please.",
+                  "Порция помогает посчитать неисчисляемое"
+                ]
+              ]
+            },
+            {
+              "t": "how much, how many и сравнение",
+              "body": "how many спрашивает о том, что считается штуками, how much — о том, что не считается. Универсальное a lot of подходит и туда, и туда. Для сравнения короткие прилагательные берут -er и than, длинные — more: fresher than, more delicious than. Слова на согласную плюс -y дают -ier.",
+              "ex": [
+                [
+                  "How many onions do we need?",
+                  "Овощи считаются"
+                ],
+                [
+                  "How much water is left?",
+                  "Вода не считается штуками"
+                ],
+                [
+                  "There is a lot of cheese here.",
+                  "Универсальный вариант"
+                ],
+                [
+                  "This soup is tastier than yours.",
+                  "Согласная плюс y даёт -ier"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "Sunday Shopping",
+            "body": "Every Sunday my father goes to the market with a long list. He always buys too much. Last week he came home with three bottles of oil, two jars of honey and a packet of rice big enough for a month. There was no room in the cupboard. How many onions does one family need? He bought eight. I asked him why and he said the vegetables there are fresher and cheaper than in the supermarket. That is true. His tomatoes really do taste better. But we still have two tins of beans from January, and nobody in this house is hungry enough to open them.",
+            "glossary": [
+              [
+                "market",
+                "рынок"
+              ],
+              [
+                "list",
+                "список"
+              ],
+              [
+                "oil",
+                "масло"
+              ],
+              [
+                "honey",
+                "мёд"
+              ],
+              [
+                "room",
+                "место"
+              ],
+              [
+                "beans",
+                "фасоль"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "Why does the father prefer the market?",
+                "options": [
+                  "It is closer",
+                  "Vegetables are fresher and cheaper",
+                  "He knows the sellers"
+                ],
+                "a": 1,
+                "why": "the vegetables there are fresher and cheaper than in the supermarket."
+              },
+              {
+                "q": "Why 'how many onions' and not 'how much onions'?",
+                "options": [
+                  "Onions can be counted",
+                  "Onions are uncountable",
+                  "Both are correct"
+                ],
+                "a": 0,
+                "why": "how many идёт с тем, что считается штуками."
+              },
+              {
+                "q": "What is still in the cupboard from January?",
+                "options": [
+                  "Two jars of honey",
+                  "Two tins of beans",
+                  "A packet of rice"
+                ],
+                "a": 1,
+                "why": "we still have two tins of beans from January."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "We need ___ bottle of milk.",
+              "options": [
+                "a",
+                "an",
+                "some"
+              ],
+              "a": 0,
+              "why": "bottle начинается с согласного звука, значит a."
+            },
+            {
+              "prompt": "There isn't ___ bread left.",
+              "options": [
+                "some",
+                "any",
+                "a"
+              ],
+              "a": 1,
+              "why": "В отрицании идёт any, а bread ещё и неисчисляемое."
+            },
+            {
+              "prompt": "___ sugar do you take?",
+              "options": [
+                "How many",
+                "How much",
+                "How long"
+              ],
+              "a": 1,
+              "why": "Сахар не считается штуками, значит how much."
+            },
+            {
+              "prompt": "___ eggs are in the fridge?",
+              "options": [
+                "How much",
+                "How many",
+                "How long"
+              ],
+              "a": 1,
+              "why": "Яйца считаются, значит how many."
+            },
+            {
+              "prompt": "This apple is ___ than that one.",
+              "options": [
+                "more sweet",
+                "sweeter",
+                "sweetest"
+              ],
+              "a": 1,
+              "why": "Короткое прилагательное берёт -er и than."
+            }
+          ],
+          "video": {
+            "n": "Грамматика A1–A2: a, some, any, much и many",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
+            "d": "Уроки с тестами про артикли, количество и сравнительную степень."
+          }
         }
       ]
     },
@@ -3242,6 +4079,620 @@
             "n": "Сравнительная степень — разбор и тесты",
             "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/comparative-adjectives",
             "d": "Правила образования степеней с примерами и два интерактивных теста."
+          }
+        },
+        {
+          "n": 6,
+          "title": "Обещания и предсказания",
+          "goal": "Говорить о будущем с will: предполагать, обещать, предлагать и решать на ходу.",
+          "map": [
+            {
+              "id": "6A",
+              "g": "will и won't: предсказания",
+              "v": "глаголы-противоположности"
+            },
+            {
+              "id": "6B",
+              "g": "will, won't, shall: другие значения",
+              "v": "глаголы с back"
+            },
+            {
+              "id": "6C",
+              "g": "обзор форм: настоящее, прошедшее, будущее",
+              "v": "модификаторы"
+            }
+          ],
+          "words": [
+            {
+              "w": "promise",
+              "lvl": "B1",
+              "ipa": "/ˈprɒm.ɪs/",
+              "pos": "глаг./сущ.",
+              "tr": "обещать; обещание",
+              "def": "Твёрдо сказать, что сделаешь.",
+              "ex": "I promise to call you tomorrow."
+            },
+            {
+              "w": "offer",
+              "lvl": "B1",
+              "ipa": "/ˈɒf.ər/",
+              "pos": "глаг./сущ.",
+              "tr": "предлагать; предложение",
+              "def": "Сказать, что готов что-то дать или сделать.",
+              "ex": "She offered to drive me home."
+            },
+            {
+              "w": "refuse",
+              "lvl": "B1",
+              "ipa": "/rɪˈfjuːz/",
+              "pos": "глаг.",
+              "tr": "отказываться",
+              "def": "Сказать, что не станешь этого делать.",
+              "ex": "He refused to answer the question."
+            },
+            {
+              "w": "lend",
+              "lvl": "A2",
+              "ipa": "/lend/",
+              "pos": "глаг.",
+              "tr": "давать взаймы",
+              "def": "Дать своё на время. Противоположность borrow.",
+              "ex": "Can you lend me ten euros?"
+            },
+            {
+              "w": "fail",
+              "lvl": "B1",
+              "ipa": "/feɪl/",
+              "pos": "глаг.",
+              "tr": "проваливать, не сдать",
+              "def": "Не справиться, особенно об экзамене. Противоположность pass.",
+              "ex": "She failed the exam in June."
+            },
+            {
+              "w": "pull",
+              "lvl": "A2",
+              "ipa": "/pʊl/",
+              "pos": "глаг.",
+              "tr": "тянуть",
+              "def": "Двигать к себе. Противоположность push.",
+              "ex": "Pull the door, do not push."
+            },
+            {
+              "w": "push",
+              "lvl": "A2",
+              "ipa": "/pʊʃ/",
+              "pos": "глаг.",
+              "tr": "толкать",
+              "def": "Двигать от себя.",
+              "ex": "Push this button to start."
+            },
+            {
+              "w": "call back",
+              "lvl": "A2",
+              "ipa": "/kɔːl bæk/",
+              "pos": "фраз. глаг.",
+              "tr": "перезвонить",
+              "def": "Позвонить в ответ или позже.",
+              "ex": "I will call you back later."
+            },
+            {
+              "w": "pay back",
+              "lvl": "B1",
+              "ipa": "/peɪ bæk/",
+              "pos": "фраз. глаг.",
+              "tr": "возвращать долг",
+              "def": "Вернуть взятые деньги.",
+              "ex": "He paid me back on Friday."
+            },
+            {
+              "w": "give back",
+              "lvl": "A2",
+              "ipa": "/ɡɪv bæk/",
+              "pos": "фраз. глаг.",
+              "tr": "возвращать вещь",
+              "def": "Отдать обратно то, что брал.",
+              "ex": "Please give back my book."
+            },
+            {
+              "w": "probably",
+              "lvl": "A2",
+              "ipa": "/ˈprɒb.ə.bli/",
+              "pos": "нареч.",
+              "tr": "вероятно",
+              "def": "Скорее всего, но не точно. Стоит перед will.",
+              "ex": "They will probably arrive late."
+            },
+            {
+              "w": "definitely",
+              "lvl": "B1",
+              "ipa": "/ˈdef.ɪ.nət.li/",
+              "pos": "нареч.",
+              "tr": "точно, определённо",
+              "def": "Без всяких сомнений.",
+              "ex": "I will definitely be there."
+            }
+          ],
+          "rules": [
+            {
+              "t": "will и won't",
+              "body": "will не меняется по лицам и после него глагол идёт в начальной форме. Отрицание — won't. Основные значения три: предсказание о будущем, обещание и решение, принятое прямо в момент речи. Именно этим will отличается от be going to: там намерение было заранее, здесь решение возникает сейчас. Наречия probably и definitely ставятся между подлежащим и will в утверждении.",
+              "ex": [
+                [
+                  "It will be cold tomorrow.",
+                  "Предсказание"
+                ],
+                [
+                  "I'll help you with that.",
+                  "Решение прямо сейчас"
+                ],
+                [
+                  "I promise I won't forget.",
+                  "Обещание"
+                ],
+                [
+                  "She probably won't come.",
+                  "В отрицании probably идёт перед won't"
+                ]
+              ]
+            },
+            {
+              "t": "shall и обзор трёх времён",
+              "body": "shall в современном английском живёт почти только в вопросах с I и we, когда что-то предлагают: Shall I open the window? Всё остальное берёт на себя will. Полезно держать в голове три опоры: Present Simple для того, что бывает вообще, Past Simple для законченного прошлого, will для будущего, а be going to для заранее принятого намерения.",
+              "ex": [
+                [
+                  "Shall I carry that for you?",
+                  "Предложение помощи"
+                ],
+                [
+                  "Shall we start now?",
+                  "Предложение сделать вместе"
+                ],
+                [
+                  "I work here every day.",
+                  "Настоящее: вообще"
+                ],
+                [
+                  "I'm going to look for a job.",
+                  "Намерение, решённое заранее"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "The Twenty Euros",
+            "body": "My brother called me on Monday and asked me to lend him twenty euros. He promised he would pay me back on Friday. I said yes, of course. It is twenty euros. On Friday he did not call. On Saturday I sent him a message and he answered with a photograph of his new headphones. He probably thinks I have forgotten. I have not. Tonight I will call him and I will ask directly. He will laugh and say he was going to give it back anyway. He always says that. Shall I stop lending him money? Probably. Will I? Definitely not.",
+            "glossary": [
+              [
+                "asked me to",
+                "попросил меня"
+              ],
+              [
+                "sent",
+                "отправила"
+              ],
+              [
+                "headphones",
+                "наушники"
+              ],
+              [
+                "directly",
+                "прямо"
+              ],
+              [
+                "laugh",
+                "засмеётся"
+              ],
+              [
+                "anyway",
+                "всё равно"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "What did the brother promise?",
+                "options": [
+                  "To buy headphones",
+                  "To pay the money back on Friday",
+                  "To call on Saturday"
+                ],
+                "a": 1,
+                "why": "he promised he would pay me back on Friday — обещание вернуть в пятницу."
+              },
+              {
+                "q": "Why 'I will call him' and not 'I am going to call him'?",
+                "options": [
+                  "The decision is made now",
+                  "The plan was made last week",
+                  "Both are identical"
+                ],
+                "a": 0,
+                "why": "will берут для решения, принятого в момент речи; be going to — для намерения, решённого заранее."
+              },
+              {
+                "q": "Will she stop lending him money?",
+                "options": [
+                  "Yes, definitely",
+                  "No, definitely not",
+                  "She has not decided"
+                ],
+                "a": 1,
+                "why": "Will I? Definitely not — то есть нет, не перестанет."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "I think it ___ rain tomorrow.",
+              "options": [
+                "will",
+                "is going",
+                "shall"
+              ],
+              "a": 0,
+              "why": "Предсказание о будущем — will."
+            },
+            {
+              "prompt": "That bag looks heavy. I ___ help you.",
+              "options": [
+                "am going to",
+                "will",
+                "would"
+              ],
+              "a": 1,
+              "why": "Решение принято прямо сейчас, значит will."
+            },
+            {
+              "prompt": "___ I open the window?",
+              "options": [
+                "Will",
+                "Shall",
+                "Do"
+              ],
+              "a": 1,
+              "why": "Предложение помощи с I — shall."
+            },
+            {
+              "prompt": "She ___ won't come to the party.",
+              "options": [
+                "probably",
+                "definitely not",
+                "will"
+              ],
+              "a": 0,
+              "why": "В отрицании probably ставится перед won't."
+            },
+            {
+              "prompt": "Can you ___ me your pen?",
+              "options": [
+                "borrow",
+                "lend",
+                "give back"
+              ],
+              "a": 1,
+              "why": "Дать своё на время — lend. borrow значит взять чужое."
+            },
+            {
+              "prompt": "He promised he ___ forget.",
+              "options": [
+                "won't",
+                "doesn't",
+                "isn't"
+              ],
+              "a": 0,
+              "why": "Отрицательная форма будущего — won't."
+            }
+          ],
+          "video": {
+            "n": "Будущее: will, be going to и Present Continuous",
+            "u": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/future-forms-will-be-going-present-continuous",
+            "d": "Чем отличаются три способа говорить о будущем, с примерами и упражнениями."
+          }
+        },
+        {
+          "n": 7,
+          "title": "Инфинитив, герундий и обязанности",
+          "goal": "Правильно соединять два глагола подряд и говорить о том, что нужно, а что запрещено.",
+          "map": [
+            {
+              "id": "7A",
+              "g": "инфинитив с to",
+              "v": "глаголы с инфинитивом"
+            },
+            {
+              "id": "7B",
+              "g": "герундий: глагол с -ing",
+              "v": "глаголы с герундием"
+            },
+            {
+              "id": "7C",
+              "g": "have to, don't have to, must, mustn't",
+              "v": "прилагательные с предлогами"
+            }
+          ],
+          "words": [
+            {
+              "w": "afford",
+              "lvl": "B1",
+              "ipa": "/əˈfɔːd/",
+              "pos": "глаг.",
+              "tr": "позволить себе",
+              "def": "Иметь достаточно денег или времени на что-то. Дальше идёт to.",
+              "ex": "We cannot afford to wait longer."
+            },
+            {
+              "w": "manage",
+              "lvl": "B1",
+              "ipa": "/ˈmæn.ɪdʒ/",
+              "pos": "глаг.",
+              "tr": "суметь, справиться",
+              "def": "Сделать что-то трудное, несмотря на препятствия. Дальше to.",
+              "ex": "She managed to finish on time."
+            },
+            {
+              "w": "pretend",
+              "lvl": "B1",
+              "ipa": "/prɪˈtend/",
+              "pos": "глаг.",
+              "tr": "притворяться",
+              "def": "Вести себя так, будто что-то правда. Дальше to.",
+              "ex": "He pretended to be asleep."
+            },
+            {
+              "w": "avoid",
+              "lvl": "B1",
+              "ipa": "/əˈvɔɪd/",
+              "pos": "глаг.",
+              "tr": "избегать",
+              "def": "Стараться не делать или не встречать. Дальше -ing.",
+              "ex": "I avoid driving in the centre."
+            },
+            {
+              "w": "suggest",
+              "lvl": "B1",
+              "ipa": "/səˈdʒest/",
+              "pos": "глаг.",
+              "tr": "предлагать (идею)",
+              "def": "Высказать идею для обсуждения. Дальше -ing.",
+              "ex": "She suggested taking the train."
+            },
+            {
+              "w": "practise",
+              "lvl": "A2",
+              "ipa": "/ˈpræk.tɪs/",
+              "pos": "глаг.",
+              "tr": "тренироваться, отрабатывать",
+              "def": "Делать регулярно, чтобы стало лучше. Дальше -ing.",
+              "ex": "He practises speaking every morning."
+            },
+            {
+              "w": "afraid of",
+              "lvl": "A2",
+              "ipa": "/əˈfreɪd ɒv/",
+              "pos": "фраза",
+              "tr": "бояться чего-то",
+              "def": "Испытывать страх. После of идёт существительное или -ing.",
+              "ex": "She is afraid of flying alone."
+            },
+            {
+              "w": "interested in",
+              "lvl": "A2",
+              "ipa": "/ˈɪn.trəs.tɪd ɪn/",
+              "pos": "фраза",
+              "tr": "интересоваться чем-то",
+              "def": "Хотеть узнать больше. После in идёт -ing.",
+              "ex": "I am interested in learning Italian."
+            },
+            {
+              "w": "good at",
+              "lvl": "A2",
+              "ipa": "/ɡʊd æt/",
+              "pos": "фраза",
+              "tr": "хорош в чём-то",
+              "def": "Умеет делать что-то хорошо. После at идёт -ing.",
+              "ex": "He is good at solving problems."
+            },
+            {
+              "w": "worried about",
+              "lvl": "B1",
+              "ipa": "/ˈwʌr.id əˈbaʊt/",
+              "pos": "фраза",
+              "tr": "беспокоиться о чём-то",
+              "def": "Тревожиться из-за чего-то.",
+              "ex": "They are worried about the exam."
+            },
+            {
+              "w": "deadline",
+              "lvl": "B1",
+              "ipa": "/ˈded.laɪn/",
+              "pos": "сущ.",
+              "tr": "крайний срок",
+              "def": "Последний день, когда работу надо сдать.",
+              "ex": "The deadline is next Monday."
+            },
+            {
+              "w": "permission",
+              "lvl": "B1",
+              "ipa": "/pəˈmɪʃ.ən/",
+              "pos": "сущ.",
+              "tr": "разрешение",
+              "def": "Согласие того, кто вправе разрешить.",
+              "ex": "You need permission to park here."
+            }
+          ],
+          "rules": [
+            {
+              "t": "Инфинитив или герундий",
+              "body": "Когда два глагола идут подряд, второй принимает одну из двух форм, и выбор зависит от первого. С инфинитивом: want, need, decide, hope, promise, offer, refuse, afford, manage, pretend, learn, agree. С герундием: enjoy, avoid, suggest, practise, finish, mind, keep, spend time. После любого предлога всегда идёт только -ing, поэтому good at swimming, а не good at to swim.",
+              "ex": [
+                [
+                  "I decided to change my job.",
+                  "decide берёт инфинитив"
+                ],
+                [
+                  "She avoided answering me.",
+                  "avoid берёт герундий"
+                ],
+                [
+                  "He is good at cooking.",
+                  "После предлога at только -ing"
+                ],
+                [
+                  "We finished painting the room.",
+                  "finish берёт герундий"
+                ]
+              ]
+            },
+            {
+              "t": "have to, must и mustn't",
+              "body": "have to говорит о внешней необходимости: так устроены правила или обстоятельства. must ближе к внутреннему решению или строгому запрету. Главная ловушка в отрицаниях: don't have to значит, что делать не обязательно, а mustn't значит, что делать нельзя. Это противоположные вещи, а не оттенки.",
+              "ex": [
+                [
+                  "I have to work on Saturday.",
+                  "Так вышло, обстоятельства"
+                ],
+                [
+                  "You must see this film.",
+                  "Личная убеждённость"
+                ],
+                [
+                  "You don't have to come.",
+                  "Можно не приходить"
+                ],
+                [
+                  "You mustn't park here.",
+                  "Нельзя, это запрет"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "The Presentation",
+            "body": "My colleague Marta is afraid of speaking in public, but last month she had to give a presentation to forty people. She decided to prepare properly. For two weeks she practised reading her text aloud in an empty meeting room. She avoided looking at the slides and learned to look at the audience instead. On the day she was very worried about the deadline for the report as well, so she barely slept. But she managed to speak for twenty minutes without notes. Afterwards our director said she did not have to be so nervous, which is easy to say when you are not the one standing there.",
+            "glossary": [
+              [
+                "colleague",
+                "коллега"
+              ],
+              [
+                "in public",
+                "на публике"
+              ],
+              [
+                "properly",
+                "как следует"
+              ],
+              [
+                "aloud",
+                "вслух"
+              ],
+              [
+                "audience",
+                "аудитория"
+              ],
+              [
+                "barely",
+                "едва"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "How did Marta prepare?",
+                "options": [
+                  "She read her text aloud for two weeks",
+                  "She wrote new slides",
+                  "She asked for permission"
+                ],
+                "a": 0,
+                "why": "she practised reading her text aloud — practise берёт герундий."
+              },
+              {
+                "q": "Why 'she managed to speak' and not 'managed speaking'?",
+                "options": [
+                  "Manage takes the infinitive",
+                  "Manage takes the gerund",
+                  "Both are possible"
+                ],
+                "a": 0,
+                "why": "manage относится к глаголам, после которых идёт инфинитив с to."
+              },
+              {
+                "q": "What did the director mean by 'she did not have to be so nervous'?",
+                "options": [
+                  "It was forbidden to be nervous",
+                  "It was not necessary to be nervous",
+                  "She had to be nervous"
+                ],
+                "a": 1,
+                "why": "don't have to значит «не обязательно», а не запрет. Запрет — это mustn't."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "We cannot afford ___ a new car.",
+              "options": [
+                "buying",
+                "to buy",
+                "buy"
+              ],
+              "a": 1,
+              "why": "afford относится к глаголам с инфинитивом."
+            },
+            {
+              "prompt": "She suggested ___ the early train.",
+              "options": [
+                "to take",
+                "take",
+                "taking"
+              ],
+              "a": 2,
+              "why": "suggest берёт герундий."
+            },
+            {
+              "prompt": "He is interested in ___ Spanish.",
+              "options": [
+                "learn",
+                "learning",
+                "to learn"
+              ],
+              "a": 1,
+              "why": "После предлога in всегда идёт -ing."
+            },
+            {
+              "prompt": "You ___ smoke in here, it is forbidden.",
+              "options": [
+                "mustn't",
+                "don't have to",
+                "have to"
+              ],
+              "a": 0,
+              "why": "Запрет выражает mustn't."
+            },
+            {
+              "prompt": "It is Sunday, so you ___ get up early.",
+              "options": [
+                "mustn't",
+                "don't have to",
+                "must"
+              ],
+              "a": 1,
+              "why": "Не обязательно — don't have to, а не запрет."
+            },
+            {
+              "prompt": "I avoid ___ during rush hour.",
+              "options": [
+                "to drive",
+                "driving",
+                "drive"
+              ],
+              "a": 1,
+              "why": "avoid берёт герундий."
+            }
+          ],
+          "video": {
+            "n": "Грамматика A1–A2: глаголы с -ing и с инфинитивом",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
+            "d": "В списке есть урок «Verbs followed by -ing or infinitive» с объяснением и тестами."
           }
         }
       ]
