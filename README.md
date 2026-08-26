@@ -29,8 +29,8 @@ English File Pre-Intermediate.
 упражнения написаны для приложения — материалы Oxford University Press не
 копируются.
 
-Готово: Elementary — юниты 1–9, Pre-Intermediate — юниты 1–7.
-Осталось: Elementary 10–12, Pre-Intermediate 8–12 и вставки Practical English.
+Готово: Elementary — все 12 юнитов, Pre-Intermediate — юниты 1–9.
+Осталось: Pre-Intermediate 10–12 и вставки Practical English.
 
 Каждый юнит содержит карту урока (что в 1A, 1B, 1C по книге), слова с
 транскрипцией и озвучкой, правила с разбором, текст со словариком и вопросами,
@@ -79,7 +79,7 @@ English File Pre-Intermediate.
 3. Откройте адрес **в Safari** → «Поделиться» → **На экран «Домой»**.
 
 **После каждой правки** меняйте номер версии в первой строке `sw.js`
-(`dict-v12` → `dict-v13`). Иначе iPhone покажет старую сохранённую копию.
+(`dict-v13` → `dict-v14`). Иначе iPhone покажет старую сохранённую копию.
 
 ## Проверка на компьютере
 

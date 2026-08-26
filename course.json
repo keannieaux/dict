@@ -2516,6 +2516,843 @@
             "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
             "d": "Уроки с тестами про артикли, количество и сравнительную степень."
           }
+        },
+        {
+          "n": 10,
+          "title": "Город и планы на поездку",
+          "goal": "Называть самое-самое в городе и рассказывать, куда вы собираетесь и что там будет.",
+          "map": [
+            {
+              "id": "10A",
+              "g": "превосходная степень прилагательных",
+              "v": "места и здания"
+            },
+            {
+              "id": "10B",
+              "g": "be going to: планы, выражения будущего времени",
+              "v": "городской отдых"
+            },
+            {
+              "id": "10C",
+              "g": "be going to: предсказания",
+              "v": "глагольные фразы"
+            }
+          ],
+          "words": [
+            {
+              "w": "museum",
+              "lvl": "A1",
+              "ipa": "/mjuːˈziː.əm/",
+              "pos": "сущ.",
+              "tr": "музей",
+              "def": "Здание, где хранят и показывают ценные предметы.",
+              "ex": "The museum opens at ten."
+            },
+            {
+              "w": "castle",
+              "lvl": "A2",
+              "ipa": "/ˈkɑː.səl/",
+              "pos": "сущ.",
+              "tr": "замок",
+              "def": "Старинное укреплённое здание. Буква t не читается.",
+              "ex": "The castle is on a hill."
+            },
+            {
+              "w": "square",
+              "lvl": "A1",
+              "ipa": "/skweər/",
+              "pos": "сущ.",
+              "tr": "площадь",
+              "def": "Открытое пространство в центре города.",
+              "ex": "We met in the main square."
+            },
+            {
+              "w": "church",
+              "lvl": "A1",
+              "ipa": "/tʃɜːtʃ/",
+              "pos": "сущ.",
+              "tr": "церковь",
+              "def": "Здание для религиозных служб.",
+              "ex": "That church is very old."
+            },
+            {
+              "w": "palace",
+              "lvl": "A2",
+              "ipa": "/ˈpæl.ɪs/",
+              "pos": "сущ.",
+              "tr": "дворец",
+              "def": "Большое здание, где жили короли.",
+              "ex": "The palace has beautiful gardens."
+            },
+            {
+              "w": "view",
+              "lvl": "A2",
+              "ipa": "/vjuː/",
+              "pos": "сущ.",
+              "tr": "вид",
+              "def": "То, что видно с какого-то места.",
+              "ex": "The view from here is amazing."
+            },
+            {
+              "w": "tourist",
+              "lvl": "A1",
+              "ipa": "/ˈtʊə.rɪst/",
+              "pos": "сущ.",
+              "tr": "турист",
+              "def": "Человек, приехавший посмотреть город.",
+              "ex": "The square is full of tourists."
+            },
+            {
+              "w": "guidebook",
+              "lvl": "A2",
+              "ipa": "/ˈɡaɪd.bʊk/",
+              "pos": "сущ.",
+              "tr": "путеводитель",
+              "def": "Книга с описанием мест для путешественника.",
+              "ex": "Buy a guidebook before you go."
+            },
+            {
+              "w": "fountain",
+              "lvl": "A2",
+              "ipa": "/ˈfaʊn.tɪn/",
+              "pos": "сущ.",
+              "tr": "фонтан",
+              "def": "Сооружение, из которого бьёт вода.",
+              "ex": "There is a fountain in front."
+            },
+            {
+              "w": "get lost",
+              "lvl": "A2",
+              "ipa": "/ɡet lɒst/",
+              "pos": "фраза",
+              "tr": "заблудиться",
+              "def": "Перестать понимать, где вы находитесь.",
+              "ex": "We got lost in the old town."
+            }
+          ],
+          "rules": [
+            {
+              "t": "Превосходная степень",
+              "body": "Превосходная степень называет самое-самое из группы и почти всегда идёт с the. Короткие прилагательные берут -est: the oldest, the biggest. Длинные, от двух слогов, берут the most: the most beautiful. Слова на согласную плюс -y дают -iest. Три формы запоминаются отдельно: good — the best, bad — the worst, far — the furthest.",
+              "ex": [
+                [
+                  "It is the oldest church in the city.",
+                  "Короткое слово плюс -est"
+                ],
+                [
+                  "This is the most expensive hotel.",
+                  "Длинное слово, the most"
+                ],
+                [
+                  "That was the best day of the trip.",
+                  "good даёт the best"
+                ],
+                [
+                  "She is the friendliest person here.",
+                  "Согласная плюс y даёт -iest"
+                ]
+              ]
+            },
+            {
+              "t": "be going to: планы и предсказания",
+              "body": "Конструкция строится из формы be, слова going to и глагола в начальной форме. Значений два: заранее принятое намерение и предсказание по видимым признакам сейчас. Выражения будущего времени — tomorrow, next week, in two days, tonight — обычно уходят в конец предложения.",
+              "ex": [
+                [
+                  "We are going to visit the castle tomorrow.",
+                  "Намерение, решено заранее"
+                ],
+                [
+                  "Look at those clouds. It is going to rain.",
+                  "Предсказание по признакам"
+                ],
+                [
+                  "She is not going to come tonight.",
+                  "Отрицание: not после формы be"
+                ],
+                [
+                  "Are you going to book a hotel?",
+                  "Вопрос перестановкой формы be"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "Three Days in Porto",
+            "body": "Next month we are going to spend three days in Porto. My sister has already bought a guidebook, and she has a plan for every hour. On the first day we are going to walk along the river and see the famous bridge. On the second day we are going to visit the oldest church in the city and a small museum near the square. She says it is the best museum in the north. On the third day we are going to do nothing at all. That is my plan, not hers. I know we are going to get lost at least once, because we always do.",
+            "glossary": [
+              [
+                "spend",
+                "провести"
+              ],
+              [
+                "along",
+                "вдоль"
+              ],
+              [
+                "famous",
+                "знаменитый"
+              ],
+              [
+                "north",
+                "север"
+              ],
+              [
+                "nothing at all",
+                "совсем ничего"
+              ],
+              [
+                "at least once",
+                "хотя бы раз"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "What are they going to do on the first day?",
+                "options": [
+                  "Visit a museum",
+                  "Walk along the river",
+                  "Do nothing"
+                ],
+                "a": 1,
+                "why": "On the first day we are going to walk along the river."
+              },
+              {
+                "q": "Why 'the oldest church' and not 'the most old church'?",
+                "options": [
+                  "Old is a short adjective",
+                  "Old is irregular",
+                  "Both are correct"
+                ],
+                "a": 0,
+                "why": "Короткие прилагательные образуют превосходную степень через -est."
+              },
+              {
+                "q": "Whose idea is the third day?",
+                "options": [
+                  "The sister's",
+                  "The narrator's",
+                  "Nobody's"
+                ],
+                "a": 1,
+                "why": "That is my plan, not hers — идея ничего не делать принадлежит рассказчику."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "This is the ___ building in the city.",
+              "options": [
+                "taller",
+                "tallest",
+                "most tall"
+              ],
+              "a": 1,
+              "why": "Короткое прилагательное в превосходной степени берёт -est."
+            },
+            {
+              "prompt": "It was the ___ interesting museum there.",
+              "options": [
+                "most",
+                "more",
+                "much"
+              ],
+              "a": 0,
+              "why": "Длинное прилагательное берёт the most."
+            },
+            {
+              "prompt": "That was the ___ day of my life.",
+              "options": [
+                "goodest",
+                "best",
+                "most good"
+              ],
+              "a": 1,
+              "why": "good даёт неправильную форму: the best."
+            },
+            {
+              "prompt": "We ___ visit the palace tomorrow.",
+              "options": [
+                "are going to",
+                "go",
+                "are going"
+              ],
+              "a": 0,
+              "why": "Намерение на будущее — be going to плюс начальная форма."
+            },
+            {
+              "prompt": "___ you going to take a guidebook?",
+              "options": [
+                "Do",
+                "Are",
+                "Will"
+              ],
+              "a": 1,
+              "why": "Вопрос строится перестановкой формы be."
+            }
+          ],
+          "video": {
+            "n": "Грамматика A1–A2: степени сравнения и будущее",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
+            "d": "Уроки с тестами про сравнительную и превосходную степень и способы говорить о будущем."
+          }
+        },
+        {
+          "n": 11,
+          "title": "Как именно и артикль the",
+          "goal": "Описывать, как выполняется действие, соединять глаголы через to и не путаться с артиклем.",
+          "map": [
+            {
+              "id": "11A",
+              "g": "наречия образа действия и модификаторы",
+              "v": "частые наречия"
+            },
+            {
+              "id": "11B",
+              "g": "verb + to + infinitive",
+              "v": "глаголы с инфинитивом"
+            },
+            {
+              "id": "11C",
+              "g": "артикль the или без артикля",
+              "v": "телефон и интернет"
+            }
+          ],
+          "words": [
+            {
+              "w": "carefully",
+              "lvl": "A2",
+              "ipa": "/ˈkeə.fəl.i/",
+              "pos": "нареч.",
+              "tr": "осторожно, внимательно",
+              "def": "С вниманием, не спеша. От careful плюс -ly.",
+              "ex": "Please read the contract carefully."
+            },
+            {
+              "w": "badly",
+              "lvl": "A2",
+              "ipa": "/ˈbæd.li/",
+              "pos": "нареч.",
+              "tr": "плохо",
+              "def": "Не хорошо. Неправильная пара: good даёт well.",
+              "ex": "He speaks Italian very badly."
+            },
+            {
+              "w": "easily",
+              "lvl": "A2",
+              "ipa": "/ˈiː.zəl.i/",
+              "pos": "нареч.",
+              "tr": "легко",
+              "def": "Без труда. Слово на -y даёт -ily.",
+              "ex": "She passed the test easily."
+            },
+            {
+              "w": "password",
+              "lvl": "A1",
+              "ipa": "/ˈpɑːs.wɜːd/",
+              "pos": "сущ.",
+              "tr": "пароль",
+              "def": "Секретный набор символов для входа.",
+              "ex": "I forgot my password again."
+            },
+            {
+              "w": "charger",
+              "lvl": "A1",
+              "ipa": "/ˈtʃɑː.dʒər/",
+              "pos": "сущ.",
+              "tr": "зарядное устройство",
+              "def": "Провод для зарядки телефона.",
+              "ex": "Can I borrow your charger?"
+            },
+            {
+              "w": "download",
+              "lvl": "A2",
+              "ipa": "/ˌdaʊnˈləʊd/",
+              "pos": "глаг.",
+              "tr": "скачивать",
+              "def": "Переносить файл из интернета на устройство.",
+              "ex": "I need to download this app."
+            },
+            {
+              "w": "switch off",
+              "lvl": "A1",
+              "ipa": "/swɪtʃ ɒf/",
+              "pos": "фраз. глаг.",
+              "tr": "выключать",
+              "def": "Прекратить работу устройства.",
+              "ex": "Switch off your phone, please."
+            },
+            {
+              "w": "screen",
+              "lvl": "A1",
+              "ipa": "/skriːn/",
+              "pos": "сущ.",
+              "tr": "экран",
+              "def": "Поверхность, на которой видно изображение.",
+              "ex": "The screen is too bright."
+            },
+            {
+              "w": "log in",
+              "lvl": "A2",
+              "ipa": "/lɒɡ ɪn/",
+              "pos": "фраз. глаг.",
+              "tr": "входить в аккаунт",
+              "def": "Ввести имя и пароль, чтобы попасть внутрь.",
+              "ex": "I cannot log in today."
+            },
+            {
+              "w": "battery",
+              "lvl": "A1",
+              "ipa": "/ˈbæt.ər.i/",
+              "pos": "сущ.",
+              "tr": "батарея, аккумулятор",
+              "def": "Источник питания устройства.",
+              "ex": "My battery is almost dead."
+            }
+          ],
+          "rules": [
+            {
+              "t": "Наречия образа действия",
+              "body": "Наречие отвечает на вопрос как и обычно образуется из прилагательного добавлением -ly: careful становится carefully. Слова на согласную плюс -y дают -ily: easy становится easily. Две пары запоминаются: good даёт well, fast и hard не меняются вообще. Наречие описывает глагол, а прилагательное — существительное: she drives carefully, но she is a careful driver.",
+              "ex": [
+                [
+                  "He drives very carefully.",
+                  "Как он водит — наречие"
+                ],
+                [
+                  "He is a careful driver.",
+                  "Какой он водитель — прилагательное"
+                ],
+                [
+                  "She sings well.",
+                  "good даёт неправильное well"
+                ],
+                [
+                  "They worked very hard.",
+                  "hard не меняется"
+                ]
+              ]
+            },
+            {
+              "t": "Артикль the и его отсутствие",
+              "body": "the ставится, когда предмет известен обоим собеседникам или единственный в своём роде. Без артикля идут: названия стран без слова republic, имена, названия языков, еда вообще и явления вообще, а также home, work, school и bed в устойчивых оборотах. Именно поэтому go to bed и go home, но go to the cinema.",
+              "ex": [
+                [
+                  "Switch off the computer, please.",
+                  "Тот самый, известный обоим"
+                ],
+                [
+                  "I go to work by bus.",
+                  "work без артикля"
+                ],
+                [
+                  "She speaks Italian well.",
+                  "Названия языков без the"
+                ],
+                [
+                  "The internet has changed everything.",
+                  "Единственный в своём роде"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "The Charger Problem",
+            "body": "My phone battery died at the airport on Monday. Of course I forgot my charger at home. I looked for a shop and finally found one, but the assistant said they only had cases and screens. I asked her politely if she had anything at all and she smiled and gave me an old charger from behind the counter. It worked badly, but it worked. I sat on the floor for forty minutes and watched the screen slowly come back to life. Then I tried to log in to my email and discovered that I could not remember the password. Some days go like that.",
+            "glossary": [
+              [
+                "died",
+                "разрядилась"
+              ],
+              [
+                "assistant",
+                "продавщица"
+              ],
+              [
+                "cases",
+                "чехлы"
+              ],
+              [
+                "counter",
+                "прилавок"
+              ],
+              [
+                "come back to life",
+                "ожить"
+              ],
+              [
+                "discovered",
+                "обнаружил"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "How did the old charger work?",
+                "options": [
+                  "Perfectly",
+                  "Badly, but it worked",
+                  "It did not work"
+                ],
+                "a": 1,
+                "why": "It worked badly, but it worked — наречие badly описывает, как именно."
+              },
+              {
+                "q": "Why 'at home' and not 'at the home'?",
+                "options": [
+                  "Home is used without an article here",
+                  "It is a mistake",
+                  "Both are correct"
+                ],
+                "a": 0,
+                "why": "Слова home, work, school и bed в устойчивых оборотах идут без артикля."
+              },
+              {
+                "q": "What was the final problem?",
+                "options": [
+                  "The shop was closed",
+                  "He forgot his password",
+                  "The screen was broken"
+                ],
+                "a": 1,
+                "why": "he could not remember the password — пароль вылетел из головы."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "She speaks English very ___.",
+              "options": [
+                "good",
+                "well",
+                "goodly"
+              ],
+              "a": 1,
+              "why": "good даёт неправильное наречие well."
+            },
+            {
+              "prompt": "Please read the message ___.",
+              "options": [
+                "careful",
+                "carefully",
+                "carefuly"
+              ],
+              "a": 1,
+              "why": "Как читать — наречие carefully с двумя l."
+            },
+            {
+              "prompt": "He passed the exam ___.",
+              "options": [
+                "easy",
+                "easyly",
+                "easily"
+              ],
+              "a": 2,
+              "why": "Слово на согласную плюс y даёт -ily."
+            },
+            {
+              "prompt": "I go to ___ bed at eleven.",
+              "options": [
+                "the",
+                "a",
+                "—"
+              ],
+              "a": 2,
+              "why": "В обороте go to bed артикль не ставится."
+            },
+            {
+              "prompt": "Can you switch off ___ television?",
+              "options": [
+                "the",
+                "a",
+                "—"
+              ],
+              "a": 0,
+              "why": "Тот самый телевизор, известный обоим — the."
+            }
+          ],
+          "video": {
+            "n": "Грамматика A1–A2: наречия и артикли",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
+            "d": "Уроки с тестами про a, an и the, про случаи без артикля и про наречия."
+          }
+        },
+        {
+          "n": 12,
+          "title": "Опыт и результат",
+          "goal": "Рассказывать о том, что уже случалось в жизни, и отличать это от конкретных событий прошлого.",
+          "map": [
+            {
+              "id": "12A",
+              "g": "Present Perfect",
+              "v": "неправильные причастия"
+            },
+            {
+              "id": "12B",
+              "g": "Present Perfect или Past Simple",
+              "v": "как учить неправильные глаголы"
+            },
+            {
+              "id": "12C",
+              "g": "повторение: построение вопроса",
+              "v": "вопросительные слова"
+            }
+          ],
+          "words": [
+            {
+              "w": "ever",
+              "lvl": "A2",
+              "ipa": "/ˈev.ər/",
+              "pos": "нареч.",
+              "tr": "когда-либо",
+              "def": "Хоть раз за всю жизнь. Живёт в вопросах Present Perfect.",
+              "ex": "Have you ever been to Greece?"
+            },
+            {
+              "w": "never",
+              "lvl": "A1",
+              "ipa": "/ˈnev.ər/",
+              "pos": "нареч.",
+              "tr": "никогда",
+              "def": "Ни разу. Само по себе уже отрицание.",
+              "ex": "I have never eaten oysters."
+            },
+            {
+              "w": "already",
+              "lvl": "A2",
+              "ipa": "/ɔːlˈred.i/",
+              "pos": "нареч.",
+              "tr": "уже",
+              "def": "Раньше, чем ожидали. Стоит между have и глаголом.",
+              "ex": "She has already finished the book."
+            },
+            {
+              "w": "yet",
+              "lvl": "A2",
+              "ipa": "/jet/",
+              "pos": "нареч.",
+              "tr": "ещё (в вопросах и отрицаниях)",
+              "def": "До сих пор не случилось. Уходит в конец предложения.",
+              "ex": "They have not arrived yet."
+            },
+            {
+              "w": "recently",
+              "lvl": "A2",
+              "ipa": "/ˈriː.sənt.li/",
+              "pos": "нареч.",
+              "tr": "недавно",
+              "def": "Незадолго до настоящего момента.",
+              "ex": "We have moved house recently."
+            },
+            {
+              "w": "meet",
+              "lvl": "A1",
+              "ipa": "/miːt/",
+              "pos": "глаг.",
+              "tr": "встречать, знакомиться",
+              "def": "Увидеться с кем-то. Формы: meet, met, met.",
+              "ex": "I have met her twice before."
+            },
+            {
+              "w": "break",
+              "lvl": "A1",
+              "ipa": "/breɪk/",
+              "pos": "глаг.",
+              "tr": "ломать, разбивать",
+              "def": "Разделить на части силой. Формы: break, broke, broken.",
+              "ex": "He has broken his glasses again."
+            },
+            {
+              "w": "fall",
+              "lvl": "A1",
+              "ipa": "/fɔːl/",
+              "pos": "глаг.",
+              "tr": "падать",
+              "def": "Двигаться вниз без опоры. Формы: fall, fell, fallen.",
+              "ex": "She has fallen off her bike."
+            },
+            {
+              "w": "sell",
+              "lvl": "A1",
+              "ipa": "/sel/",
+              "pos": "глаг.",
+              "tr": "продавать",
+              "def": "Отдавать за деньги. Формы: sell, sold, sold.",
+              "ex": "They have sold their old car."
+            },
+            {
+              "w": "become",
+              "lvl": "A2",
+              "ipa": "/bɪˈkʌm/",
+              "pos": "глаг.",
+              "tr": "становиться",
+              "def": "Превращаться в кого-то или что-то. Формы: become, became, become.",
+              "ex": "He has become a good teacher."
+            }
+          ],
+          "rules": [
+            {
+              "t": "Present Perfect: три формы глагола",
+              "body": "Present Perfect строится из have или has и третьей формы глагола. У правильных глаголов третья форма совпадает со второй и кончается на -ed. У неправильных её надо запоминать отдельно, и она часто отличается от второй: break — broke — broken, fall — fell — fallen. Времени это время не называет: важен результат, который виден сейчас.",
+              "ex": [
+                [
+                  "I have finished my work.",
+                  "Правильный глагол, третья форма на -ed"
+                ],
+                [
+                  "She has broken her phone.",
+                  "Неправильный: broke во второй, broken в третьей"
+                ],
+                [
+                  "Have you ever met him?",
+                  "Опыт за всю жизнь, ever в вопросе"
+                ],
+                [
+                  "They have never been abroad.",
+                  "never само по себе отрицание"
+                ]
+              ]
+            },
+            {
+              "t": "Present Perfect или Past Simple",
+              "body": "Правило простое и почти без исключений: как только называется время в прошлом — yesterday, last year, in 2020, when I was a child — работает Past Simple. Present Perfect времени не называет никогда. Поэтому нельзя сказать I have seen him yesterday, только I saw him yesterday. Типичный разговор начинается с Present Perfect и переходит в Past Simple, когда доходит до подробностей.",
+              "ex": [
+                [
+                  "I have been to Japan.",
+                  "Опыт, без времени"
+                ],
+                [
+                  "I went there in 2019.",
+                  "Появилось время — Past Simple"
+                ],
+                [
+                  "Have you seen the new film?",
+                  "Общий вопрос об опыте"
+                ],
+                [
+                  "Yes, I saw it on Friday.",
+                  "Подробность со временем — Past Simple"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "Things I Have Not Done Yet",
+            "body": "I am thirty-four and I have never learned to drive. I have also never been to the sea in winter, and I have not read a single book in English from start to finish. My friend Dima says lists like this are useless, but he has recently sold his car and bought a bicycle, so he has his own strange ideas. Last year I started a driving course. I went to four lessons and then stopped, because the teacher shouted at me when I fell off the pavement into the road. He has probably forgotten it. I have not. This year I am going to try again, with a different teacher.",
+            "glossary": [
+              [
+                "a single book",
+                "ни одной книги"
+              ],
+              [
+                "from start to finish",
+                "от начала до конца"
+              ],
+              [
+                "useless",
+                "бесполезные"
+              ],
+              [
+                "strange",
+                "странные"
+              ],
+              [
+                "pavement",
+                "тротуар"
+              ],
+              [
+                "different",
+                "другой"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "What has the narrator never done?",
+                "options": [
+                  "Learned to drive",
+                  "Bought a bicycle",
+                  "Sold a car"
+                ],
+                "a": 0,
+                "why": "I have never learned to drive — опыт за всю жизнь, поэтому Present Perfect."
+              },
+              {
+                "q": "Why 'I went to four lessons' and not 'I have gone'?",
+                "options": [
+                  "Last year is a stated time",
+                  "Going is irregular",
+                  "Both work here"
+                ],
+                "a": 0,
+                "why": "Названо время last year, а значит только Past Simple."
+              },
+              {
+                "q": "What is the plan for this year?",
+                "options": [
+                  "To buy a bicycle",
+                  "To try driving again",
+                  "To read a book in English"
+                ],
+                "a": 1,
+                "why": "I am going to try again, with a different teacher."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "I have ___ been to Rome.",
+              "options": [
+                "never",
+                "not never",
+                "ever"
+              ],
+              "a": 0,
+              "why": "never само по себе отрицание, второго not не нужно."
+            },
+            {
+              "prompt": "Have you ___ eaten sushi?",
+              "options": [
+                "never",
+                "ever",
+                "yet"
+              ],
+              "a": 1,
+              "why": "В вопросе об опыте за всю жизнь идёт ever."
+            },
+            {
+              "prompt": "She has ___ her keys.",
+              "options": [
+                "lose",
+                "lost",
+                "losed"
+              ],
+              "a": 1,
+              "why": "Третья форма неправильного глагола lose — lost."
+            },
+            {
+              "prompt": "We ___ the house in 2019.",
+              "options": [
+                "have sold",
+                "sold",
+                "have sell"
+              ],
+              "a": 1,
+              "why": "Названо время in 2019, значит Past Simple."
+            },
+            {
+              "prompt": "They haven't arrived ___.",
+              "options": [
+                "already",
+                "ever",
+                "yet"
+              ],
+              "a": 2,
+              "why": "В отрицании идёт yet, и стоит в конце."
+            }
+          ],
+          "video": {
+            "n": "Present Perfect: just, yet, still и already",
+            "u": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect-just-yet-still-already",
+            "d": "Разбор с примерами и два теста: где стоит already, а где yet уходит в конец."
+          }
         }
       ]
     },
@@ -4693,6 +5530,620 @@
             "n": "Грамматика A1–A2: глаголы с -ing и с инфинитивом",
             "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
             "d": "В списке есть урок «Verbs followed by -ing or infinitive» с объяснением и тестами."
+          }
+        },
+        {
+          "n": 8,
+          "title": "Советы и условия",
+          "goal": "Давать советы, говорить о реальных условиях в будущем и не путать похожие глаголы.",
+          "map": [
+            {
+              "id": "8A",
+              "g": "should",
+              "v": "выражения с get"
+            },
+            {
+              "id": "8B",
+              "g": "первый тип условных: if + настоящее, will",
+              "v": "легко путаемые глаголы"
+            },
+            {
+              "id": "8C",
+              "g": "притяжательные местоимения",
+              "v": "наречия образа действия"
+            }
+          ],
+          "words": [
+            {
+              "w": "advice",
+              "lvl": "B1",
+              "ipa": "/ədˈvaɪs/",
+              "pos": "сущ.",
+              "tr": "совет",
+              "def": "Мнение о том, как лучше поступить. Неисчисляемое: не advices, а a piece of advice.",
+              "ex": "She gave me some good advice."
+            },
+            {
+              "w": "apply for",
+              "lvl": "B1",
+              "ipa": "/əˈplaɪ fɔː/",
+              "pos": "фраз. глаг.",
+              "tr": "подавать заявление на",
+              "def": "Официально просить о работе, визе или месте.",
+              "ex": "He applied for a new job."
+            },
+            {
+              "w": "get over",
+              "lvl": "B1",
+              "ipa": "/ɡet ˈəʊ.vər/",
+              "pos": "фраз. глаг.",
+              "tr": "справиться, оправиться",
+              "def": "Пережить болезнь или неприятность.",
+              "ex": "It took her months to get over it."
+            },
+            {
+              "w": "get rid of",
+              "lvl": "B1",
+              "ipa": "/ɡet rɪd ɒv/",
+              "pos": "фраза",
+              "tr": "избавиться от",
+              "def": "Убрать что-то ненужное насовсем.",
+              "ex": "We should get rid of these boxes."
+            },
+            {
+              "w": "get in touch",
+              "lvl": "B1",
+              "ipa": "/ɡet ɪn tʌtʃ/",
+              "pos": "фраза",
+              "tr": "связаться",
+              "def": "Написать или позвонить кому-то.",
+              "ex": "Get in touch when you arrive."
+            },
+            {
+              "w": "unless",
+              "lvl": "B1",
+              "ipa": "/ənˈles/",
+              "pos": "союз",
+              "tr": "если не",
+              "def": "Вводит условие с отрицанием. После него глагол остаётся положительным.",
+              "ex": "We will go unless it rains."
+            },
+            {
+              "w": "remind",
+              "lvl": "B1",
+              "ipa": "/rɪˈmaɪnd/",
+              "pos": "глаг.",
+              "tr": "напоминать кому-то",
+              "def": "Заставить другого вспомнить. Не путать с remember — вспоминать самому.",
+              "ex": "Please remind me to call her."
+            },
+            {
+              "w": "recommend",
+              "lvl": "B1",
+              "ipa": "/ˌrek.əˈmend/",
+              "pos": "глаг.",
+              "tr": "рекомендовать",
+              "def": "Советовать что-то конкретное. Дальше идёт -ing.",
+              "ex": "I recommend booking a table."
+            },
+            {
+              "w": "mine",
+              "lvl": "A2",
+              "ipa": "/maɪn/",
+              "pos": "мест.",
+              "tr": "мой, моё (без существительного)",
+              "def": "Заменяет my плюс существительное целиком.",
+              "ex": "That blue coat is mine."
+            },
+            {
+              "w": "yours",
+              "lvl": "A2",
+              "ipa": "/jɔːz/",
+              "pos": "мест.",
+              "tr": "твой, ваш (без существительного)",
+              "def": "Заменяет your плюс существительное.",
+              "ex": "Is this umbrella yours or mine?"
+            },
+            {
+              "w": "politely",
+              "lvl": "B1",
+              "ipa": "/pəˈlaɪt.li/",
+              "pos": "нареч.",
+              "tr": "вежливо",
+              "def": "С уважением к собеседнику.",
+              "ex": "He asked politely for help."
+            },
+            {
+              "w": "quietly",
+              "lvl": "A2",
+              "ipa": "/ˈkwaɪ.ət.li/",
+              "pos": "нареч.",
+              "tr": "тихо",
+              "def": "Не издавая шума.",
+              "ex": "She closed the door quietly."
+            }
+          ],
+          "rules": [
+            {
+              "t": "should и первый тип условных",
+              "body": "should даёт совет и не меняется по лицам, после него глагол идёт без to. Первый тип условных описывает реальную возможность в будущем: в части с if стоит настоящее время, в главной — will. Будущее после if не ставится: не if it will rain, а if it rains. unless значит то же, что if not, поэтому второго отрицания рядом не нужно.",
+              "ex": [
+                [
+                  "You should talk to her.",
+                  "Совет, глагол без to"
+                ],
+                [
+                  "If it rains, we will stay home.",
+                  "После if настоящее, в главной will"
+                ],
+                [
+                  "I will call you if I have time.",
+                  "Порядок частей можно менять"
+                ],
+                [
+                  "We will be late unless we leave now.",
+                  "unless уже содержит отрицание"
+                ]
+              ]
+            },
+            {
+              "t": "Притяжательные местоимения и похожие глаголы",
+              "body": "my, your, his, her стоят перед существительным. mine, yours, his, hers, ours, theirs заменяют его целиком и стоят одни: this is my bag превращается в this bag is mine. Апострофа в них нет никогда. Отдельно стоит запомнить пары, которые путают: remember значит вспоминать самому, remind — напоминать другому. borrow — брать чужое, lend — давать своё.",
+              "ex": [
+                [
+                  "This is my key.",
+                  "Перед существительным — my"
+                ],
+                [
+                  "This key is mine.",
+                  "Одно, без существительного — mine"
+                ],
+                [
+                  "Remind me to buy milk.",
+                  "Напомни мне — remind"
+                ],
+                [
+                  "I remember her face.",
+                  "Помню сам — remember"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "Advice I Did Not Take",
+            "body": "When I applied for my first job, my aunt gave me one piece of advice: if they offer you the position, ask about the team before you say yes. I did not ask. I said yes in four seconds. The salary was good and the office was five minutes from my flat. Six months later I understood what she meant. Nobody spoke to each other. People ate lunch quietly at their desks with headphones on. If I had asked one question, I would have known. I got over it eventually and found something better, but I still remind my younger cousin about it every time she applies for anything.",
+            "glossary": [
+              [
+                "aunt",
+                "тётя"
+              ],
+              [
+                "position",
+                "должность"
+              ],
+              [
+                "salary",
+                "зарплата"
+              ],
+              [
+                "desks",
+                "рабочие столы"
+              ],
+              [
+                "eventually",
+                "в конце концов"
+              ],
+              [
+                "cousin",
+                "двоюродная сестра"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "What was the aunt's advice?",
+                "options": [
+                  "To ask about the salary",
+                  "To ask about the team",
+                  "To say yes quickly"
+                ],
+                "a": 1,
+                "why": "ask about the team before you say yes."
+              },
+              {
+                "q": "Why 'remind my cousin' and not 'remember my cousin'?",
+                "options": [
+                  "Remind means to make someone else recall",
+                  "They are the same",
+                  "It is a mistake"
+                ],
+                "a": 0,
+                "why": "remind — напоминать другому, remember — вспоминать самому."
+              },
+              {
+                "q": "How did the narrator feel about the job later?",
+                "options": [
+                  "He understood the advice was right",
+                  "He was happy he said yes",
+                  "He never thought about it"
+                ],
+                "a": 0,
+                "why": "Six months later I understood what she meant."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "You ___ see a doctor about that.",
+              "options": [
+                "should",
+                "should to",
+                "shoulds"
+              ],
+              "a": 0,
+              "why": "После should глагол идёт без to, форма не меняется."
+            },
+            {
+              "prompt": "If it ___ tomorrow, we will cancel.",
+              "options": [
+                "will rain",
+                "rains",
+                "rained"
+              ],
+              "a": 1,
+              "why": "После if будущее время не ставится, идёт настоящее."
+            },
+            {
+              "prompt": "We will miss the train ___ we hurry.",
+              "options": [
+                "if",
+                "unless",
+                "when"
+              ],
+              "a": 1,
+              "why": "unless значит «если не» и уже содержит отрицание."
+            },
+            {
+              "prompt": "This bag is not yours, it is ___.",
+              "options": [
+                "my",
+                "mine",
+                "my's"
+              ],
+              "a": 1,
+              "why": "Без существительного идёт mine, апострофа нет."
+            },
+            {
+              "prompt": "Can you ___ me to send the email?",
+              "options": [
+                "remember",
+                "remind",
+                "recommend"
+              ],
+              "a": 1,
+              "why": "Напомнить другому — remind."
+            },
+            {
+              "prompt": "I ___ booking a table in advance.",
+              "options": [
+                "recommend",
+                "advice",
+                "remind"
+              ],
+              "a": 0,
+              "why": "recommend — глагол, advice — существительное."
+            }
+          ],
+          "video": {
+            "n": "Грамматика B1–B2: условные предложения",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2",
+            "d": "Раздел с уроками и тестами, в том числе про нулевой, первый и второй тип условных."
+          }
+        },
+        {
+          "n": 9,
+          "title": "Страхи, сроки и биографии",
+          "goal": "Говорить о нереальном условии, считать время с какого-то момента и рассказывать о чужой жизни.",
+          "map": [
+            {
+              "id": "9A",
+              "g": "второй тип условных: if + прошедшее, would",
+              "v": "животные и насекомые"
+            },
+            {
+              "id": "9B",
+              "g": "Present Perfect с for и since",
+              "v": "слова о страхе"
+            },
+            {
+              "id": "9C",
+              "g": "Present Perfect или Past Simple",
+              "v": "биографии"
+            }
+          ],
+          "words": [
+            {
+              "w": "spider",
+              "lvl": "A2",
+              "ipa": "/ˈspaɪ.dər/",
+              "pos": "сущ.",
+              "tr": "паук",
+              "def": "Существо с восемью ногами, плетёт паутину.",
+              "ex": "There is a spider in the bath."
+            },
+            {
+              "w": "bee",
+              "lvl": "A2",
+              "ipa": "/biː/",
+              "pos": "сущ.",
+              "tr": "пчела",
+              "def": "Насекомое, которое делает мёд.",
+              "ex": "A bee flew into the kitchen."
+            },
+            {
+              "w": "snake",
+              "lvl": "A2",
+              "ipa": "/sneɪk/",
+              "pos": "сущ.",
+              "tr": "змея",
+              "def": "Длинное животное без ног.",
+              "ex": "We saw a snake near the path."
+            },
+            {
+              "w": "insect",
+              "lvl": "A2",
+              "ipa": "/ˈɪn.sekt/",
+              "pos": "сущ.",
+              "tr": "насекомое",
+              "def": "Мелкое существо с шестью ногами.",
+              "ex": "This insect is completely harmless."
+            },
+            {
+              "w": "bite",
+              "lvl": "A2",
+              "ipa": "/baɪt/",
+              "pos": "глаг./сущ.",
+              "tr": "кусать; укус",
+              "def": "Схватить зубами. Формы: bite, bit, bitten.",
+              "ex": "The dog has never bitten anyone."
+            },
+            {
+              "w": "sting",
+              "lvl": "B1",
+              "ipa": "/stɪŋ/",
+              "pos": "глаг./сущ.",
+              "tr": "жалить; укус жалом",
+              "def": "Уколоть жалом, как пчела. Формы: sting, stung, stung.",
+              "ex": "A bee stung me on the arm."
+            },
+            {
+              "w": "terrified",
+              "lvl": "B1",
+              "ipa": "/ˈter.ɪ.faɪd/",
+              "pos": "прил.",
+              "tr": "в ужасе",
+              "def": "Испытывающий очень сильный страх.",
+              "ex": "She is terrified of heights."
+            },
+            {
+              "w": "panic",
+              "lvl": "B1",
+              "ipa": "/ˈpæn.ɪk/",
+              "pos": "глаг./сущ.",
+              "tr": "паниковать; паника",
+              "def": "Терять контроль от страха.",
+              "ex": "Do not panic, it is harmless."
+            },
+            {
+              "w": "phobia",
+              "lvl": "B1",
+              "ipa": "/ˈfəʊ.bi.ə/",
+              "pos": "сущ.",
+              "tr": "фобия",
+              "def": "Сильный необъяснимый страх чего-то конкретного.",
+              "ex": "He has a phobia about flying."
+            },
+            {
+              "w": "achievement",
+              "lvl": "B1",
+              "ipa": "/əˈtʃiːv.mənt/",
+              "pos": "сущ.",
+              "tr": "достижение",
+              "def": "То значительное, что человек сделал.",
+              "ex": "That was her greatest achievement."
+            },
+            {
+              "w": "award",
+              "lvl": "B1",
+              "ipa": "/əˈwɔːd/",
+              "pos": "сущ.",
+              "tr": "награда, премия",
+              "def": "Приз за заслуги.",
+              "ex": "He won an award for teaching."
+            },
+            {
+              "w": "retire",
+              "lvl": "B1",
+              "ipa": "/rɪˈtaɪər/",
+              "pos": "глаг.",
+              "tr": "выходить на пенсию",
+              "def": "Прекратить работать по возрасту.",
+              "ex": "She retired three years ago."
+            }
+          ],
+          "rules": [
+            {
+              "t": "Второй тип условных",
+              "body": "Второй тип описывает то, чего сейчас нет: воображаемую ситуацию или маловероятную возможность. В части с if стоит прошедшее время, в главной — would плюс начальная форма. Прошедшее здесь не про прошлое, а знак нереальности. С глаголом be в книжном варианте для всех лиц ставят were: if I were you.",
+              "ex": [
+                [
+                  "If I had more time, I would learn Greek.",
+                  "Времени нет — ситуация воображаемая"
+                ],
+                [
+                  "If I were you, I would apply.",
+                  "Устойчивый оборот для совета"
+                ],
+                [
+                  "She would travel more if she could.",
+                  "Порядок частей можно менять"
+                ],
+                [
+                  "What would you do if you saw a snake?",
+                  "Вопрос о воображаемой ситуации"
+                ]
+              ]
+            },
+            {
+              "t": "for и since",
+              "body": "Оба идут с Present Perfect и отвечают на вопрос как долго. for называет длину отрезка: for two years, for ten minutes. since называет точку, с которой всё началось: since 2019, since Monday, since I moved here. Проверка простая: если после слова можно поставить вопрос сколько времени, нужен for, если когда именно началось — since.",
+              "ex": [
+                [
+                  "I have lived here for six years.",
+                  "Длина отрезка"
+                ],
+                [
+                  "I have lived here since 2019.",
+                  "Точка начала"
+                ],
+                [
+                  "We have not spoken since Friday.",
+                  "Точка начала"
+                ],
+                [
+                  "She has been ill for a week.",
+                  "Длина отрезка"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "The Woman Who Was Not Afraid",
+            "body": "My grandmother has been afraid of nothing for as long as I have known her. Spiders, snakes, dark rooms, difficult people: none of it has ever bothered her. She worked as a nurse for forty years and retired in 2011. She has lived alone since my grandfather died, in a village where the nearest shop is four kilometres away. Last summer a bee stung her twice while she was picking apples and she did not even stop. If I were her, I would have run into the house immediately. She just said the bee was probably more frightened than she was. She has never won an award for anything, but I think that is an achievement.",
+            "glossary": [
+              [
+                "bothered",
+                "беспокоило"
+              ],
+              [
+                "alone",
+                "одна"
+              ],
+              [
+                "village",
+                "деревня"
+              ],
+              [
+                "nearest",
+                "ближайший"
+              ],
+              [
+                "picking",
+                "собирала"
+              ],
+              [
+                "frightened",
+                "напугана"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "How long did she work as a nurse?",
+                "options": [
+                  "Since 2011",
+                  "For forty years",
+                  "Since her husband died"
+                ],
+                "a": 1,
+                "why": "for называет длину отрезка: for forty years."
+              },
+              {
+                "q": "Why 'since my grandfather died' and not 'for'?",
+                "options": [
+                  "It names the starting point",
+                  "It names a length of time",
+                  "Both are correct"
+                ],
+                "a": 0,
+                "why": "since вводит момент, с которого всё началось, for — длину отрезка."
+              },
+              {
+                "q": "What would the narrator have done?",
+                "options": [
+                  "The same thing",
+                  "Run into the house",
+                  "Kept picking apples"
+                ],
+                "a": 1,
+                "why": "If I were her, I would have run into the house immediately."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "If I ___ rich, I would buy a house.",
+              "options": [
+                "am",
+                "were",
+                "will be"
+              ],
+              "a": 1,
+              "why": "Второй тип условных: в части с if прошедшее, с be обычно were."
+            },
+            {
+              "prompt": "She would travel more if she ___ time.",
+              "options": [
+                "has",
+                "had",
+                "will have"
+              ],
+              "a": 1,
+              "why": "Воображаемая ситуация требует прошедшего времени после if."
+            },
+            {
+              "prompt": "I have known him ___ ten years.",
+              "options": [
+                "since",
+                "for",
+                "from"
+              ],
+              "a": 1,
+              "why": "Длина отрезка вводится через for."
+            },
+            {
+              "prompt": "We have not met ___ March.",
+              "options": [
+                "for",
+                "since",
+                "during"
+              ],
+              "a": 1,
+              "why": "March — точка начала, значит since."
+            },
+            {
+              "prompt": "A bee ___ me yesterday.",
+              "options": [
+                "stung",
+                "stinged",
+                "has stung"
+              ],
+              "a": 0,
+              "why": "Названо время yesterday, значит Past Simple, и форма неправильная: stung."
+            },
+            {
+              "prompt": "She is ___ of spiders.",
+              "options": [
+                "terrify",
+                "terrified",
+                "terrifying"
+              ],
+              "a": 1,
+              "why": "Чувство человека выражает форма на -ed: terrified."
+            }
+          ],
+          "video": {
+            "n": "Present Perfect с for и since",
+            "u": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect-simple-continuous",
+            "d": "Разбор употребления for и since с примерами и тестами."
           }
         }
       ]
