@@ -1,14 +1,20 @@
 /* ================= раздел: A2 =================
-   Отдельный модуль: темы, истории, правила в деле, письмо и видео.
-   Данные приходят из a2.json через initA2(pack) после загрузки app.js. */
-let A2 = null;
+   Отдельный модуль: последовательный Elementary-курс, темы, истории,
+   правила в деле, письмо и видео. Данные приходят из a2.json/course.json. */
+let A2 = null, COURSE = null;
 const A2WKEY = 'dict-a2-writing-v1';
+const CKEY = 'dict-course-v1';
 const A2W = {
   data: {},
   load(){ try { this.data = JSON.parse(localStorage.getItem(A2WKEY) || '{}'); } catch(e){ this.data = {}; } },
   save(){ try { localStorage.setItem(A2WKEY, JSON.stringify(this.data)); } catch(e){} }
 };
-let a2s = { tab: 'topics', topic: null, quiz: null, story: null, drill: null, writing: null };
+const CP = {
+  data: {},
+  load(){ try { this.data = JSON.parse(localStorage.getItem(CKEY) || '{}'); } catch(e){ this.data = {}; } },
+  save(){ try { localStorage.setItem(CKEY, JSON.stringify(this.data)); } catch(e){} }
+};
+let a2s = { tab: 'course', topic: null, quiz: null, story: null, drill: null, writing: null, lesson: null };
 
 function a2Words(){
   return A2 ? A2.topics.reduce((acc, t) => acc.concat(t.words), []) : [];
@@ -18,6 +24,7 @@ function a2TopicWords(i){
 }
 function a2Tabs(){
   return [
+    ['course', 'Курс'],
     ['topics', 'Темы'],
     ['stories', 'Истории'],
     ['drills', 'Правила в деле'],
@@ -26,9 +33,11 @@ function a2Tabs(){
   ];
 }
 
-function initA2(pack){
+function initA2(pack, course){
   A2 = pack;
+  COURSE = course;
   A2W.load();
+  CP.load();
   const body = document.getElementById('a2Body');
   if (body && !body.dataset.bound){
     body.dataset.bound = '1';
@@ -41,13 +50,15 @@ function initA2(pack){
 function renderA2(){
   const body = document.getElementById('a2Body');
   if (!body) return;
-  if (!A2){
+  if (!A2 && !COURSE){
     document.getElementById('a2Stat').textContent = '';
-    body.innerHTML = '<p class="blank"><b>A2 ещё загружается</b>Если сообщение не исчезает, проверьте, что a2.json лежит рядом с index.html.</p>';
+    body.innerHTML = '<p class="blank"><b>Материалы ещё загружаются</b>Если сообщение не исчезает, проверьте, что a2.json и course.json лежат рядом с index.html.</p>';
     return;
   }
+  const done = COURSE ? COURSE.lessons.filter(l => CP.data[l.id] && CP.data[l.id].done).length : 0;
   document.getElementById('a2Stat').textContent =
-    a2Words().length + ' слов · ' + A2.stories.length + ' историй · ' + A2.drills.length + ' упражнений';
+    (COURSE ? done + '/' + COURSE.lessons.length + ' уроков · ' : '') +
+    (A2 ? a2Words().length + ' слов · ' + A2.stories.length + ' историй · ' + A2.drills.length + ' упражнений' : '');
   body.innerHTML =
     '<div class="a2tabs">' + a2Tabs().map(([id, name]) =>
       '<button class="pill' + (a2s.tab === id ? ' on' : '') + '" data-a2="tab" data-tab="' + id + '">' + name + '</button>').join('') +
@@ -57,12 +68,100 @@ function renderA2(){
 
 function renderA2Stage(){
   const stage = document.getElementById('a2Stage');
-  if (!stage || !A2) return;
+  if (!stage) return;
+  if (a2s.tab === 'course'){ stage.innerHTML = COURSE ? (a2s.lesson === null ? a2CourseList() : a2CourseLesson(a2s.lesson)) : '<p class="blank"><b>Курс не загрузился</b>Проверьте course.json.</p>'; return; }
+  if (!A2){ stage.innerHTML = '<p class="blank"><b>Раздел не загрузился</b>Проверьте a2.json.</p>'; return; }
   if (a2s.tab === 'topics') stage.innerHTML = a2s.topic === null ? a2TopicList() : a2TopicDetail(a2s.topic);
   if (a2s.tab === 'stories') stage.innerHTML = a2s.story === null ? a2StoryList() : a2StoryDetail(a2s.story);
   if (a2s.tab === 'drills') stage.innerHTML = a2Drills();
   if (a2s.tab === 'writing') stage.innerHTML = a2s.writing === null ? a2WritingList() : a2WritingDetail(a2s.writing);
   if (a2s.tab === 'videos') stage.innerHTML = a2Videos();
+}
+
+/* ---------- Курс: оригинальные уроки по elementary-маршруту ---------- */
+function a2CourseList(){
+  const done = COURSE.lessons.filter(l => CP.data[l.id] && CP.data[l.id].done).length;
+  return `
+    <div class="card">
+      <div class="prompt-label">Маршрут · оригинальные материалы</div>
+      <p class="prompt" style="font-size:24px">Elementary A1 → A2</p>
+      <p class="def" style="margin-top:8px">${esc(COURSE.note)}</p>
+      <p class="stat" style="margin-top:10px">Пройдено: ${done} / ${COURSE.lessons.length}</p>
+      <div class="btnrow">
+        <button class="btn ghost" data-a2="ttsvoice" data-v="en-US">Голос US</button>
+        <button class="btn ghost" data-a2="ttsvoice" data-v="en-GB">Голос UK</button>
+        <button class="btn ghost" data-a2="ttsrate" data-v="0.72">Медленно</button>
+        <button class="btn ghost" data-a2="ttsrate" data-v="0.88">Обычно</button>
+      </div>
+    </div>
+    ${COURSE.lessons.map((l, i) => {
+      const st = CP.data[l.id] || {};
+      return `
+      <div class="card">
+        <div class="prompt-label">Урок ${l.id} · ${esc(l.cefr)} ${st.done ? '· пройден' : ''}</div>
+        <p class="prompt" style="font-size:23px">${esc(l.title)}</p>
+        <p class="def" style="margin-top:8px">${esc(l.goal)}</p>
+        <p class="why" style="margin-top:6px;color:var(--ink-soft)">${esc(l.grammar.join(' · '))} · ${esc(l.vocabTheme)}</p>
+        <div class="btnrow"><button class="btn" data-a2="lesson" data-i="${i}">Открыть урок</button></div>
+      </div>`;
+    }).join('')}`;
+}
+
+function a2LessonState(id){
+  if (!CP.data[id]) CP.data[id] = { ans: {}, write: '', done: false };
+  return CP.data[id];
+}
+function a2CourseLesson(i){
+  const l = COURSE.lessons[i];
+  const st = a2LessonState(l.id);
+  const right = l.tasks.reduce((n, t, k) => n + (st.ans[k] === t.a ? 1 : 0), 0);
+  const answered = Object.keys(st.ans).length;
+  return `
+    <div class="card">
+      <div class="prompt-label">Урок ${l.id} · Elementary route</div>
+      <p class="prompt" style="font-size:25px">${esc(l.title)}</p>
+      <p class="def" style="margin-top:8px">${esc(l.goal)}</p>
+      <div class="btnrow">
+        <button class="btn ghost" data-a2="back">К урокам</button>
+        ${i > 0 ? `<button class="btn ghost" data-a2="lesson" data-i="${i - 1}">← Назад</button>` : ''}
+        ${i < COURSE.lessons.length - 1 ? `<button class="btn ghost" data-a2="lesson" data-i="${i + 1}">Дальше →</button>` : ''}
+      </div>
+    </div>
+    <div class="card">
+      <div class="prompt-label">Правило своими словами</div>
+      <p class="def">${esc(l.rule)}</p>
+      <div class="cat" style="margin-top:12px">Слова урока</div>
+      ${l.words.map(w => `<div class="rule-ex"><div class="en">${esc(w.w)} — ${esc(w.tr)}</div><button class="speak" data-say="${esc(w.w)}">Произнести</button></div>`).join('')}
+    </div>
+    <div class="card">
+      <div class="prompt-label">Короткий текст</div>
+      <p class="def" style="line-height:1.65">${esc(l.text)}</p>
+      <button class="speak" data-say="${esc(l.text)}">Озвучить текст</button>
+    </div>
+    <div class="card">
+      <div class="prompt-label">Задания · ${right} / ${l.tasks.length}</div>
+      ${l.tasks.map((t, k) => {
+        const chosen = st.ans[k];
+        return `<div class="a2q">
+          <p class="def" style="font-weight:700">${k + 1}. ${esc(t.q)}</p>
+          <div class="a2opts">${t.options.map((o, v) => {
+            const cls = chosen === undefined ? '' : (v === t.a ? ' ok' : v === chosen ? ' no' : '');
+            return `<button class="a2opt${cls}" data-a2="lessontask" data-i="${i}" data-q="${k}" data-v="${v}">${esc(o)}</button>`;
+          }).join('')}</div>
+          ${chosen === undefined ? '' : `<div class="verdict ${chosen === t.a ? 'ok' : 'no'}"><b>${chosen === t.a ? 'Верно' : 'Пока нет'}</b><span class="ex">${esc(t.why)}</span></div>`}
+        </div>`;
+      }).join('')}
+      ${answered === l.tasks.length ? `<div class="verdict ${right >= l.tasks.length - 1 ? 'ok' : 'no'}"><b>${right >= l.tasks.length - 1 ? 'Урок засчитан' : 'Есть ошибки'}</b><span class="right">Понято ${right} из ${l.tasks.length}</span></div>` : ''}
+    </div>
+    <div class="card">
+      <div class="prompt-label">Письмо по уроку</div>
+      <p class="def">${esc(l.write)}</p>
+      <textarea class="a2write" data-course-write="${l.id}" rows="6" placeholder="Ваш черновик сохраняется в браузере.">${esc(st.write || '')}</textarea>
+      <div class="btnrow">
+        <button class="btn" data-a2="lessondone" data-i="${i}">${st.done ? 'Снять отметку' : 'Отметить пройденным'}</button>
+        <a class="btn ghost" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=${encodeURIComponent(l.video)}">Видео по теме</a>
+      </div>
+    </div>`;
 }
 
 /* ---------- Темы ---------- */
@@ -291,8 +390,8 @@ function a2Click(e){
   if (!b) return;
   const act = b.dataset.a2;
 
-  if (act === 'tab'){ a2s.tab = b.dataset.tab; a2s.topic = a2s.story = a2s.writing = null; a2s.quiz = null; a2s.drill = null; renderA2(); return; }
-  if (act === 'back'){ a2s.topic = a2s.story = a2s.writing = null; a2s.quiz = null; renderA2Stage(); return; }
+  if (act === 'tab'){ a2s.tab = b.dataset.tab; a2s.topic = a2s.story = a2s.writing = a2s.lesson = null; a2s.quiz = null; a2s.drill = null; renderA2(); return; }
+  if (act === 'back'){ a2s.topic = a2s.story = a2s.writing = a2s.lesson = null; a2s.quiz = null; renderA2Stage(); return; }
   if (act === 'topic'){ a2s.topic = +b.dataset.i; a2s.quiz = null; renderA2Stage(); return; }
   if (act === 'topicquiz'){ const i = +b.dataset.i; a2s.topic = i; a2MakeQuiz(i); renderA2Stage(); return; }
   if (act === 'opt'){
@@ -332,12 +431,32 @@ function a2Click(e){
     A2W.save(); return;
   }
   if (act === 'sample'){ a2s.showSample = a2s.showSample === +b.dataset.i ? null : +b.dataset.i; renderA2Stage(); return; }
+  if (act === 'lesson'){ a2s.lesson = +b.dataset.i; renderA2Stage(); window.scrollTo({top:0}); return; }
+  if (act === 'lessontask'){
+    const i = +b.dataset.i, q = +b.dataset.q, v = +b.dataset.v;
+    const l = COURSE.lessons[i], st = a2LessonState(l.id);
+    if (st.ans[q] === undefined){ st.ans[q] = v; CP.save(); }
+    renderA2Stage(); return;
+  }
+  if (act === 'lessondone'){
+    const l = COURSE.lessons[+b.dataset.i], st = a2LessonState(l.id);
+    st.done = !st.done; CP.save(); renderA2(); return;
+  }
+  if (act === 'ttsvoice'){ if (window.setTTS) setTTS({ lang: b.dataset.v }); return; }
+  if (act === 'ttsrate'){ if (window.setTTS) setTTS({ rate: +b.dataset.v }); return; }
   if (act === 'clearwrite'){
     const st = a2WriteState(+b.dataset.i);
     st.text = ''; st.checks = {}; A2W.save(); renderA2Stage(); return;
   }
 }
 function a2Input(e){
+  const cw = e.target.closest('[data-course-write]');
+  if (cw){
+    const st = a2LessonState(cw.dataset.courseWrite);
+    st.write = cw.value;
+    CP.save();
+    return;
+  }
   const ta = e.target.closest('[data-writing-text]');
   if (!ta) return;
   const st = a2WriteState(+ta.dataset.writingText);

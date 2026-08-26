@@ -1,0 +1,888 @@
+{
+  "note": "Оригинальные учебные материалы. Последовательность тем выровнена по типичному маршруту Elementary A1→A2; тексты, задания и объяснения написаны заново.",
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Hello, my name is…",
+      "cefr": "A1→A2",
+      "goal": "Поздороваться, представиться и назвать день/номер.",
+      "grammar": [
+        "verb be +",
+        "subject pronouns"
+      ],
+      "vocabTheme": "days and numbers 0–20",
+      "words": [
+        {
+          "w": "name",
+          "tr": "имя"
+        },
+        {
+          "w": "day",
+          "tr": "день"
+        },
+        {
+          "w": "week",
+          "tr": "неделя"
+        },
+        {
+          "w": "number",
+          "tr": "номер"
+        },
+        {
+          "w": "hello",
+          "tr": "привет"
+        },
+        {
+          "w": "from",
+          "tr": "из"
+        }
+      ],
+      "rule": "I am / you are / we are. В коротких ответах не говорим «Yes, I’m» без продолжения: Yes, I am.",
+      "text": "Hi, I am Lena. I am from Kazan. Today is Monday, and my English lesson is at seven. I am happy, but a little nervous.",
+      "tasks": [
+        {
+          "q": "I ___ Lena.",
+          "options": [
+            "am",
+            "is",
+            "are"
+          ],
+          "a": 0,
+          "why": "С I всегда am."
+        },
+        {
+          "q": "They ___ from Spain.",
+          "options": [
+            "is",
+            "are",
+            "am"
+          ],
+          "a": 1,
+          "why": "They — множественное, поэтому are."
+        },
+        {
+          "q": "Lena is ___ Kazan.",
+          "options": [
+            "from",
+            "at",
+            "on"
+          ],
+          "a": 0,
+          "why": "Родом откуда-то — from + место."
+        }
+      ],
+      "write": "Напишите 4 предложения: имя, город, день недели, чувство перед уроком.",
+      "video": "A1 English introductions for beginners"
+    },
+    {
+      "id": 2,
+      "title": "Where are you from?",
+      "cefr": "A1→A2",
+      "goal": "Спросить о стране и понять большие числа.",
+      "grammar": [
+        "verb be – and ?",
+        "possessive adjectives"
+      ],
+      "vocabTheme": "countries and numbers 21–100",
+      "words": [
+        {
+          "w": "country",
+          "tr": "страна"
+        },
+        {
+          "w": "city",
+          "tr": "город"
+        },
+        {
+          "w": "email",
+          "tr": "электронная почта"
+        },
+        {
+          "w": "my",
+          "tr": "мой"
+        },
+        {
+          "w": "your",
+          "tr": "твой/ваш"
+        },
+        {
+          "w": "their",
+          "tr": "их"
+        }
+      ],
+      "rule": "Вопрос с be: Are you from Italy? Отрицание: I am not / we aren’t. My/your/their стоят перед существительным.",
+      "text": "My name is Adam. I am not from Poland; I am from Hungary. My sister is twenty-four, and her city is small but beautiful.",
+      "tasks": [
+        {
+          "q": "___ you from Brazil?",
+          "options": [
+            "Is",
+            "Are",
+            "Am"
+          ],
+          "a": 1,
+          "why": "С you вопрос начинается с Are."
+        },
+        {
+          "q": "This is ___ brother. (говорит девушка)",
+          "options": [
+            "her",
+            "his",
+            "their"
+          ],
+          "a": 0,
+          "why": "У девушки — her brother."
+        },
+        {
+          "q": "Adam is from ___.",
+          "options": [
+            "Poland",
+            "Hungary",
+            "Spain"
+          ],
+          "a": 1,
+          "why": "В тексте он говорит, что не из Польши, а из Венгрии."
+        }
+      ],
+      "write": "Напишите 5 вопросов с Are you…? и короткие ответы к ним.",
+      "video": "A1 English countries and where are you from"
+    },
+    {
+      "id": 3,
+      "title": "My room, my mood",
+      "cefr": "A1→A2",
+      "goal": "Описать вещи в комнате и простые чувства.",
+      "grammar": [
+        "singular/plural nouns",
+        "adjectives",
+        "imperatives"
+      ],
+      "vocabTheme": "things, colours, feelings",
+      "words": [
+        {
+          "w": "thing",
+          "tr": "вещь"
+        },
+        {
+          "w": "table",
+          "tr": "стол"
+        },
+        {
+          "w": "lamp",
+          "tr": "лампа"
+        },
+        {
+          "w": "tidy",
+          "tr": "аккуратный"
+        },
+        {
+          "w": "tired",
+          "tr": "уставший"
+        },
+        {
+          "w": "happy",
+          "tr": "счастливый"
+        }
+      ],
+      "rule": "Множественное число чаще -s/-es: lamp → lamps, box → boxes. Приказ: Open the window. Предложение: Let’s sit down.",
+      "text": "My room is small but tidy. Two lamps are on the table, and my books are in a blue box. I am tired, so let’s stop for ten minutes.",
+      "tasks": [
+        {
+          "q": "Two ___ are on the table.",
+          "options": [
+            "lamp",
+            "lamps",
+            "lampes"
+          ],
+          "a": 1,
+          "why": "Обычное множественное число: lamps."
+        },
+        {
+          "q": "___ the door, please.",
+          "options": [
+            "Open",
+            "Opens",
+            "Opening"
+          ],
+          "a": 0,
+          "why": "Повелительное наклонение — голая форма глагола."
+        },
+        {
+          "q": "The room is ___.",
+          "options": [
+            "messy",
+            "tidy",
+            "cold"
+          ],
+          "a": 1,
+          "why": "В тексте прямо сказано small but tidy."
+        }
+      ],
+      "write": "Опишите комнату в 5 предложениях: 2 вещи, где они, и одно чувство.",
+      "video": "A1 English describing a room"
+    },
+    {
+      "id": 4,
+      "title": "Every day, every week",
+      "cefr": "A1→A2",
+      "goal": "Говорить о привычках и работе.",
+      "grammar": [
+        "present simple +/–/?",
+        "question words"
+      ],
+      "vocabTheme": "verb phrases and jobs",
+      "words": [
+        {
+          "w": "work",
+          "tr": "работать"
+        },
+        {
+          "w": "cook",
+          "tr": "готовить"
+        },
+        {
+          "w": "start",
+          "tr": "начинать"
+        },
+        {
+          "w": "finish",
+          "tr": "заканчивать"
+        },
+        {
+          "w": "job",
+          "tr": "работа"
+        },
+        {
+          "w": "usually",
+          "tr": "обычно"
+        }
+      ],
+      "rule": "He/she/it + -s: she works. Вопрос: Does he work? Отрицание: He doesn’t work.",
+      "text": "Nora is a nurse. She starts at eight and finishes at six. She doesn’t cook on weekdays; her brother usually makes soup.",
+      "tasks": [
+        {
+          "q": "She ___ at eight.",
+          "options": [
+            "start",
+            "starts",
+            "starting"
+          ],
+          "a": 1,
+          "why": "She — третье лицо, глагол с -s."
+        },
+        {
+          "q": "___ he work night shifts?",
+          "options": [
+            "Do",
+            "Does",
+            "Is"
+          ],
+          "a": 1,
+          "why": "Present Simple вопрос с he — Does."
+        },
+        {
+          "q": "Who cooks on weekdays?",
+          "options": [
+            "Nora",
+            "Her brother",
+            "Nobody"
+          ],
+          "a": 1,
+          "why": "В тексте готовит её брат."
+        }
+      ],
+      "write": "Напишите 6 предложений о буднях знакомого человека: starts, finishes, doesn’t, usually.",
+      "video": "A1 present simple daily routines"
+    },
+    {
+      "id": 5,
+      "title": "Family time",
+      "cefr": "A1→A2",
+      "goal": "Рассказать о семье, распорядке и частоте.",
+      "grammar": [
+        "possessive ’s",
+        "prepositions of time/place",
+        "adverbs of frequency"
+      ],
+      "vocabTheme": "family and daily routine",
+      "words": [
+        {
+          "w": "mother",
+          "tr": "мать"
+        },
+        {
+          "w": "uncle",
+          "tr": "дядя"
+        },
+        {
+          "w": "weekend",
+          "tr": "выходные"
+        },
+        {
+          "w": "always",
+          "tr": "всегда"
+        },
+        {
+          "w": "sometimes",
+          "tr": "иногда"
+        },
+        {
+          "w": "never",
+          "tr": "никогда"
+        }
+      ],
+      "rule": "Anna’s brother — брат Анны. At seven, on Monday, in the morning. Always/usually стоят перед глаголом: I always drink tea.",
+      "text": "On Sundays I visit my mother’s flat. We always have tea at five in the kitchen. My uncle sometimes comes, but he is never late.",
+      "tasks": [
+        {
+          "q": "This is ___ car. (машина Марка)",
+          "options": [
+            "Mark",
+            "Mark’s",
+            "Marks"
+          ],
+          "a": 1,
+          "why": "Притяжательность: Mark’s car."
+        },
+        {
+          "q": "We meet ___ five.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "a": 2,
+          "why": "Точное время — at."
+        },
+        {
+          "q": "The uncle is ___.",
+          "options": [
+            "always late",
+            "never late",
+            "always early"
+          ],
+          "a": 1,
+          "why": "В тексте: he is never late."
+        }
+      ],
+      "write": "Опишите семейную традицию: когда, где, кто приходит, что всегда/иногда происходит.",
+      "video": "A1 English family and routine"
+    },
+    {
+      "id": 6,
+      "title": "I can, I’m doing",
+      "cefr": "A1→A2",
+      "goal": "Назвать умения и сказать, что происходит сейчас.",
+      "grammar": [
+        "can/can’t",
+        "present continuous"
+      ],
+      "vocabTheme": "abilities, noise, weather",
+      "words": [
+        {
+          "w": "can",
+          "tr": "мочь/уметь"
+        },
+        {
+          "w": "swim",
+          "tr": "плавать"
+        },
+        {
+          "w": "cook",
+          "tr": "готовить"
+        },
+        {
+          "w": "rain",
+          "tr": "дождь"
+        },
+        {
+          "w": "noisy",
+          "tr": "шумный"
+        },
+        {
+          "w": "now",
+          "tr": "сейчас"
+        }
+      ],
+      "rule": "Can + голая форма: I can swim. Действие сейчас: be + V-ing — It is raining.",
+      "text": "Look, it is raining again. People are running to the bus. I can’t play tennis today, but I can cook dinner at home.",
+      "tasks": [
+        {
+          "q": "I ___ swim well.",
+          "options": [
+            "can",
+            "cans",
+            "am can"
+          ],
+          "a": 0,
+          "why": "После can глагол без изменений."
+        },
+        {
+          "q": "It ___ raining now.",
+          "options": [
+            "is",
+            "are",
+            "am"
+          ],
+          "a": 0,
+          "why": "It + is + V-ing."
+        },
+        {
+          "q": "Why no tennis today?",
+          "options": [
+            "It is raining",
+            "He is at work",
+            "It is Sunday"
+          ],
+          "a": 0,
+          "why": "Причина в тексте — дождь."
+        }
+      ],
+      "write": "Напишите 3 умения с can и 3 действия, которые происходят вокруг вас сейчас.",
+      "video": "A1 English can and present continuous"
+    },
+    {
+      "id": 7,
+      "title": "Yesterday I was…",
+      "cefr": "A1→A2",
+      "goal": "Рассказать о прошлом состоянии и простом событии.",
+      "grammar": [
+        "was/were",
+        "past simple regular"
+      ],
+      "vocabTheme": "past time expressions",
+      "words": [
+        {
+          "w": "yesterday",
+          "tr": "вчера"
+        },
+        {
+          "w": "last night",
+          "tr": "вчера вечером"
+        },
+        {
+          "w": "was",
+          "tr": "был/была"
+        },
+        {
+          "w": "were",
+          "tr": "были"
+        },
+        {
+          "w": "visited",
+          "tr": "посетил"
+        },
+        {
+          "w": "played",
+          "tr": "играл"
+        }
+      ],
+      "rule": "Was — I/he/she/it, were — you/we/they. Правильные глаголы в прошлом: visit → visited.",
+      "text": "Yesterday I was at home. My friends were in the park. We played chess online and visited my grandmother in the evening.",
+      "tasks": [
+        {
+          "q": "I ___ at home yesterday.",
+          "options": [
+            "was",
+            "were",
+            "am"
+          ],
+          "a": 0,
+          "why": "I в прошлом — was."
+        },
+        {
+          "q": "They ___ chess last night.",
+          "options": [
+            "play",
+            "played",
+            "plays"
+          ],
+          "a": 1,
+          "why": "Last night — прошлое: played."
+        },
+        {
+          "q": "Where were the friends?",
+          "options": [
+            "at home",
+            "in the park",
+            "at work"
+          ],
+          "a": 1,
+          "why": "В тексте friends were in the park."
+        }
+      ],
+      "write": "Напишите 5 предложений о вчерашнем дне: 2 с was/were, 3 с правильными глаголами.",
+      "video": "A1 English past simple was were"
+    },
+    {
+      "id": 8,
+      "title": "A room with a story",
+      "cefr": "A1→A2",
+      "goal": "Описать дом и событие в прошлом.",
+      "grammar": [
+        "past simple irregular",
+        "there is/are",
+        "there was/were"
+      ],
+      "vocabTheme": "house and prepositions",
+      "words": [
+        {
+          "w": "there is",
+          "tr": "есть (ед.)"
+        },
+        {
+          "w": "there are",
+          "tr": "есть (мн.)"
+        },
+        {
+          "w": "went",
+          "tr": "пошёл"
+        },
+        {
+          "w": "saw",
+          "tr": "увидел"
+        },
+        {
+          "w": "behind",
+          "tr": "позади"
+        },
+        {
+          "w": "into",
+          "tr": "внутрь"
+        }
+      ],
+      "rule": "There is + одно, there are + много. В прошлом: there was/there were. Go → went, see → saw.",
+      "text": "There is an old house near the river. Last year we went inside and saw three rooms. There was a piano, and there were old photos on the wall.",
+      "tasks": [
+        {
+          "q": "There ___ three rooms.",
+          "options": [
+            "was",
+            "were",
+            "is"
+          ],
+          "a": 1,
+          "why": "Rooms — множественное прошлое: were."
+        },
+        {
+          "q": "We ___ inside last year.",
+          "options": [
+            "go",
+            "went",
+            "goes"
+          ],
+          "a": 1,
+          "why": "Last year просит went."
+        },
+        {
+          "q": "What was in the house?",
+          "options": [
+            "a piano",
+            "a car",
+            "a shop"
+          ],
+          "a": 0,
+          "why": "В тексте был piano."
+        }
+      ],
+      "write": "Опишите комнату сейчас и год назад: there is/are и there was/were.",
+      "video": "A1 English there is there was house description"
+    },
+    {
+      "id": 9,
+      "title": "Food and numbers",
+      "cefr": "A1→A2",
+      "goal": "Поговорить о еде, количестве и сравнить цены.",
+      "grammar": [
+        "countable/uncountable",
+        "some/any",
+        "quantifiers",
+        "comparatives"
+      ],
+      "vocabTheme": "food, containers, high numbers",
+      "words": [
+        {
+          "w": "bread",
+          "tr": "хлеб"
+        },
+        {
+          "w": "egg",
+          "tr": "яйцо"
+        },
+        {
+          "w": "some",
+          "tr": "немного"
+        },
+        {
+          "w": "any",
+          "tr": "сколько-нибудь/нет"
+        },
+        {
+          "w": "cheaper",
+          "tr": "дешевле"
+        },
+        {
+          "w": "bottle",
+          "tr": "бутылка"
+        }
+      ],
+      "rule": "Bread — неисчисляемое: much bread. Eggs — исчисляемые: many eggs. В утверждении some, в вопросе/отрицании any. Дешевле — cheaper than.",
+      "text": "There is some bread and there are six eggs. We don’t have any juice. This café is cheaper than the hotel restaurant, and the portions are bigger.",
+      "tasks": [
+        {
+          "q": "There isn’t ___ milk.",
+          "options": [
+            "many",
+            "much",
+            "a"
+          ],
+          "a": 1,
+          "why": "Milk неисчисляемое: much."
+        },
+        {
+          "q": "This café is ___ than the restaurant.",
+          "options": [
+            "cheap",
+            "cheaper",
+            "cheapest"
+          ],
+          "a": 1,
+          "why": "Than → comparative."
+        },
+        {
+          "q": "What don’t they have?",
+          "options": [
+            "bread",
+            "eggs",
+            "juice"
+          ],
+          "a": 2,
+          "why": "В тексте no juice."
+        }
+      ],
+      "write": "Составьте список покупок: 3 countable, 3 uncountable, 1 сравнение цен.",
+      "video": "A1 English food countable uncountable"
+    },
+    {
+      "id": 10,
+      "title": "The best plan",
+      "cefr": "A1→A2",
+      "goal": "Сравнить места и рассказать о планах.",
+      "grammar": [
+        "superlatives",
+        "be going to plans/predictions"
+      ],
+      "vocabTheme": "places, buildings, city holidays",
+      "words": [
+        {
+          "w": "best",
+          "tr": "лучший"
+        },
+        {
+          "w": "most",
+          "tr": "самый"
+        },
+        {
+          "w": "going to",
+          "tr": "собираться"
+        },
+        {
+          "w": "museum",
+          "tr": "музей"
+        },
+        {
+          "w": "bridge",
+          "tr": "мост"
+        },
+        {
+          "w": "tomorrow",
+          "tr": "завтра"
+        }
+      ],
+      "rule": "Самый высокий — the tallest, самый интересный — the most interesting. План: I’m going to visit… Предсказание: It’s going to rain.",
+      "text": "Tomorrow we are going to walk across the oldest bridge in the city. Look at those black clouds — it is going to rain. The museum is the most interesting place for us.",
+      "tasks": [
+        {
+          "q": "This is the ___ bridge in the city.",
+          "options": [
+            "old",
+            "older",
+            "oldest"
+          ],
+          "a": 2,
+          "why": "Самый старый — the oldest."
+        },
+        {
+          "q": "We ___ visit the museum tomorrow.",
+          "options": [
+            "are going to",
+            "go to",
+            "went to"
+          ],
+          "a": 0,
+          "why": "План на завтра — going to."
+        },
+        {
+          "q": "What is the weather sign?",
+          "options": [
+            "black clouds",
+            "bright sun",
+            "snow"
+          ],
+          "a": 0,
+          "why": "Чёрные облака — признак дождя."
+        }
+      ],
+      "write": "Напишите план на выходные: 3 going to и 1 предсказание про погоду.",
+      "video": "A1 English going to plans"
+    },
+    {
+      "id": 11,
+      "title": "Do it slowly, want to go",
+      "cefr": "A1→A2",
+      "goal": "Говорить точнее: как и что хотите сделать.",
+      "grammar": [
+        "adverbs of manner",
+        "verb + to infinitive",
+        "the / no article"
+      ],
+      "vocabTheme": "common adverbs, phones and internet",
+      "words": [
+        {
+          "w": "slowly",
+          "tr": "медленно"
+        },
+        {
+          "w": "quickly",
+          "tr": "быстро"
+        },
+        {
+          "w": "want",
+          "tr": "хотеть"
+        },
+        {
+          "w": "hope",
+          "tr": "надеяться"
+        },
+        {
+          "w": "internet",
+          "tr": "интернет"
+        },
+        {
+          "w": "phone",
+          "tr": "телефон"
+        }
+      ],
+      "rule": "Как? — наречие: drive slowly. Хочу сделать — want to go. The — когда понятно, о чём речь; без the — общие понятия: I use the internet every day.",
+      "text": "Please speak slowly; I am learning English. I want to use the phone less at night. I hope to read more paper books this year.",
+      "tasks": [
+        {
+          "q": "Please drive ___.",
+          "options": [
+            "slow",
+            "slowly",
+            "slower"
+          ],
+          "a": 1,
+          "why": "Как именно — наречие slowly."
+        },
+        {
+          "q": "I want ___ home early.",
+          "options": [
+            "go",
+            "to go",
+            "going"
+          ],
+          "a": 1,
+          "why": "want + to + infinitive."
+        },
+        {
+          "q": "What does the speaker want to use less?",
+          "options": [
+            "books",
+            "the phone",
+            "the internet"
+          ],
+          "a": 1,
+          "why": "В тексте — phone less at night."
+        }
+      ],
+      "write": "Напишите 5 предложений: 2 наречия, 2 want/hope + to, 1 про телефон/интернет.",
+      "video": "A1 English adverbs and infinitive"
+    },
+    {
+      "id": 12,
+      "title": "I’ve seen it!",
+      "cefr": "A1→A2",
+      "goal": "Сказать о жизненном опыте и отличить от конкретного прошлого.",
+      "grammar": [
+        "present perfect",
+        "present perfect vs past simple",
+        "question revision"
+      ],
+      "vocabTheme": "irregular participles, films, books",
+      "words": [
+        {
+          "w": "seen",
+          "tr": "видел (p.p.)"
+        },
+        {
+          "w": "been",
+          "tr": "был (p.p.)"
+        },
+        {
+          "w": "never",
+          "tr": "никогда"
+        },
+        {
+          "w": "ever",
+          "tr": "когда-либо"
+        },
+        {
+          "w": "already",
+          "tr": "уже"
+        },
+        {
+          "w": "yet",
+          "tr": "уже/ещё"
+        }
+      ],
+      "rule": "Опыт без даты: I have seen it. Конкретное прошлое: I saw it in 2019. В вопросе: Have you ever…?",
+      "text": "I have seen this film three times, but I saw it first in 2020. My brother has never been to London. Have you ever read a book twice?",
+      "tasks": [
+        {
+          "q": "I ___ this film three times.",
+          "options": [
+            "have seen",
+            "saw",
+            "see"
+          ],
+          "a": 0,
+          "why": "Опыт без точной даты — Present Perfect."
+        },
+        {
+          "q": "I saw it ___ 2020.",
+          "options": [
+            "in",
+            "on",
+            "at"
+          ],
+          "a": 0,
+          "why": "Год — in 2020."
+        },
+        {
+          "q": "Who has never been to London?",
+          "options": [
+            "I",
+            "my brother",
+            "we"
+          ],
+          "a": 1,
+          "why": "В тексте brother has never been."
+        }
+      ],
+      "write": "Напишите 4 предложения: 2 с have/has + p.p. без даты и 2 с Past Simple с датой.",
+      "video": "A1 A2 present perfect experiences"
+    }
+  ]
+}

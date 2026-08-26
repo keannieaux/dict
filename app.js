@@ -2,7 +2,7 @@
 const $  = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 
-let words = [], grammar = [], links = [], a2pack = null;
+let words = [], grammar = [], links = [], a2pack = null, coursepack = null;
 
 function esc(s){
   return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -50,18 +50,44 @@ function learnedCount(){
 }
 
 /* ================= озвучка ================= */
-function speak(text, lang = 'en-GB'){
+/* По умолчанию берём нейтральный en-US: на iPhone он обычно ровнее,
+   чем случайный en-GB. Настройки можно поменять через window.setTTS. */
+const TTSKEY = 'dict-tts-v1';
+let tts = { lang: 'en-US', rate: 0.84 };
+try { tts = Object.assign(tts, JSON.parse(localStorage.getItem(TTSKEY) || '{}')); } catch(e){}
+function setTTS(patch){
+  tts = Object.assign(tts, patch || {});
+  try { localStorage.setItem(TTSKEY, JSON.stringify(tts)); } catch(e){}
+}
+function pickVoice(lang){
+  if (!('speechSynthesis' in window)) return null;
+  const bad = /zarvox|trinoid|whisper|wobble|boing|bubbles|cellos|albert|bells|hysterical|good news|organ|novelty/i;
+  const vs = speechSynthesis.getVoices().filter(v => v.lang && !bad.test(v.name || ''));
+  const norm = s => String(s).replace('_', '-').toLowerCase();
+  const want = norm(lang);
+  const exact = vs.filter(v => norm(v.lang).startsWith(want));
+  const nice = /samantha|alex|aria|jenny|guy|sonia|libby|google us english|microsoft|natural|siri/i;
+  return exact.find(v => nice.test(v.name || ''))
+      || exact.find(v => /google|microsoft|natural|siri/i.test(v.name || ''))
+      || exact[0]
+      || vs.find(v => norm(v.lang).startsWith('en'))
+      || null;
+}
+function speak(text, lang = tts.lang){
   if (!('speechSynthesis' in window)) return;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = lang;
-  u.rate = 0.88;
-  const v = speechSynthesis.getVoices().find(v => v.lang && v.lang.replace('_','-').startsWith(lang))
-         || speechSynthesis.getVoices().find(v => v.lang && v.lang.startsWith('en'));
+  u.rate = tts.rate;
+  const v = pickVoice(lang);
   if (v) u.voice = v;
   speechSynthesis.speak(u);
 }
-if ('speechSynthesis' in window) speechSynthesis.getVoices();
+if ('speechSynthesis' in window){
+  speechSynthesis.getVoices();
+  speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+}
+window.setTTS = setTTS;
 
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-say]');
@@ -536,12 +562,13 @@ Promise.all([
   fetch('words.json').then(r => r.json()),
   fetch('grammar.json').then(r => r.json()).catch(() => []),
   fetch('links.json').then(r => r.json()).catch(() => []),
-  fetch('a2.json').then(r => r.json()).catch(() => null)
-]).then(([w, g, l, a]) => {
+  fetch('a2.json').then(r => r.json()).catch(() => null),
+  fetch('course.json').then(r => r.json()).catch(() => null)
+]).then(([w, g, l, a, c]) => {
   words = w.sort((a, b) => a.w.localeCompare(b.w));
-  grammar = g; links = l; a2pack = a;
+  grammar = g; links = l; a2pack = a; coursepack = c;
   buildRail(); renderDict(); renderRules(); renderMore();
-  if (window.initA2) initA2(a2pack);
+  if (window.initA2) initA2(a2pack, coursepack);
 }).catch(() => {
   $('#list').innerHTML = '<p class="blank"><b>Словарь не загрузился</b>' +
     'Файл words.json должен лежать рядом с index.html, а сайт — открываться по http или https.</p>';
