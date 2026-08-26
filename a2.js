@@ -3,7 +3,7 @@
    правила в деле, письмо и видео. Данные приходят из a2.json/course.json. */
 let A2 = null, COURSE = null;
 const A2WKEY = 'dict-a2-writing-v1';
-const CKEY = 'dict-course-v1';
+const CKEY = 'dict-course-v2';
 const A2W = {
   data: {},
   load(){ try { this.data = JSON.parse(localStorage.getItem(A2WKEY) || '{}'); } catch(e){ this.data = {}; } },
@@ -86,6 +86,7 @@ function a2CourseList(){
       <div class="prompt-label">Маршрут · оригинальные материалы</div>
       <p class="prompt" style="font-size:24px">Elementary A1 → A2</p>
       <p class="def" style="margin-top:8px">${esc(COURSE.note)}</p>
+      <p class="def" style="margin-top:8px">${esc(COURSE.format)}</p>
       <p class="stat" style="margin-top:10px">Пройдено: ${done} / ${COURSE.lessons.length}</p>
       <div class="btnrow">
         <button class="btn ghost" data-a2="ttsvoice" data-v="en-US">Голос US</button>
@@ -98,11 +99,11 @@ function a2CourseList(){
       const st = CP.data[l.id] || {};
       return `
       <div class="card">
-        <div class="prompt-label">Урок ${l.id} · ${esc(l.cefr)} ${st.done ? '· пройден' : ''}</div>
+        <div class="prompt-label">Урок ${l.id} · ${esc(l.minutes)} ${st.done ? '· пройден' : ''}</div>
         <p class="prompt" style="font-size:23px">${esc(l.title)}</p>
         <p class="def" style="margin-top:8px">${esc(l.goal)}</p>
-        <p class="why" style="margin-top:6px;color:var(--ink-soft)">${esc(l.grammar.join(' · '))} · ${esc(l.vocabTheme)}</p>
-        <div class="btnrow"><button class="btn" data-a2="lesson" data-i="${i}">Открыть урок</button></div>
+        <p class="why" style="margin-top:6px;color:var(--ink-soft)">${l.words.length} слов · ${l.quiz.length} заданий · ${esc(l.grammar.join(' · '))}</p>
+        <div class="btnrow"><button class="btn" data-a2="lesson" data-i="${i}">Начать урок</button></div>
       </div>`;
     }).join('')}`;
 }
@@ -114,49 +115,87 @@ function a2LessonState(id){
 function a2CourseLesson(i){
   const l = COURSE.lessons[i];
   const st = a2LessonState(l.id);
-  const right = l.tasks.reduce((n, t, k) => n + (st.ans[k] === t.a ? 1 : 0), 0);
+  const quiz = l.quiz || [];
+  const right = quiz.reduce((n, t, k) => n + (st.ans[k] === t.a ? 1 : 0), 0);
   const answered = Object.keys(st.ans).length;
+  const pass = Math.ceil(quiz.length * 0.7);
+  const cats = [...new Set(quiz.map(q => q.cat))];
   return `
     <div class="card">
-      <div class="prompt-label">Урок ${l.id} · Elementary route</div>
+      <div class="prompt-label">Урок ${l.id} · ${esc(l.minutes)} · Elementary route</div>
       <p class="prompt" style="font-size:25px">${esc(l.title)}</p>
       <p class="def" style="margin-top:8px">${esc(l.goal)}</p>
+      <p class="stat" style="margin-top:8px">Прогресс заданий: ${answered}/${quiz.length} · верно ${right}</p>
       <div class="btnrow">
         <button class="btn ghost" data-a2="back">К урокам</button>
         ${i > 0 ? `<button class="btn ghost" data-a2="lesson" data-i="${i - 1}">← Назад</button>` : ''}
         ${i < COURSE.lessons.length - 1 ? `<button class="btn ghost" data-a2="lesson" data-i="${i + 1}">Дальше →</button>` : ''}
       </div>
     </div>
+
     <div class="card">
-      <div class="prompt-label">Правило своими словами</div>
-      <p class="def">${esc(l.rule)}</p>
-      <div class="cat" style="margin-top:12px">Слова урока</div>
+      <div class="prompt-label">1 · Разогрев — 3 минуты</div>
+      ${l.warmup.map(x => `<div class="rule-ex"><div class="en">${esc(x)}</div></div>`).join('')}
+      <p class="def" style="margin-top:10px;color:var(--ink-soft)">Отвечайте вслух, быстро и без идеальности. Цель — включить английский.</p>
+    </div>
+
+    <div class="card">
+      <div class="prompt-label">2 · Слова урока — 7 минут</div>
       ${l.words.map(w => `<div class="rule-ex"><div class="en">${esc(w.w)} — ${esc(w.tr)}</div><button class="speak" data-say="${esc(w.w)}">Произнести</button></div>`).join('')}
+      <p class="def" style="margin-top:10px;color:var(--ink-soft)">Схема: слушайте → повторяйте → закройте перевод → скажите сами.</p>
     </div>
+
     <div class="card">
-      <div class="prompt-label">Короткий текст</div>
-      <p class="def" style="line-height:1.65">${esc(l.text)}</p>
-      <button class="speak" data-say="${esc(l.text)}">Озвучить текст</button>
+      <div class="prompt-label">3 · Правило — 5 минут</div>
+      <p class="def">${esc(l.rule)}</p>
+      <div class="cat" style="margin-top:12px">Примеры</div>
+      ${l.examples.map(x => `<div class="rule-ex"><div class="en">${esc(x)}</div><button class="speak" data-say="${esc(x)}">Озвучить</button></div>`).join('')}
     </div>
+
     <div class="card">
-      <div class="prompt-label">Задания · ${right} / ${l.tasks.length}</div>
-      ${l.tasks.map((t, k) => {
-        const chosen = st.ans[k];
-        return `<div class="a2q">
-          <p class="def" style="font-weight:700">${k + 1}. ${esc(t.q)}</p>
-          <div class="a2opts">${t.options.map((o, v) => {
-            const cls = chosen === undefined ? '' : (v === t.a ? ' ok' : v === chosen ? ' no' : '');
-            return `<button class="a2opt${cls}" data-a2="lessontask" data-i="${i}" data-q="${k}" data-v="${v}">${esc(o)}</button>`;
-          }).join('')}</div>
-          ${chosen === undefined ? '' : `<div class="verdict ${chosen === t.a ? 'ok' : 'no'}"><b>${chosen === t.a ? 'Верно' : 'Пока нет'}</b><span class="ex">${esc(t.why)}</span></div>`}
-        </div>`;
-      }).join('')}
-      ${answered === l.tasks.length ? `<div class="verdict ${right >= l.tasks.length - 1 ? 'ok' : 'no'}"><b>${right >= l.tasks.length - 1 ? 'Урок засчитан' : 'Есть ошибки'}</b><span class="right">Понято ${right} из ${l.tasks.length}</span></div>` : ''}
+      <div class="prompt-label">4 · Чтение — 6 минут</div>
+      <p class="def" style="font-weight:700">${esc(l.reading.title)}</p>
+      <p class="def" style="line-height:1.65;margin-top:8px">${esc(l.reading.text)}</p>
+      <button class="speak" data-say="${esc(l.reading.text)}">Озвучить текст</button>
     </div>
+
     <div class="card">
-      <div class="prompt-label">Письмо по уроку</div>
-      <p class="def">${esc(l.write)}</p>
-      <textarea class="a2write" data-course-write="${l.id}" rows="6" placeholder="Ваш черновик сохраняется в браузере.">${esc(st.write || '')}</textarea>
+      <div class="prompt-label">5 · Аудирование — 5 минут</div>
+      <p class="def">Сначала слушайте без текста, потом откройте расшифровку и проверьте себя.</p>
+      <button class="speak" data-say="${esc(l.listening.script)}">Слушать</button>
+      <details class="rule" style="margin-top:12px"><summary><h3>Показать текст аудио</h3></summary><div class="rule-body"><p>${esc(l.listening.script)}</p></div></details>
+    </div>
+
+    <div class="card">
+      <div class="prompt-label">6 · Практика и финальный разбор — ${quiz.length} заданий</div>
+      ${cats.map(cat => `
+        <div class="cat">${esc(cat)}</div>
+        ${quiz.map((t, k) => ({ t, k })).filter(x => x.t.cat === cat).map(({ t, k }) => {
+          const chosen = st.ans[k];
+          return `<div class="a2q">
+            <p class="def" style="font-weight:700">${k + 1}. ${esc(t.q)}</p>
+            <div class="a2opts">${t.options.map((o, v) => {
+              const cls = chosen === undefined ? '' : (v === t.a ? ' ok' : v === chosen ? ' no' : '');
+              return `<button class="a2opt${cls}" data-a2="lessontask" data-i="${i}" data-q="${k}" data-v="${v}">${esc(o)}</button>`;
+            }).join('')}</div>
+            ${chosen === undefined ? '' : `<div class="verdict ${chosen === t.a ? 'ok' : 'no'}"><b>${chosen === t.a ? 'Верно' : 'Пока нет'}</b><span class="ex">${esc(t.why)}</span></div>`}
+          </div>`;
+        }).join('')}`).join('')}
+      ${answered === quiz.length ? `<div class="verdict ${right >= pass ? 'ok' : 'no'}"><b>${right >= pass ? 'Порог пройден' : 'Пока рано закрывать урок'}</b><span class="right">Нужно ${pass}+ верных, у вас ${right}</span></div>` : ''}
+    </div>
+
+    <div class="card">
+      <div class="prompt-label">7 · Говорение — 4 минуты</div>
+      ${l.speaking.map(x => `<div class="rule-ex"><div class="en">${esc(x)}</div></div>`).join('')}
+      <p class="def" style="margin-top:10px;color:var(--ink-soft)">Засеките минуту и говорите без остановки. Потом скажите ещё раз лучше.</p>
+    </div>
+
+    <div class="card">
+      <div class="prompt-label">8 · Письмо — 6 минут</div>
+      <p class="def">${esc(l.write.prompt)}</p>
+      <div class="bank" style="margin-top:12px">${l.write.phrases.map(ph => `<button class="chip" data-a2="coursephrase" data-i="${i}" data-p="${esc(ph)}">${esc(ph)}</button>`).join('')}</div>
+      <textarea class="a2write" data-course-write="${l.id}" rows="8" placeholder="Ваш черновик сохраняется в браузере.">${esc(st.write || '')}</textarea>
+      ${l.write.checklist.map(c => `<div class="rule-ex"><div class="why">☐ ${esc(c)}</div></div>`).join('')}
       <div class="btnrow">
         <button class="btn" data-a2="lessondone" data-i="${i}">${st.done ? 'Снять отметку' : 'Отметить пройденным'}</button>
         <a class="btn ghost" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=${encodeURIComponent(l.video)}">Видео по теме</a>
@@ -419,6 +458,12 @@ function a2Click(e){
   if (act === 'drillnext'){ a2s.drill.i++; a2s.drill.locked = false; a2s.drill.picked = null; renderA2Stage(); return; }
   if (act === 'drillrestart'){ a2s.drill = { i: 0, right: 0, locked: false, picked: null }; renderA2Stage(); return; }
   if (act === 'writing'){ a2s.writing = +b.dataset.i; renderA2Stage(); return; }
+  if (act === 'coursephrase'){
+    const i = +b.dataset.i, ph = b.dataset.p;
+    const ta = document.querySelector('[data-course-write="' + COURSE.lessons[i].id + '"]');
+    if (ta){ ta.value = (ta.value ? ta.value.replace(/\s+$/, '') + ' ' : '') + ph + ' '; ta.dispatchEvent(new Event('input', { bubbles: true })); ta.focus(); }
+    return;
+  }
   if (act === 'phrase'){
     const i = +b.dataset.i, p = +b.dataset.p;
     const ta = document.querySelector('[data-writing-text="' + i + '"]');
