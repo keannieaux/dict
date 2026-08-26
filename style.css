@@ -287,3 +287,8 @@ mark{background:linear-gradient(var(--mark),var(--mark)) no-repeat center/100% 6
 .chip2.on{background:var(--mark);border-color:var(--mark);color:#191C2B}
 .chip2.on b{color:#191C2B}
 .btn:disabled{opacity:.4;cursor:default}
+
+.build{
+  font-family:var(--cond);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-soft);text-align:center;margin:26px 0 4px;opacity:.7;
+}

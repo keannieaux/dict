@@ -1,3 +1,5 @@
+const BUILD = 'v11';   /* номер сборки — виден внизу вкладки «Ещё» */
+
 /* ================= вспомогательное ================= */
 const $  = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -599,7 +601,8 @@ function renderMore(){
       <a class="link" href="${esc(it.u)}" target="_blank" rel="noopener">
         <div class="n">${esc(it.n)}</div>
         <div class="d">${esc(it.d)}</div>
-      </a>`).join('')}`).join('');
+      </a>`).join('')}`).join('')
+    + `<p class="build">Сборка ${BUILD} · ${words.length} слов</p>`;
 }
 
 /* ================= переключение разделов ================= */
