@@ -252,3 +252,14 @@ mark{background:linear-gradient(var(--mark),var(--mark)) no-repeat center/100% 6
 .qz-why{margin-top:9px;font-size:14.5px;color:var(--ink-soft)}
 .qz-why b{display:block;font-family:var(--cond);letter-spacing:.1em;
   text-transform:uppercase;font-size:11px;color:var(--ink);margin-bottom:3px}
+
+/* переключатель книг */
+.switch{display:flex;gap:7px;margin-bottom:16px}
+.sw-b{
+  flex:1;background:var(--slip);border:1px solid var(--rule);border-radius:9px;
+  padding:9px 8px;cursor:pointer;color:var(--ink-soft);
+  font-family:var(--cond);font-size:13px;letter-spacing:.05em;text-transform:uppercase;
+  display:flex;flex-direction:column;align-items:center;gap:2px;line-height:1.15;
+}
+.sw-b span{font-size:11px;letter-spacing:.04em;opacity:.8;text-transform:none}
+.sw-b.on{background:var(--ink);border-color:var(--ink);color:var(--paper)}

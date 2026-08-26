@@ -1,17 +1,17 @@
-/* ============ КУРС по программе учебника ============ */
-let course = null, openUnit = null;
+/* ============ КУРС: две книги, юниты по программе ============ */
+let course = null, curBook = 1, openUnit = null;   // curBook: 0 — Elementary, 1 — Pre-Intermediate
 
-/* Слова юнитов вливаются в общий словарь: их подхватывают поиск,
-   тест и интервальное повторение. */
+/* Слова всех юнитов вливаются в общий словарь: их подхватывают
+   поиск, «Тест» и интервальное повторение. */
 function mergeCourseWords(){
   const have = new Set(words.map(w => w.w.toLowerCase()));
-  course.units.forEach(u => {
+  course.courses.forEach(bk => bk.units.forEach(u => {
     u.words.forEach(w => {
       if (have.has(w.w.toLowerCase())) return;
       have.add(w.w.toLowerCase());
-      words.push(Object.assign({ unit: u.n }, w));
+      words.push(Object.assign({ book: bk.id, unit: u.n }, w));
     });
-  });
+  }));
   words.sort((a, b) => a.w.localeCompare(b.w));
   buildRail();
   renderDict();
@@ -25,39 +25,54 @@ function unitStats(u){
 function renderCourse(){
   const body = $('#courseBody');
   if (!course){ body.innerHTML = '<p class="blank">Курс не загрузился.</p>'; return; }
+  const bk = course.courses[curBook];
 
-  /* ---- список юнитов ---- */
+  /* ---------- список юнитов ---------- */
   if (openUnit === null){
     $('#courseTitle').textContent = 'Курс';
-    $('#courseSub').textContent = course.book + ' · ' + course.level;
-    $('#courseStat').textContent = course.units.length + ' ' +
-      plural(course.units.length, 'юнит', 'юнита', 'юнитов');
+    $('#courseSub').textContent = bk.book + ' · ' + bk.level;
+    $('#courseStat').textContent = bk.units.length + ' ' +
+      plural(bk.units.length, 'юнит', 'юнита', 'юнитов');
 
-    body.innerHTML = course.units.map(u => {
-      const s = unitStats(u);
-      return `
-      <button class="unit" data-unit="${u.n}">
-        <div class="unit-n">${u.n}</div>
-        <div class="unit-main">
-          <div class="unit-t">${esc(u.title)}</div>
-          <div class="unit-g">${u.map.map(m => esc(m.g)).join(' · ')}</div>
-          <div class="unit-bar"><i style="width:${Math.round(s.done / s.total * 100)}%"></i></div>
-        </div>
-        <div class="unit-c">${s.done}/${s.total}</div>
-      </button>`;
-    }).join('') + `
-      <p class="fineprint">${esc(course.note)}</p>`;
+    body.innerHTML = `
+      <div class="switch">
+        ${course.courses.map((c, i) => `
+          <button class="sw-b ${i === curBook ? 'on' : ''}" data-bk="${i}">
+            ${i === 0 ? 'Elementary' : 'Pre-Intermediate'}
+            <span>${esc(c.level)}</span>
+          </button>`).join('')}
+      </div>` +
+      bk.units.map(u => {
+        const s = unitStats(u);
+        return `
+        <button class="unit" data-unit="${u.n}">
+          <div class="unit-n">${u.n}</div>
+          <div class="unit-main">
+            <div class="unit-t">${esc(u.title)}</div>
+            <div class="unit-g">${u.map.map(m => esc(m.g)).join(' · ')}</div>
+            <div class="unit-bar"><i style="width:${Math.round(s.done / s.total * 100)}%"></i></div>
+          </div>
+          <div class="unit-c">${s.done}/${s.total}</div>
+        </button>`;
+      }).join('') +
+      `<p class="fineprint">${esc(course.note)}</p>`;
 
+    body.querySelectorAll('[data-bk]').forEach(b =>
+      b.addEventListener('click', () => { curBook = +b.dataset.bk; renderCourse(); }));
     body.querySelectorAll('[data-unit]').forEach(b =>
-      b.addEventListener('click', () => { openUnit = +b.dataset.unit; renderCourse(); window.scrollTo({top:0}); }));
+      b.addEventListener('click', () => {
+        openUnit = +b.dataset.unit; renderCourse(); window.scrollTo({top: 0});
+      }));
     return;
   }
 
-  /* ---- один юнит ---- */
-  const u = course.units.find(x => x.n === openUnit);
+  /* ---------- один юнит ---------- */
+  const u = bk.units.find(x => x.n === openUnit);
+  if (!u){ openUnit = null; renderCourse(); return; }
+
   $('#courseTitle').textContent = 'Юнит ' + u.n + '. ' + u.title;
   $('#courseSub').textContent = u.goal;
-  $('#courseStat').textContent = '';
+  $('#courseStat').textContent = curBook === 0 ? 'Elementary' : 'Pre-Int';
 
   body.innerHTML = `
     <button class="btn ghost back" id="backToUnits">← Все юниты</button>
@@ -135,7 +150,9 @@ function renderCourse(){
       </div>
     </details>`;
 
-  $('#backToUnits').addEventListener('click', () => { openUnit = null; renderCourse(); window.scrollTo({top:0}); });
+  $('#backToUnits').addEventListener('click', () => {
+    openUnit = null; renderCourse(); window.scrollTo({top: 0});
+  });
 
   drawQuiz(body.querySelector('[data-quiz="text"]'),
            u.text.questions.map(q => ({ q: q.q, options: q.options, a: q.a, why: q.why })));
