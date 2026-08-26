@@ -842,6 +842,843 @@
             "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/present-simple",
             "d": "Объяснение с примерами, правила окончаний и два интерактивных теста на закрепление."
           }
+        },
+        {
+          "n": 4,
+          "title": "Семья и день",
+          "goal": "Рассказывать о родственниках, о своём распорядке и о том, как часто вы что-то делаете.",
+          "map": [
+            {
+              "id": "4A",
+              "g": "притяжательный 's, Whose…?",
+              "v": "семья"
+            },
+            {
+              "id": "4B",
+              "g": "предлоги времени и места: at, in, on, to",
+              "v": "распорядок дня"
+            },
+            {
+              "id": "4C",
+              "g": "место наречий, выражения частоты",
+              "v": "месяцы, наречия частоты"
+            }
+          ],
+          "words": [
+            {
+              "w": "nephew",
+              "lvl": "A2",
+              "ipa": "/ˈnef.juː/",
+              "pos": "сущ.",
+              "tr": "племянник",
+              "def": "Сын брата или сестры.",
+              "ex": "My nephew is six years old."
+            },
+            {
+              "w": "niece",
+              "lvl": "A2",
+              "ipa": "/niːs/",
+              "pos": "сущ.",
+              "tr": "племянница",
+              "def": "Дочь брата или сестры.",
+              "ex": "Her niece lives in Prague."
+            },
+            {
+              "w": "grandparents",
+              "lvl": "A1",
+              "ipa": "/ˈɡræn.peə.rənts/",
+              "pos": "сущ.",
+              "tr": "бабушка и дедушка",
+              "def": "Родители ваших родителей.",
+              "ex": "We visit our grandparents on Sundays."
+            },
+            {
+              "w": "relative",
+              "lvl": "A2",
+              "ipa": "/ˈrel.ə.tɪv/",
+              "pos": "сущ.",
+              "tr": "родственник",
+              "def": "Любой член семьи, кроме самых близких.",
+              "ex": "All our relatives came to dinner."
+            },
+            {
+              "w": "wake up",
+              "lvl": "A1",
+              "ipa": "/weɪk ʌp/",
+              "pos": "фраз. глаг.",
+              "tr": "просыпаться",
+              "def": "Перестать спать.",
+              "ex": "I wake up at half past six."
+            },
+            {
+              "w": "get dressed",
+              "lvl": "A1",
+              "ipa": "/ɡet drest/",
+              "pos": "фраза",
+              "tr": "одеваться",
+              "def": "Надеть на себя одежду.",
+              "ex": "He gets dressed before breakfast."
+            },
+            {
+              "w": "have a shower",
+              "lvl": "A1",
+              "ipa": "/hæv ə ˈʃaʊ.ər/",
+              "pos": "фраза",
+              "tr": "принимать душ",
+              "def": "Мыться под душем. С shower идёт have, не take, в британском варианте.",
+              "ex": "She has a shower every morning."
+            },
+            {
+              "w": "get home",
+              "lvl": "A1",
+              "ipa": "/ɡet həʊm/",
+              "pos": "фраза",
+              "tr": "добираться домой",
+              "def": "Приходить или приезжать домой. Перед home предлог не ставится.",
+              "ex": "They get home after seven."
+            },
+            {
+              "w": "hardly ever",
+              "lvl": "A2",
+              "ipa": "/ˈhɑːd.li ˈev.ər/",
+              "pos": "нареч.",
+              "tr": "почти никогда",
+              "def": "Очень редко, почти не бывает.",
+              "ex": "We hardly ever eat out."
+            },
+            {
+              "w": "twice a week",
+              "lvl": "A1",
+              "ipa": "/twaɪs ə wiːk/",
+              "pos": "фраза",
+              "tr": "дважды в неделю",
+              "def": "Два раза за неделю. Один раз — once, три — three times.",
+              "ex": "I go swimming twice a week."
+            }
+          ],
+          "rules": [
+            {
+              "t": "Притяжательный 's и Whose…?",
+              "body": "Принадлежность в английском чаще всего показывает 's, а не of: не the car of my brother, а my brother's car. Если существительное во множественном числе уже кончается на -s, ставится только апостроф: my parents' house. Вопрос о владельце начинается с Whose.",
+              "ex": [
+                [
+                  "This is my sister's phone.",
+                  "Один владелец: 's"
+                ],
+                [
+                  "My parents' flat is small.",
+                  "Множественное на -s: только апостроф"
+                ],
+                [
+                  "Whose bag is this?",
+                  "Вопрос о владельце"
+                ],
+                [
+                  "The children's room is upstairs.",
+                  "children не кончается на -s, поэтому 's"
+                ]
+              ]
+            },
+            {
+              "t": "at, in, on и место наречий частоты",
+              "body": "Во времени: at для часов, on для дней и дат, in для месяцев, годов и частей суток. Перед home предлога нет вообще: go home, get home. Наречия частоты — always, usually, often, sometimes, hardly ever, never — стоят перед смысловым глаголом, но после формы be. Выражения вроде twice a week уходят в конец предложения.",
+              "ex": [
+                [
+                  "I start at nine.",
+                  "Часы — at"
+                ],
+                [
+                  "We meet on Friday.",
+                  "День — on"
+                ],
+                [
+                  "She always gets up early.",
+                  "Перед смысловым глаголом"
+                ],
+                [
+                  "He is never late.",
+                  "После формы be"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "My Sister's Week",
+            "body": "My sister Vera is a teacher and her week is always the same. She wakes up at six, has a shower and gets dressed in ten minutes. She never has breakfast at home. She starts work at eight and gets home after five. On Tuesdays and Thursdays she goes to the gym, so twice a week she gets home much later. She hardly ever watches television. In the evening she reads or calls our grandparents. At the weekend everything changes. Her husband's family comes for lunch, and their small flat is suddenly full of relatives, children and noise.",
+            "glossary": [
+              [
+                "the same",
+                "одинаковая"
+              ],
+              [
+                "gym",
+                "спортзал"
+              ],
+              [
+                "much later",
+                "намного позже"
+              ],
+              [
+                "television",
+                "телевизор"
+              ],
+              [
+                "changes",
+                "меняется"
+              ],
+              [
+                "noise",
+                "шум"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "How often does Vera go to the gym?",
+                "options": [
+                  "Every day",
+                  "Twice a week",
+                  "Hardly ever"
+                ],
+                "a": 1,
+                "why": "По вторникам и четвергам, то есть twice a week — выражение частоты в конце предложения."
+              },
+              {
+                "q": "Why is it 'her husband's family'?",
+                "options": [
+                  "The husband is the owner",
+                  "There are many husbands",
+                  "It is a mistake"
+                ],
+                "a": 0,
+                "why": "'s показывает владельца: семья её мужа. Один владелец — апостроф плюс s."
+              },
+              {
+                "q": "Where does 'never' stand in 'She never has breakfast'?",
+                "options": [
+                  "After the verb",
+                  "Before the main verb",
+                  "At the end"
+                ],
+                "a": 1,
+                "why": "Наречия частоты стоят перед смысловым глаголом: she never has."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "This is my ___ car.",
+              "options": [
+                "brothers",
+                "brother's",
+                "brothers'"
+              ],
+              "a": 1,
+              "why": "Один брат-владелец: апостроф перед s."
+            },
+            {
+              "prompt": "My ___ house is near the park.",
+              "options": [
+                "parents'",
+                "parent's",
+                "parents"
+              ],
+              "a": 0,
+              "why": "Родителей двое, слово уже на -s, поэтому только апостроф."
+            },
+            {
+              "prompt": "The train leaves ___ half past four.",
+              "options": [
+                "in",
+                "on",
+                "at"
+              ],
+              "a": 2,
+              "why": "Точное время всегда с at."
+            },
+            {
+              "prompt": "I usually get ___ at seven.",
+              "options": [
+                "to home",
+                "home",
+                "at home"
+              ],
+              "a": 1,
+              "why": "Перед home предлог не ставится: get home."
+            },
+            {
+              "prompt": "She ___ late for work.",
+              "options": [
+                "is never",
+                "never is",
+                "never"
+              ],
+              "a": 0,
+              "why": "После формы be наречие частоты идёт следом: is never."
+            }
+          ],
+          "video": {
+            "n": "Грамматика A1–A2: предлоги, притяжательные, вопросы",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
+            "d": "Список коротких уроков с тестами: предлоги времени и места, притяжательный 's, порядок слов."
+          }
+        },
+        {
+          "n": 5,
+          "title": "Что я умею и что происходит",
+          "goal": "Говорить об умениях, описывать происходящее прямо сейчас и рассказывать о погоде.",
+          "map": [
+            {
+              "id": "5A",
+              "g": "can и can't",
+              "v": "глагольные фразы"
+            },
+            {
+              "id": "5B",
+              "g": "Present Continuous: be + глагол с -ing",
+              "v": "звуки и шум"
+            },
+            {
+              "id": "5C",
+              "g": "Present Simple или Present Continuous",
+              "v": "погода и времена года"
+            }
+          ],
+          "words": [
+            {
+              "w": "cloudy",
+              "lvl": "A1",
+              "ipa": "/ˈklaʊ.di/",
+              "pos": "прил.",
+              "tr": "облачный",
+              "def": "Небо закрыто облаками.",
+              "ex": "It is cloudy and cold today."
+            },
+            {
+              "w": "windy",
+              "lvl": "A1",
+              "ipa": "/ˈwɪn.di/",
+              "pos": "прил.",
+              "tr": "ветреный",
+              "def": "Дует сильный ветер.",
+              "ex": "It was very windy last night."
+            },
+            {
+              "w": "foggy",
+              "lvl": "A2",
+              "ipa": "/ˈfɒɡ.i/",
+              "pos": "прил.",
+              "tr": "туманный",
+              "def": "Воздух белый от тумана, плохо видно.",
+              "ex": "The road is foggy this morning."
+            },
+            {
+              "w": "storm",
+              "lvl": "A2",
+              "ipa": "/stɔːm/",
+              "pos": "сущ.",
+              "tr": "буря, гроза",
+              "def": "Плохая погода с сильным ветром и дождём.",
+              "ex": "A storm is coming this evening."
+            },
+            {
+              "w": "season",
+              "lvl": "A1",
+              "ipa": "/ˈsiː.zən/",
+              "pos": "сущ.",
+              "tr": "время года",
+              "def": "Одна из четырёх частей года.",
+              "ex": "Autumn is my favourite season."
+            },
+            {
+              "w": "noisy",
+              "lvl": "A1",
+              "ipa": "/ˈnɔɪ.zi/",
+              "pos": "прил.",
+              "tr": "шумный",
+              "def": "Издаёт много звука.",
+              "ex": "The street is noisy at night."
+            },
+            {
+              "w": "whisper",
+              "lvl": "A2",
+              "ipa": "/ˈwɪs.pər/",
+              "pos": "глаг.",
+              "tr": "шептать",
+              "def": "Говорить очень тихо, без голоса.",
+              "ex": "Why are you whispering to me?"
+            },
+            {
+              "w": "shout",
+              "lvl": "A1",
+              "ipa": "/ʃaʊt/",
+              "pos": "глаг.",
+              "tr": "кричать",
+              "def": "Говорить очень громко.",
+              "ex": "Please do not shout at me."
+            },
+            {
+              "w": "drive",
+              "lvl": "A1",
+              "ipa": "/draɪv/",
+              "pos": "глаг.",
+              "tr": "водить машину",
+              "def": "Управлять автомобилем.",
+              "ex": "My mother cannot drive a car."
+            },
+            {
+              "w": "ride",
+              "lvl": "A1",
+              "ipa": "/raɪd/",
+              "pos": "глаг.",
+              "tr": "ездить верхом, кататься",
+              "def": "Ездить на велосипеде, мотоцикле или лошади.",
+              "ex": "He can ride a bike well."
+            }
+          ],
+          "rules": [
+            {
+              "t": "can и can't",
+              "body": "can выражает умение или возможность и не меняется по лицам: он одинаков для I, he, she, we. После can глагол всегда стоит в начальной форме, без to и без -s. Отрицание — can't, вопрос — простой перестановкой, без всякого do.",
+              "ex": [
+                [
+                  "I can swim.",
+                  "Умение, глагол без to"
+                ],
+                [
+                  "She can drive.",
+                  "Никакого -s ни у can, ни у drive"
+                ],
+                [
+                  "He can't come today.",
+                  "Отрицание — can't"
+                ],
+                [
+                  "Can you help me?",
+                  "Вопрос — перестановкой, без do"
+                ]
+              ]
+            },
+            {
+              "t": "Present Continuous и его отличие от Simple",
+              "body": "Present Continuous строится из формы be плюс глагол с -ing и описывает то, что происходит прямо сейчас. Present Simple описывает то, что бывает вообще. При добавлении -ing немая -e на конце уходит: write становится writing, а короткая согласная удваивается: sit становится sitting.",
+              "ex": [
+                [
+                  "It usually rains in November.",
+                  "Вообще, обычно"
+                ],
+                [
+                  "Look, it is raining!",
+                  "Прямо сейчас"
+                ],
+                [
+                  "She is writing a letter.",
+                  "Немая -e ушла"
+                ],
+                [
+                  "They are sitting outside.",
+                  "Согласная удвоилась"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "A Grey Sunday",
+            "body": "It is Sunday morning and I am looking out of the window. It is very cloudy and windy, and the trees in the garden are moving. My neighbour is running to his car with a newspaper over his head. He cannot find his keys. Now he is shouting something, but I cannot hear him. In our house everything is quiet. My daughter is whispering to the cat in the kitchen. She thinks the cat can understand her. Autumn is not my favourite season, but I like these grey Sundays. Nobody is going anywhere and nobody is in a hurry.",
+            "glossary": [
+              [
+                "window",
+                "окно"
+              ],
+              [
+                "garden",
+                "сад"
+              ],
+              [
+                "over his head",
+                "над головой"
+              ],
+              [
+                "hear",
+                "слышать"
+              ],
+              [
+                "thinks",
+                "думает"
+              ],
+              [
+                "in a hurry",
+                "спешит"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "What is the neighbour doing?",
+                "options": [
+                  "Reading a newspaper",
+                  "Running to his car",
+                  "Driving away"
+                ],
+                "a": 1,
+                "why": "Прямо сейчас — Present Continuous: he is running to his car."
+              },
+              {
+                "q": "Why 'It is raining' and not 'It rains' in this kind of sentence?",
+                "options": [
+                  "Because it is happening now",
+                  "Because it is a habit",
+                  "Both are the same"
+                ],
+                "a": 0,
+                "why": "Continuous описывает момент речи, Simple — то, что бывает вообще."
+              },
+              {
+                "q": "Can the narrator hear the neighbour?",
+                "options": [
+                  "Yes, clearly",
+                  "No, he cannot",
+                  "He does not say"
+                ],
+                "a": 1,
+                "why": "Прямо сказано: I cannot hear him."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "She ___ play the piano very well.",
+              "options": [
+                "cans",
+                "can",
+                "can to"
+              ],
+              "a": 1,
+              "why": "can не меняется по лицам и не получает -s."
+            },
+            {
+              "prompt": "He can ___ a bike.",
+              "options": [
+                "rides",
+                "to ride",
+                "ride"
+              ],
+              "a": 2,
+              "why": "После can глагол в начальной форме, без to."
+            },
+            {
+              "prompt": "Listen! The baby ___.",
+              "options": [
+                "cries",
+                "is crying",
+                "cry"
+              ],
+              "a": 1,
+              "why": "Происходит прямо сейчас — Present Continuous."
+            },
+            {
+              "prompt": "It usually ___ a lot in autumn here.",
+              "options": [
+                "is raining",
+                "rains",
+                "rain"
+              ],
+              "a": 1,
+              "why": "usually указывает на привычное явление — Present Simple."
+            },
+            {
+              "prompt": "They are ___ in the garden.",
+              "options": [
+                "siting",
+                "sitting",
+                "siteing"
+              ],
+              "a": 1,
+              "why": "Короткая согласная перед -ing удваивается: sit — sitting."
+            }
+          ],
+          "video": {
+            "n": "Present Continuous — видеоурок British Council",
+            "u": "https://learnenglishteens.britishcouncil.org/grammar/a1-a2-grammar/present-continuous",
+            "d": "Ролик с диалогом, где время выделено в субтитрах, потом объяснение и упражнения."
+          }
+        },
+        {
+          "n": 6,
+          "title": "Вкусы и даты",
+          "goal": "Говорить, что вам нравится делать, называть даты и заменять имена местоимениями.",
+          "map": [
+            {
+              "id": "6A",
+              "g": "объектные местоимения: me, you, him",
+              "v": "слова для рассказа"
+            },
+            {
+              "id": "6B",
+              "g": "like + глагол с -ing",
+              "v": "даты, порядковые числительные"
+            },
+            {
+              "id": "6C",
+              "g": "повторение: be или do?",
+              "v": "музыка"
+            }
+          ],
+          "words": [
+            {
+              "w": "band",
+              "lvl": "A1",
+              "ipa": "/bænd/",
+              "pos": "сущ.",
+              "tr": "музыкальная группа",
+              "def": "Несколько музыкантов, играющих вместе.",
+              "ex": "My brother plays in a band."
+            },
+            {
+              "w": "singer",
+              "lvl": "A1",
+              "ipa": "/ˈsɪŋ.ər/",
+              "pos": "сущ.",
+              "tr": "певец, певица",
+              "def": "Тот, кто поёт.",
+              "ex": "She is a very good singer."
+            },
+            {
+              "w": "concert",
+              "lvl": "A1",
+              "ipa": "/ˈkɒn.sət/",
+              "pos": "сущ.",
+              "tr": "концерт",
+              "def": "Живое выступление музыкантов перед публикой.",
+              "ex": "The concert starts at eight."
+            },
+            {
+              "w": "lyrics",
+              "lvl": "A2",
+              "ipa": "/ˈlɪr.ɪks/",
+              "pos": "сущ.",
+              "tr": "текст песни",
+              "def": "Слова песни. Всегда во множественном числе.",
+              "ex": "I do not understand the lyrics."
+            },
+            {
+              "w": "tune",
+              "lvl": "A2",
+              "ipa": "/tjuːn/",
+              "pos": "сущ.",
+              "tr": "мелодия, мотив",
+              "def": "Последовательность нот, которую можно напеть.",
+              "ex": "That tune is in my head."
+            },
+            {
+              "w": "loud",
+              "lvl": "A1",
+              "ipa": "/laʊd/",
+              "pos": "прил.",
+              "tr": "громкий",
+              "def": "Издающий сильный звук.",
+              "ex": "The music was too loud."
+            },
+            {
+              "w": "date",
+              "lvl": "A1",
+              "ipa": "/deɪt/",
+              "pos": "сущ.",
+              "tr": "дата",
+              "def": "День, месяц и год какого-то события.",
+              "ex": "What is the date today?"
+            },
+            {
+              "w": "mind",
+              "lvl": "A2",
+              "ipa": "/maɪnd/",
+              "pos": "глаг.",
+              "tr": "возражать, быть против",
+              "def": "Испытывать неудобство от чего-то. После него идёт -ing.",
+              "ex": "Do you mind waiting a moment?"
+            },
+            {
+              "w": "can't stand",
+              "lvl": "A2",
+              "ipa": "/kɑːnt stænd/",
+              "pos": "фраза",
+              "tr": "терпеть не могу",
+              "def": "Очень сильно не нравится. Дальше идёт -ing.",
+              "ex": "I can't stand getting up early."
+            },
+            {
+              "w": "enjoy",
+              "lvl": "A1",
+              "ipa": "/ɪnˈdʒɔɪ/",
+              "pos": "глаг.",
+              "tr": "получать удовольствие",
+              "def": "Нравиться настолько, что делаешь с радостью. Дальше -ing.",
+              "ex": "They enjoy listening to jazz."
+            }
+          ],
+          "rules": [
+            {
+              "t": "Объектные местоимения",
+              "body": "У местоимений две формы. I, he, she, we, they стоят перед глаголом как подлежащее. После глагола или предлога ставится вторая форма: me, him, her, us, them. You и it выглядят одинаково в обеих ролях.",
+              "ex": [
+                [
+                  "She knows me well.",
+                  "После глагола — me, не I"
+                ],
+                [
+                  "I called him yesterday.",
+                  "После глагола — him"
+                ],
+                [
+                  "Come with us tonight.",
+                  "После предлога — us"
+                ],
+                [
+                  "They invited her and me.",
+                  "Обе формы объектные"
+                ]
+              ]
+            },
+            {
+              "t": "like, love, hate плюс -ing",
+              "body": "После like, love, hate, enjoy, don't mind и can't stand английский ставит глагол с -ing, а не с to. I like swimming, а не I like to swim, если речь о вкусах вообще. Даты произносятся с порядковыми числительными: the first of May или May the first.",
+              "ex": [
+                [
+                  "I like cooking at the weekend.",
+                  "Вкус вообще — форма с -ing"
+                ],
+                [
+                  "She hates waiting in queues.",
+                  "После hate идёт -ing"
+                ],
+                [
+                  "I don't mind working late.",
+                  "То же после don't mind"
+                ],
+                [
+                  "My birthday is on the third of June.",
+                  "Дата с порядковым числительным"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "The Band Next Door",
+            "body": "Four students live in the flat below us and they have a band. They practise on Tuesdays and Saturdays, and they are very loud. My husband can't stand hearing the same song forty times, but I quite like it. Their singer has a good voice and their tunes stay in my head all week. Last month they invited us to a concert. It was on the fourteenth of May, in a small bar near the station. We went and we enjoyed it very much. I do not understand their lyrics, because they sing in English very fast, but I do not mind. The music is enough for me.",
+            "glossary": [
+              [
+                "below",
+                "под, этажом ниже"
+              ],
+              [
+                "practise",
+                "репетируют"
+              ],
+              [
+                "voice",
+                "голос"
+              ],
+              [
+                "stay in my head",
+                "не выходят из головы"
+              ],
+              [
+                "invited",
+                "пригласили"
+              ],
+              [
+                "fast",
+                "быстро"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "How does the husband feel about the band?",
+                "options": [
+                  "He likes them",
+                  "He can't stand the repetition",
+                  "He goes to every concert"
+                ],
+                "a": 1,
+                "why": "can't stand hearing the same song forty times — терпеть не может повторов."
+              },
+              {
+                "q": "Why is it 'they invited us' and not 'they invited we'?",
+                "options": [
+                  "After a verb we use the object form",
+                  "It is a mistake",
+                  "Both are correct"
+                ],
+                "a": 0,
+                "why": "После глагола ставится объектная форма: us, а не we."
+              },
+              {
+                "q": "When was the concert?",
+                "options": [
+                  "On the fourth of May",
+                  "On the fourteenth of May",
+                  "In June"
+                ],
+                "a": 1,
+                "why": "Дата названа порядковым числительным: on the fourteenth of May."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "I saw ___ at the concert.",
+              "options": [
+                "they",
+                "them",
+                "their"
+              ],
+              "a": 1,
+              "why": "После глагола идёт объектная форма them."
+            },
+            {
+              "prompt": "Can you come with ___?",
+              "options": [
+                "we",
+                "us",
+                "our"
+              ],
+              "a": 1,
+              "why": "После предлога with — объектная форма us."
+            },
+            {
+              "prompt": "She loves ___ to old music.",
+              "options": [
+                "listen",
+                "listening",
+                "to listening"
+              ],
+              "a": 1,
+              "why": "После love ставится форма с -ing."
+            },
+            {
+              "prompt": "I can't stand ___ in queues.",
+              "options": [
+                "wait",
+                "waiting",
+                "to wait"
+              ],
+              "a": 1,
+              "why": "После can't stand идёт -ing."
+            },
+            {
+              "prompt": "___ you like jazz?",
+              "options": [
+                "Are",
+                "Do",
+                "Is"
+              ],
+              "a": 1,
+              "why": "like — обычный глагол, значит вспомогательный do, а не форма be."
+            }
+          ],
+          "video": {
+            "n": "Грамматика A1–A2: местоимения и глаголы с -ing",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
+            "d": "Уроки с тестами, в том числе про глаголы, после которых идёт -ing или инфинитив."
+          }
         }
       ]
     },
@@ -2098,6 +2935,313 @@
             "n": "Present Perfect: just, yet, still и already",
             "u": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect-just-yet-still-already",
             "d": "Разбор каждого слова с примерами и два теста: где стоит just, а где yet уходит в конец."
+          }
+        },
+        {
+          "n": 5,
+          "title": "Сравнения, город и здоровье",
+          "goal": "Сравнивать вещи и места, говорить, чего слишком много, а чего не хватает, и объяснять, что болит.",
+          "map": [
+            {
+              "id": "5A",
+              "g": "сравнительная степень прилагательных и наречий, as…as",
+              "v": "виды чисел"
+            },
+            {
+              "id": "5B",
+              "g": "превосходная степень, ever с Present Perfect",
+              "v": "описание города"
+            },
+            {
+              "id": "5C",
+              "g": "quantifiers, too, (not) enough",
+              "v": "здоровье и тело"
+            }
+          ],
+          "words": [
+            {
+              "w": "lively",
+              "lvl": "B1",
+              "ipa": "/ˈlaɪv.li/",
+              "pos": "прил.",
+              "tr": "оживлённый",
+              "def": "Полный людей, движения и энергии.",
+              "ex": "The old town is very lively."
+            },
+            {
+              "w": "polluted",
+              "lvl": "B1",
+              "ipa": "/pəˈluː.tɪd/",
+              "pos": "прил.",
+              "tr": "загрязнённый",
+              "def": "С грязным воздухом или водой.",
+              "ex": "The river here is badly polluted."
+            },
+            {
+              "w": "suburb",
+              "lvl": "B1",
+              "ipa": "/ˈsʌb.ɜːb/",
+              "pos": "сущ.",
+              "tr": "пригород",
+              "def": "Жилой район на краю города.",
+              "ex": "They live in a quiet suburb."
+            },
+            {
+              "w": "facilities",
+              "lvl": "B1",
+              "ipa": "/fəˈsɪl.ə.tiz/",
+              "pos": "сущ.",
+              "tr": "удобства, инфраструктура",
+              "def": "Всё, что построено для людей: спортзалы, школы, парковки.",
+              "ex": "The town has excellent sports facilities."
+            },
+            {
+              "w": "ache",
+              "lvl": "B1",
+              "ipa": "/eɪk/",
+              "pos": "сущ./глаг.",
+              "tr": "ноющая боль; болеть",
+              "def": "Длительная тупая боль. Буква ch читается как к.",
+              "ex": "My back aches after work."
+            },
+            {
+              "w": "sore throat",
+              "lvl": "A2",
+              "ipa": "/sɔː θrəʊt/",
+              "pos": "фраза",
+              "tr": "больное горло",
+              "def": "Горло болит, обычно при простуде.",
+              "ex": "I have a sore throat today."
+            },
+            {
+              "w": "cough",
+              "lvl": "A2",
+              "ipa": "/kɒf/",
+              "pos": "глаг./сущ.",
+              "tr": "кашлять; кашель",
+              "def": "Резко выталкивать воздух из горла. Читается как коф.",
+              "ex": "She has a bad cough."
+            },
+            {
+              "w": "fit",
+              "lvl": "A2",
+              "ipa": "/fɪt/",
+              "pos": "прил.",
+              "tr": "в хорошей форме",
+              "def": "Здоровый и сильный благодаря движению.",
+              "ex": "He is fitter than me now."
+            },
+            {
+              "w": "plenty of",
+              "lvl": "B1",
+              "ipa": "/ˈplen.ti ɒv/",
+              "pos": "фраза",
+              "tr": "достаточно, много",
+              "def": "Больше, чем нужно. Годится и для счётного, и для несчётного.",
+              "ex": "There is plenty of time left."
+            },
+            {
+              "w": "slightly",
+              "lvl": "B1",
+              "ipa": "/ˈslaɪt.li/",
+              "pos": "нареч.",
+              "tr": "слегка, чуть-чуть",
+              "def": "В небольшой степени. Часто перед сравнительной формой.",
+              "ex": "This one is slightly cheaper."
+            },
+            {
+              "w": "figure",
+              "lvl": "B1",
+              "ipa": "/ˈfɪɡ.ər/",
+              "pos": "сущ.",
+              "tr": "цифра, показатель",
+              "def": "Число в отчёте или статистике.",
+              "ex": "The figures went up last year."
+            },
+            {
+              "w": "dizzy",
+              "lvl": "B1",
+              "ipa": "/ˈdɪz.i/",
+              "pos": "прил.",
+              "tr": "кружится голова",
+              "def": "Ощущение, будто всё вращается.",
+              "ex": "I felt dizzy and sat down."
+            }
+          ],
+          "rules": [
+            {
+              "t": "Сравнительная и превосходная степень",
+              "body": "Короткие слова берут -er и the -est: cheap, cheaper, the cheapest. Длинные, от двух слогов, берут more и the most. Слова на согласную плюс -y дают -ier: happy, happier. Сравнение вводится через than, а равенство — через as…as: as cheap as. Перед сравнительной формой можно поставить much или slightly, чтобы показать размер разницы.",
+              "ex": [
+                [
+                  "This flat is cheaper than mine.",
+                  "Короткое слово плюс than"
+                ],
+                [
+                  "It is the most polluted city here.",
+                  "Длинное слово, превосходная степень"
+                ],
+                [
+                  "She is slightly fitter than before.",
+                  "slightly показывает небольшую разницу"
+                ],
+                [
+                  "My town is not as lively as yours.",
+                  "Равенство через as…as"
+                ]
+              ]
+            },
+            {
+              "t": "too, not enough и quantifiers",
+              "body": "too значит «слишком», больше нормы, и ставится перед прилагательным. enough значит «достаточно» и ведёт себя иначе: после прилагательного, но перед существительным. Отсюда две разные конструкции: too expensive и not big enough. Для количества: much с несчётным, many со счётным, a lot of и plenty of подходят везде.",
+              "ex": [
+                [
+                  "This coat is too expensive.",
+                  "too перед прилагательным"
+                ],
+                [
+                  "The room is not big enough.",
+                  "enough после прилагательного"
+                ],
+                [
+                  "We do not have enough chairs.",
+                  "enough перед существительным"
+                ],
+                [
+                  "There is plenty of water left.",
+                  "plenty of с несчётным"
+                ]
+              ]
+            }
+          ],
+          "text": {
+            "title": "Two Towns",
+            "body": "I grew up in a small suburb thirty kilometres from the city, and I now live in the centre. People always ask me which is better. The suburb was quieter and much greener, and the air was far less polluted. But there was never enough to do. The sports facilities were poor and the buses stopped at nine. The centre is noisier and the flats are far more expensive, but it is the liveliest place I have ever lived in. Last winter I had a sore throat for three weeks and I blamed the city air. Perhaps that is fair. Still, I am not moving back. I am slightly happier here, and that is enough.",
+            "glossary": [
+              [
+                "grew up",
+                "вырос"
+              ],
+              [
+                "greener",
+                "зеленее"
+              ],
+              [
+                "far less",
+                "намного менее"
+              ],
+              [
+                "poor",
+                "плохие"
+              ],
+              [
+                "blamed",
+                "винил"
+              ],
+              [
+                "fair",
+                "справедливо"
+              ]
+            ],
+            "questions": [
+              {
+                "q": "What was the problem with the suburb?",
+                "options": [
+                  "The air was polluted",
+                  "There was not enough to do",
+                  "It was too noisy"
+                ],
+                "a": 1,
+                "why": "Прямо сказано: there was never enough to do — занятий не хватало."
+              },
+              {
+                "q": "Why 'the liveliest' and not 'the most lively'?",
+                "options": [
+                  "Lively ends in -y, so it takes -iest",
+                  "It is a mistake",
+                  "Both forms exist"
+                ],
+                "a": 0,
+                "why": "Слова на согласную плюс -y образуют степень через -ier и -iest."
+              },
+              {
+                "q": "Does the narrator want to move back?",
+                "options": [
+                  "Yes, soon",
+                  "No, he is happier now",
+                  "He has not decided"
+                ],
+                "a": 1,
+                "why": "I am not moving back, и дальше — I am slightly happier here."
+              }
+            ]
+          },
+          "drills": [
+            {
+              "prompt": "This street is ___ than ours.",
+              "options": [
+                "noisier",
+                "more noisy",
+                "noisiest"
+              ],
+              "a": 0,
+              "why": "Слово на согласную плюс -y даёт -ier: noisier."
+            },
+            {
+              "prompt": "It is the ___ city I have ever visited.",
+              "options": [
+                "more expensive",
+                "most expensive",
+                "expensivest"
+              ],
+              "a": 1,
+              "why": "Длинное прилагательное в превосходной степени берёт the most."
+            },
+            {
+              "prompt": "My flat is not ___ yours.",
+              "options": [
+                "as big as",
+                "so big than",
+                "bigger as"
+              ],
+              "a": 0,
+              "why": "Равенство и его отрицание строятся через as…as."
+            },
+            {
+              "prompt": "These shoes are ___ small for me.",
+              "options": [
+                "enough",
+                "too",
+                "much"
+              ],
+              "a": 1,
+              "why": "«Слишком» — too, и стоит перед прилагательным."
+            },
+            {
+              "prompt": "The room is not warm ___.",
+              "options": [
+                "enough",
+                "too",
+                "plenty"
+              ],
+              "a": 0,
+              "why": "enough после прилагательного: not warm enough."
+            },
+            {
+              "prompt": "We have ___ of time before the train.",
+              "options": [
+                "many",
+                "much",
+                "plenty"
+              ],
+              "a": 2,
+              "why": "plenty of подходит и к счётному, и к несчётному."
+            }
+          ],
+          "video": {
+            "n": "Сравнительная степень — разбор и тесты",
+            "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2/comparative-adjectives",
+            "d": "Правила образования степеней с примерами и два интерактивных теста."
           }
         }
       ]
