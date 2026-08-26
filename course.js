@@ -195,8 +195,10 @@ function drawQuiz(box, items){
 /* ---- запуск: ждём, пока app.js загрузит словарь ---- */
 (window.appReady || Promise.resolve())
   .then(() => fetch('course.json').then(r => r.json()))
-  .then(c => { course = c; mergeCourseWords(); renderCourse(); })
+  .then(c => { course = c; mergeCourseWords(); renderCourse(); renderMore(); })
   .catch(() => {
+    course = { failed: true, courses: [] };
+    renderMore();
     const b = $('#courseBody');
     if (b) b.innerHTML = '<p class="blank"><b>Курс не загрузился</b>Проверьте, что файл course.json лежит рядом с index.html.</p>';
   });

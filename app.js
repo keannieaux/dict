@@ -1,4 +1,4 @@
-const BUILD = 'v13';   /* номер сборки — виден внизу вкладки «Ещё» */
+const BUILD = 'v14';   /* номер сборки — виден внизу вкладки «Ещё» */
 
 /* ================= вспомогательное ================= */
 const $  = s => document.querySelector(s);
@@ -602,7 +602,15 @@ function renderMore(){
         <div class="n">${esc(it.n)}</div>
         <div class="d">${esc(it.d)}</div>
       </a>`).join('')}`).join('')
-    + `<p class="build">Сборка ${BUILD} · ${words.length} слов</p>`;
+    + `<p class="build">Сборка ${BUILD} · ${words.length} слов<br>${courseInfo()}</p>`;
+}
+
+/* Состояние курса — чтобы сразу было видно, загрузился он или нет. */
+function courseInfo(){
+  if (typeof course === 'undefined' || course === null) return 'курс не загружен';
+  if (course.failed) return 'course.json не читается';
+  return course.courses.map(c =>
+    (c.id === 'elem' ? 'Elem' : 'Pre-Int') + ' ' + c.units.length).join(' · ') + ' юнитов';
 }
 
 /* ================= переключение разделов ================= */
