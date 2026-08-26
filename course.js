@@ -192,13 +192,40 @@ function drawQuiz(box, items){
   });
 }
 
-/* ---- запуск: ждём, пока app.js загрузит словарь ---- */
+/* ---- запуск ----
+   Курс разбит на четыре файла, чтобы каждый было легко загружать по отдельности.
+   Если какая-то часть не пришла, остальные всё равно работают. */
+const PARTS = ['course-elem-1.json', 'course-elem-2.json',
+               'course-pre-1.json',  'course-pre-2.json'];
+
+function assemble(loaded){
+  const byId = {};
+  loaded.filter(Boolean).forEach(p => {
+    if (!byId[p.id]) byId[p.id] = { id: p.id, book: p.book, level: p.level, units: [] };
+    byId[p.id].units.push(...p.units);
+  });
+  const order = ['elem', 'pre'];
+  return {
+    note: 'Программа юнитов повторяет учебник. Тексты, слова и упражнения написаны для этого приложения.',
+    missing: PARTS.length - loaded.filter(Boolean).length,
+    courses: order.filter(id => byId[id]).map(id => {
+      byId[id].units.sort((a, b) => a.n - b.n);
+      return byId[id];
+    })
+  };
+}
+
 (window.appReady || Promise.resolve())
-  .then(() => fetch('course.json').then(r => r.json()))
-  .then(c => { course = c; mergeCourseWords(); renderCourse(); renderMore(); })
+  .then(() => Promise.all(PARTS.map(p =>
+      fetch(p).then(r => r.ok ? r.json() : null).catch(() => null))))
+  .then(loaded => {
+    course = assemble(loaded);
+    if (!course.courses.length) throw new Error('нет ни одной части');
+    mergeCourseWords(); renderCourse(); renderMore();
+  })
   .catch(() => {
     course = { failed: true, courses: [] };
     renderMore();
     const b = $('#courseBody');
-    if (b) b.innerHTML = '<p class="blank"><b>Курс не загрузился</b>Проверьте, что файл course.json лежит рядом с index.html.</p>';
+    if (b) b.innerHTML = '<p class="blank"><b>Курс не загрузился</b>Проверьте, что файлы course-elem-1.json и остальные три лежат рядом с index.html.</p>';
   });

@@ -30,6 +30,7 @@ English File Pre-Intermediate.
 копируются.
 
 Готово: обе книги целиком — по 12 юнитов, 323 слова.
+Курс разбит на четыре файла примерно по 60–70 КБ, чтобы их было легко загружать.
 Осталось: вставки Practical English (по 6 эпизодов в каждой книге).
 
 Каждый юнит содержит карту урока (что в 1A, 1B, 1C по книге), слова с
@@ -42,7 +43,8 @@ English File Pre-Intermediate.
 
 ## Как добавить свой юнит
 
-В массив `units` нужной книги в файле `course.json`:
+В массив `units` нужного файла: `course-elem-1.json` (Elementary 1–6),
+`course-elem-2.json` (7–12), `course-pre-1.json`, `course-pre-2.json`:
 
 ```json
 {

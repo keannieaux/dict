@@ -1,0 +1,1849 @@
+{
+  "id": "pre",
+  "book": "English File Pre-Intermediate, 4-е издание",
+  "level": "A2 → B1",
+  "units": [
+    {
+      "n": 7,
+      "title": "Инфинитив, герундий и обязанности",
+      "goal": "Правильно соединять два глагола подряд и говорить о том, что нужно, а что запрещено.",
+      "map": [
+        {
+          "id": "7A",
+          "g": "инфинитив с to",
+          "v": "глаголы с инфинитивом"
+        },
+        {
+          "id": "7B",
+          "g": "герундий: глагол с -ing",
+          "v": "глаголы с герундием"
+        },
+        {
+          "id": "7C",
+          "g": "have to, don't have to, must, mustn't",
+          "v": "прилагательные с предлогами"
+        }
+      ],
+      "words": [
+        {
+          "w": "afford",
+          "lvl": "B1",
+          "ipa": "/əˈfɔːd/",
+          "pos": "глаг.",
+          "tr": "позволить себе",
+          "def": "Иметь достаточно денег или времени на что-то. Дальше идёт to.",
+          "ex": "We cannot afford to wait longer."
+        },
+        {
+          "w": "manage",
+          "lvl": "B1",
+          "ipa": "/ˈmæn.ɪdʒ/",
+          "pos": "глаг.",
+          "tr": "суметь, справиться",
+          "def": "Сделать что-то трудное, несмотря на препятствия. Дальше to.",
+          "ex": "She managed to finish on time."
+        },
+        {
+          "w": "pretend",
+          "lvl": "B1",
+          "ipa": "/prɪˈtend/",
+          "pos": "глаг.",
+          "tr": "притворяться",
+          "def": "Вести себя так, будто что-то правда. Дальше to.",
+          "ex": "He pretended to be asleep."
+        },
+        {
+          "w": "avoid",
+          "lvl": "B1",
+          "ipa": "/əˈvɔɪd/",
+          "pos": "глаг.",
+          "tr": "избегать",
+          "def": "Стараться не делать или не встречать. Дальше -ing.",
+          "ex": "I avoid driving in the centre."
+        },
+        {
+          "w": "suggest",
+          "lvl": "B1",
+          "ipa": "/səˈdʒest/",
+          "pos": "глаг.",
+          "tr": "предлагать (идею)",
+          "def": "Высказать идею для обсуждения. Дальше -ing.",
+          "ex": "She suggested taking the train."
+        },
+        {
+          "w": "practise",
+          "lvl": "A2",
+          "ipa": "/ˈpræk.tɪs/",
+          "pos": "глаг.",
+          "tr": "тренироваться, отрабатывать",
+          "def": "Делать регулярно, чтобы стало лучше. Дальше -ing.",
+          "ex": "He practises speaking every morning."
+        },
+        {
+          "w": "afraid of",
+          "lvl": "A2",
+          "ipa": "/əˈfreɪd ɒv/",
+          "pos": "фраза",
+          "tr": "бояться чего-то",
+          "def": "Испытывать страх. После of идёт существительное или -ing.",
+          "ex": "She is afraid of flying alone."
+        },
+        {
+          "w": "interested in",
+          "lvl": "A2",
+          "ipa": "/ˈɪn.trəs.tɪd ɪn/",
+          "pos": "фраза",
+          "tr": "интересоваться чем-то",
+          "def": "Хотеть узнать больше. После in идёт -ing.",
+          "ex": "I am interested in learning Italian."
+        },
+        {
+          "w": "good at",
+          "lvl": "A2",
+          "ipa": "/ɡʊd æt/",
+          "pos": "фраза",
+          "tr": "хорош в чём-то",
+          "def": "Умеет делать что-то хорошо. После at идёт -ing.",
+          "ex": "He is good at solving problems."
+        },
+        {
+          "w": "worried about",
+          "lvl": "B1",
+          "ipa": "/ˈwʌr.id əˈbaʊt/",
+          "pos": "фраза",
+          "tr": "беспокоиться о чём-то",
+          "def": "Тревожиться из-за чего-то.",
+          "ex": "They are worried about the exam."
+        },
+        {
+          "w": "deadline",
+          "lvl": "B1",
+          "ipa": "/ˈded.laɪn/",
+          "pos": "сущ.",
+          "tr": "крайний срок",
+          "def": "Последний день, когда работу надо сдать.",
+          "ex": "The deadline is next Monday."
+        },
+        {
+          "w": "permission",
+          "lvl": "B1",
+          "ipa": "/pəˈmɪʃ.ən/",
+          "pos": "сущ.",
+          "tr": "разрешение",
+          "def": "Согласие того, кто вправе разрешить.",
+          "ex": "You need permission to park here."
+        }
+      ],
+      "rules": [
+        {
+          "t": "Инфинитив или герундий",
+          "body": "Когда два глагола идут подряд, второй принимает одну из двух форм, и выбор зависит от первого. С инфинитивом: want, need, decide, hope, promise, offer, refuse, afford, manage, pretend, learn, agree. С герундием: enjoy, avoid, suggest, practise, finish, mind, keep, spend time. После любого предлога всегда идёт только -ing, поэтому good at swimming, а не good at to swim.",
+          "ex": [
+            [
+              "I decided to change my job.",
+              "decide берёт инфинитив"
+            ],
+            [
+              "She avoided answering me.",
+              "avoid берёт герундий"
+            ],
+            [
+              "He is good at cooking.",
+              "После предлога at только -ing"
+            ],
+            [
+              "We finished painting the room.",
+              "finish берёт герундий"
+            ]
+          ]
+        },
+        {
+          "t": "have to, must и mustn't",
+          "body": "have to говорит о внешней необходимости: так устроены правила или обстоятельства. must ближе к внутреннему решению или строгому запрету. Главная ловушка в отрицаниях: don't have to значит, что делать не обязательно, а mustn't значит, что делать нельзя. Это противоположные вещи, а не оттенки.",
+          "ex": [
+            [
+              "I have to work on Saturday.",
+              "Так вышло, обстоятельства"
+            ],
+            [
+              "You must see this film.",
+              "Личная убеждённость"
+            ],
+            [
+              "You don't have to come.",
+              "Можно не приходить"
+            ],
+            [
+              "You mustn't park here.",
+              "Нельзя, это запрет"
+            ]
+          ]
+        }
+      ],
+      "text": {
+        "title": "The Presentation",
+        "body": "My colleague Marta is afraid of speaking in public, but last month she had to give a presentation to forty people. She decided to prepare properly. For two weeks she practised reading her text aloud in an empty meeting room. She avoided looking at the slides and learned to look at the audience instead. On the day she was very worried about the deadline for the report as well, so she barely slept. But she managed to speak for twenty minutes without notes. Afterwards our director said she did not have to be so nervous, which is easy to say when you are not the one standing there.",
+        "glossary": [
+          [
+            "colleague",
+            "коллега"
+          ],
+          [
+            "in public",
+            "на публике"
+          ],
+          [
+            "properly",
+            "как следует"
+          ],
+          [
+            "aloud",
+            "вслух"
+          ],
+          [
+            "audience",
+            "аудитория"
+          ],
+          [
+            "barely",
+            "едва"
+          ]
+        ],
+        "questions": [
+          {
+            "q": "How did Marta prepare?",
+            "options": [
+              "She read her text aloud for two weeks",
+              "She wrote new slides",
+              "She asked for permission"
+            ],
+            "a": 0,
+            "why": "she practised reading her text aloud — practise берёт герундий."
+          },
+          {
+            "q": "Why 'she managed to speak' and not 'managed speaking'?",
+            "options": [
+              "Manage takes the infinitive",
+              "Manage takes the gerund",
+              "Both are possible"
+            ],
+            "a": 0,
+            "why": "manage относится к глаголам, после которых идёт инфинитив с to."
+          },
+          {
+            "q": "What did the director mean by 'she did not have to be so nervous'?",
+            "options": [
+              "It was forbidden to be nervous",
+              "It was not necessary to be nervous",
+              "She had to be nervous"
+            ],
+            "a": 1,
+            "why": "don't have to значит «не обязательно», а не запрет. Запрет — это mustn't."
+          }
+        ]
+      },
+      "drills": [
+        {
+          "prompt": "We cannot afford ___ a new car.",
+          "options": [
+            "buying",
+            "to buy",
+            "buy"
+          ],
+          "a": 1,
+          "why": "afford относится к глаголам с инфинитивом."
+        },
+        {
+          "prompt": "She suggested ___ the early train.",
+          "options": [
+            "to take",
+            "take",
+            "taking"
+          ],
+          "a": 2,
+          "why": "suggest берёт герундий."
+        },
+        {
+          "prompt": "He is interested in ___ Spanish.",
+          "options": [
+            "learn",
+            "learning",
+            "to learn"
+          ],
+          "a": 1,
+          "why": "После предлога in всегда идёт -ing."
+        },
+        {
+          "prompt": "You ___ smoke in here, it is forbidden.",
+          "options": [
+            "mustn't",
+            "don't have to",
+            "have to"
+          ],
+          "a": 0,
+          "why": "Запрет выражает mustn't."
+        },
+        {
+          "prompt": "It is Sunday, so you ___ get up early.",
+          "options": [
+            "mustn't",
+            "don't have to",
+            "must"
+          ],
+          "a": 1,
+          "why": "Не обязательно — don't have to, а не запрет."
+        },
+        {
+          "prompt": "I avoid ___ during rush hour.",
+          "options": [
+            "to drive",
+            "driving",
+            "drive"
+          ],
+          "a": 1,
+          "why": "avoid берёт герундий."
+        }
+      ],
+      "video": {
+        "n": "Грамматика A1–A2: глаголы с -ing и с инфинитивом",
+        "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
+        "d": "В списке есть урок «Verbs followed by -ing or infinitive» с объяснением и тестами."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Советы и условия",
+      "goal": "Давать советы, говорить о реальных условиях в будущем и не путать похожие глаголы.",
+      "map": [
+        {
+          "id": "8A",
+          "g": "should",
+          "v": "выражения с get"
+        },
+        {
+          "id": "8B",
+          "g": "первый тип условных: if + настоящее, will",
+          "v": "легко путаемые глаголы"
+        },
+        {
+          "id": "8C",
+          "g": "притяжательные местоимения",
+          "v": "наречия образа действия"
+        }
+      ],
+      "words": [
+        {
+          "w": "advice",
+          "lvl": "B1",
+          "ipa": "/ədˈvaɪs/",
+          "pos": "сущ.",
+          "tr": "совет",
+          "def": "Мнение о том, как лучше поступить. Неисчисляемое: не advices, а a piece of advice.",
+          "ex": "She gave me some good advice."
+        },
+        {
+          "w": "apply for",
+          "lvl": "B1",
+          "ipa": "/əˈplaɪ fɔː/",
+          "pos": "фраз. глаг.",
+          "tr": "подавать заявление на",
+          "def": "Официально просить о работе, визе или месте.",
+          "ex": "He applied for a new job."
+        },
+        {
+          "w": "get over",
+          "lvl": "B1",
+          "ipa": "/ɡet ˈəʊ.vər/",
+          "pos": "фраз. глаг.",
+          "tr": "справиться, оправиться",
+          "def": "Пережить болезнь или неприятность.",
+          "ex": "It took her months to get over it."
+        },
+        {
+          "w": "get rid of",
+          "lvl": "B1",
+          "ipa": "/ɡet rɪd ɒv/",
+          "pos": "фраза",
+          "tr": "избавиться от",
+          "def": "Убрать что-то ненужное насовсем.",
+          "ex": "We should get rid of these boxes."
+        },
+        {
+          "w": "get in touch",
+          "lvl": "B1",
+          "ipa": "/ɡet ɪn tʌtʃ/",
+          "pos": "фраза",
+          "tr": "связаться",
+          "def": "Написать или позвонить кому-то.",
+          "ex": "Get in touch when you arrive."
+        },
+        {
+          "w": "unless",
+          "lvl": "B1",
+          "ipa": "/ənˈles/",
+          "pos": "союз",
+          "tr": "если не",
+          "def": "Вводит условие с отрицанием. После него глагол остаётся положительным.",
+          "ex": "We will go unless it rains."
+        },
+        {
+          "w": "remind",
+          "lvl": "B1",
+          "ipa": "/rɪˈmaɪnd/",
+          "pos": "глаг.",
+          "tr": "напоминать кому-то",
+          "def": "Заставить другого вспомнить. Не путать с remember — вспоминать самому.",
+          "ex": "Please remind me to call her."
+        },
+        {
+          "w": "recommend",
+          "lvl": "B1",
+          "ipa": "/ˌrek.əˈmend/",
+          "pos": "глаг.",
+          "tr": "рекомендовать",
+          "def": "Советовать что-то конкретное. Дальше идёт -ing.",
+          "ex": "I recommend booking a table."
+        },
+        {
+          "w": "mine",
+          "lvl": "A2",
+          "ipa": "/maɪn/",
+          "pos": "мест.",
+          "tr": "мой, моё (без существительного)",
+          "def": "Заменяет my плюс существительное целиком.",
+          "ex": "That blue coat is mine."
+        },
+        {
+          "w": "yours",
+          "lvl": "A2",
+          "ipa": "/jɔːz/",
+          "pos": "мест.",
+          "tr": "твой, ваш (без существительного)",
+          "def": "Заменяет your плюс существительное.",
+          "ex": "Is this umbrella yours or mine?"
+        },
+        {
+          "w": "politely",
+          "lvl": "B1",
+          "ipa": "/pəˈlaɪt.li/",
+          "pos": "нареч.",
+          "tr": "вежливо",
+          "def": "С уважением к собеседнику.",
+          "ex": "He asked politely for help."
+        },
+        {
+          "w": "quietly",
+          "lvl": "A2",
+          "ipa": "/ˈkwaɪ.ət.li/",
+          "pos": "нареч.",
+          "tr": "тихо",
+          "def": "Не издавая шума.",
+          "ex": "She closed the door quietly."
+        }
+      ],
+      "rules": [
+        {
+          "t": "should и первый тип условных",
+          "body": "should даёт совет и не меняется по лицам, после него глагол идёт без to. Первый тип условных описывает реальную возможность в будущем: в части с if стоит настоящее время, в главной — will. Будущее после if не ставится: не if it will rain, а if it rains. unless значит то же, что if not, поэтому второго отрицания рядом не нужно.",
+          "ex": [
+            [
+              "You should talk to her.",
+              "Совет, глагол без to"
+            ],
+            [
+              "If it rains, we will stay home.",
+              "После if настоящее, в главной will"
+            ],
+            [
+              "I will call you if I have time.",
+              "Порядок частей можно менять"
+            ],
+            [
+              "We will be late unless we leave now.",
+              "unless уже содержит отрицание"
+            ]
+          ]
+        },
+        {
+          "t": "Притяжательные местоимения и похожие глаголы",
+          "body": "my, your, his, her стоят перед существительным. mine, yours, his, hers, ours, theirs заменяют его целиком и стоят одни: this is my bag превращается в this bag is mine. Апострофа в них нет никогда. Отдельно стоит запомнить пары, которые путают: remember значит вспоминать самому, remind — напоминать другому. borrow — брать чужое, lend — давать своё.",
+          "ex": [
+            [
+              "This is my key.",
+              "Перед существительным — my"
+            ],
+            [
+              "This key is mine.",
+              "Одно, без существительного — mine"
+            ],
+            [
+              "Remind me to buy milk.",
+              "Напомни мне — remind"
+            ],
+            [
+              "I remember her face.",
+              "Помню сам — remember"
+            ]
+          ]
+        }
+      ],
+      "text": {
+        "title": "Advice I Did Not Take",
+        "body": "When I applied for my first job, my aunt gave me one piece of advice: if they offer you the position, ask about the team before you say yes. I did not ask. I said yes in four seconds. The salary was good and the office was five minutes from my flat. Six months later I understood what she meant. Nobody spoke to each other. People ate lunch quietly at their desks with headphones on. If I had asked one question, I would have known. I got over it eventually and found something better, but I still remind my younger cousin about it every time she applies for anything.",
+        "glossary": [
+          [
+            "aunt",
+            "тётя"
+          ],
+          [
+            "position",
+            "должность"
+          ],
+          [
+            "salary",
+            "зарплата"
+          ],
+          [
+            "desks",
+            "рабочие столы"
+          ],
+          [
+            "eventually",
+            "в конце концов"
+          ],
+          [
+            "cousin",
+            "двоюродная сестра"
+          ]
+        ],
+        "questions": [
+          {
+            "q": "What was the aunt's advice?",
+            "options": [
+              "To ask about the salary",
+              "To ask about the team",
+              "To say yes quickly"
+            ],
+            "a": 1,
+            "why": "ask about the team before you say yes."
+          },
+          {
+            "q": "Why 'remind my cousin' and not 'remember my cousin'?",
+            "options": [
+              "Remind means to make someone else recall",
+              "They are the same",
+              "It is a mistake"
+            ],
+            "a": 0,
+            "why": "remind — напоминать другому, remember — вспоминать самому."
+          },
+          {
+            "q": "How did the narrator feel about the job later?",
+            "options": [
+              "He understood the advice was right",
+              "He was happy he said yes",
+              "He never thought about it"
+            ],
+            "a": 0,
+            "why": "Six months later I understood what she meant."
+          }
+        ]
+      },
+      "drills": [
+        {
+          "prompt": "You ___ see a doctor about that.",
+          "options": [
+            "should",
+            "should to",
+            "shoulds"
+          ],
+          "a": 0,
+          "why": "После should глагол идёт без to, форма не меняется."
+        },
+        {
+          "prompt": "If it ___ tomorrow, we will cancel.",
+          "options": [
+            "will rain",
+            "rains",
+            "rained"
+          ],
+          "a": 1,
+          "why": "После if будущее время не ставится, идёт настоящее."
+        },
+        {
+          "prompt": "We will miss the train ___ we hurry.",
+          "options": [
+            "if",
+            "unless",
+            "when"
+          ],
+          "a": 1,
+          "why": "unless значит «если не» и уже содержит отрицание."
+        },
+        {
+          "prompt": "This bag is not yours, it is ___.",
+          "options": [
+            "my",
+            "mine",
+            "my's"
+          ],
+          "a": 1,
+          "why": "Без существительного идёт mine, апострофа нет."
+        },
+        {
+          "prompt": "Can you ___ me to send the email?",
+          "options": [
+            "remember",
+            "remind",
+            "recommend"
+          ],
+          "a": 1,
+          "why": "Напомнить другому — remind."
+        },
+        {
+          "prompt": "I ___ booking a table in advance.",
+          "options": [
+            "recommend",
+            "advice",
+            "remind"
+          ],
+          "a": 0,
+          "why": "recommend — глагол, advice — существительное."
+        }
+      ],
+      "video": {
+        "n": "Грамматика B1–B2: условные предложения",
+        "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2",
+        "d": "Раздел с уроками и тестами, в том числе про нулевой, первый и второй тип условных."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Страхи, сроки и биографии",
+      "goal": "Говорить о нереальном условии, считать время с какого-то момента и рассказывать о чужой жизни.",
+      "map": [
+        {
+          "id": "9A",
+          "g": "второй тип условных: if + прошедшее, would",
+          "v": "животные и насекомые"
+        },
+        {
+          "id": "9B",
+          "g": "Present Perfect с for и since",
+          "v": "слова о страхе"
+        },
+        {
+          "id": "9C",
+          "g": "Present Perfect или Past Simple",
+          "v": "биографии"
+        }
+      ],
+      "words": [
+        {
+          "w": "spider",
+          "lvl": "A2",
+          "ipa": "/ˈspaɪ.dər/",
+          "pos": "сущ.",
+          "tr": "паук",
+          "def": "Существо с восемью ногами, плетёт паутину.",
+          "ex": "There is a spider in the bath."
+        },
+        {
+          "w": "bee",
+          "lvl": "A2",
+          "ipa": "/biː/",
+          "pos": "сущ.",
+          "tr": "пчела",
+          "def": "Насекомое, которое делает мёд.",
+          "ex": "A bee flew into the kitchen."
+        },
+        {
+          "w": "snake",
+          "lvl": "A2",
+          "ipa": "/sneɪk/",
+          "pos": "сущ.",
+          "tr": "змея",
+          "def": "Длинное животное без ног.",
+          "ex": "We saw a snake near the path."
+        },
+        {
+          "w": "insect",
+          "lvl": "A2",
+          "ipa": "/ˈɪn.sekt/",
+          "pos": "сущ.",
+          "tr": "насекомое",
+          "def": "Мелкое существо с шестью ногами.",
+          "ex": "This insect is completely harmless."
+        },
+        {
+          "w": "bite",
+          "lvl": "A2",
+          "ipa": "/baɪt/",
+          "pos": "глаг./сущ.",
+          "tr": "кусать; укус",
+          "def": "Схватить зубами. Формы: bite, bit, bitten.",
+          "ex": "The dog has never bitten anyone."
+        },
+        {
+          "w": "sting",
+          "lvl": "B1",
+          "ipa": "/stɪŋ/",
+          "pos": "глаг./сущ.",
+          "tr": "жалить; укус жалом",
+          "def": "Уколоть жалом, как пчела. Формы: sting, stung, stung.",
+          "ex": "A bee stung me on the arm."
+        },
+        {
+          "w": "terrified",
+          "lvl": "B1",
+          "ipa": "/ˈter.ɪ.faɪd/",
+          "pos": "прил.",
+          "tr": "в ужасе",
+          "def": "Испытывающий очень сильный страх.",
+          "ex": "She is terrified of heights."
+        },
+        {
+          "w": "panic",
+          "lvl": "B1",
+          "ipa": "/ˈpæn.ɪk/",
+          "pos": "глаг./сущ.",
+          "tr": "паниковать; паника",
+          "def": "Терять контроль от страха.",
+          "ex": "Do not panic, it is harmless."
+        },
+        {
+          "w": "phobia",
+          "lvl": "B1",
+          "ipa": "/ˈfəʊ.bi.ə/",
+          "pos": "сущ.",
+          "tr": "фобия",
+          "def": "Сильный необъяснимый страх чего-то конкретного.",
+          "ex": "He has a phobia about flying."
+        },
+        {
+          "w": "achievement",
+          "lvl": "B1",
+          "ipa": "/əˈtʃiːv.mənt/",
+          "pos": "сущ.",
+          "tr": "достижение",
+          "def": "То значительное, что человек сделал.",
+          "ex": "That was her greatest achievement."
+        },
+        {
+          "w": "award",
+          "lvl": "B1",
+          "ipa": "/əˈwɔːd/",
+          "pos": "сущ.",
+          "tr": "награда, премия",
+          "def": "Приз за заслуги.",
+          "ex": "He won an award for teaching."
+        },
+        {
+          "w": "retire",
+          "lvl": "B1",
+          "ipa": "/rɪˈtaɪər/",
+          "pos": "глаг.",
+          "tr": "выходить на пенсию",
+          "def": "Прекратить работать по возрасту.",
+          "ex": "She retired three years ago."
+        }
+      ],
+      "rules": [
+        {
+          "t": "Второй тип условных",
+          "body": "Второй тип описывает то, чего сейчас нет: воображаемую ситуацию или маловероятную возможность. В части с if стоит прошедшее время, в главной — would плюс начальная форма. Прошедшее здесь не про прошлое, а знак нереальности. С глаголом be в книжном варианте для всех лиц ставят were: if I were you.",
+          "ex": [
+            [
+              "If I had more time, I would learn Greek.",
+              "Времени нет — ситуация воображаемая"
+            ],
+            [
+              "If I were you, I would apply.",
+              "Устойчивый оборот для совета"
+            ],
+            [
+              "She would travel more if she could.",
+              "Порядок частей можно менять"
+            ],
+            [
+              "What would you do if you saw a snake?",
+              "Вопрос о воображаемой ситуации"
+            ]
+          ]
+        },
+        {
+          "t": "for и since",
+          "body": "Оба идут с Present Perfect и отвечают на вопрос как долго. for называет длину отрезка: for two years, for ten minutes. since называет точку, с которой всё началось: since 2019, since Monday, since I moved here. Проверка простая: если после слова можно поставить вопрос сколько времени, нужен for, если когда именно началось — since.",
+          "ex": [
+            [
+              "I have lived here for six years.",
+              "Длина отрезка"
+            ],
+            [
+              "I have lived here since 2019.",
+              "Точка начала"
+            ],
+            [
+              "We have not spoken since Friday.",
+              "Точка начала"
+            ],
+            [
+              "She has been ill for a week.",
+              "Длина отрезка"
+            ]
+          ]
+        }
+      ],
+      "text": {
+        "title": "The Woman Who Was Not Afraid",
+        "body": "My grandmother has been afraid of nothing for as long as I have known her. Spiders, snakes, dark rooms, difficult people: none of it has ever bothered her. She worked as a nurse for forty years and retired in 2011. She has lived alone since my grandfather died, in a village where the nearest shop is four kilometres away. Last summer a bee stung her twice while she was picking apples and she did not even stop. If I were her, I would have run into the house immediately. She just said the bee was probably more frightened than she was. She has never won an award for anything, but I think that is an achievement.",
+        "glossary": [
+          [
+            "bothered",
+            "беспокоило"
+          ],
+          [
+            "alone",
+            "одна"
+          ],
+          [
+            "village",
+            "деревня"
+          ],
+          [
+            "nearest",
+            "ближайший"
+          ],
+          [
+            "picking",
+            "собирала"
+          ],
+          [
+            "frightened",
+            "напугана"
+          ]
+        ],
+        "questions": [
+          {
+            "q": "How long did she work as a nurse?",
+            "options": [
+              "Since 2011",
+              "For forty years",
+              "Since her husband died"
+            ],
+            "a": 1,
+            "why": "for называет длину отрезка: for forty years."
+          },
+          {
+            "q": "Why 'since my grandfather died' and not 'for'?",
+            "options": [
+              "It names the starting point",
+              "It names a length of time",
+              "Both are correct"
+            ],
+            "a": 0,
+            "why": "since вводит момент, с которого всё началось, for — длину отрезка."
+          },
+          {
+            "q": "What would the narrator have done?",
+            "options": [
+              "The same thing",
+              "Run into the house",
+              "Kept picking apples"
+            ],
+            "a": 1,
+            "why": "If I were her, I would have run into the house immediately."
+          }
+        ]
+      },
+      "drills": [
+        {
+          "prompt": "If I ___ rich, I would buy a house.",
+          "options": [
+            "am",
+            "were",
+            "will be"
+          ],
+          "a": 1,
+          "why": "Второй тип условных: в части с if прошедшее, с be обычно were."
+        },
+        {
+          "prompt": "She would travel more if she ___ time.",
+          "options": [
+            "has",
+            "had",
+            "will have"
+          ],
+          "a": 1,
+          "why": "Воображаемая ситуация требует прошедшего времени после if."
+        },
+        {
+          "prompt": "I have known him ___ ten years.",
+          "options": [
+            "since",
+            "for",
+            "from"
+          ],
+          "a": 1,
+          "why": "Длина отрезка вводится через for."
+        },
+        {
+          "prompt": "We have not met ___ March.",
+          "options": [
+            "for",
+            "since",
+            "during"
+          ],
+          "a": 1,
+          "why": "March — точка начала, значит since."
+        },
+        {
+          "prompt": "A bee ___ me yesterday.",
+          "options": [
+            "stung",
+            "stinged",
+            "has stung"
+          ],
+          "a": 0,
+          "why": "Названо время yesterday, значит Past Simple, и форма неправильная: stung."
+        },
+        {
+          "prompt": "She is ___ of spiders.",
+          "options": [
+            "terrify",
+            "terrified",
+            "terrifying"
+          ],
+          "a": 1,
+          "why": "Чувство человека выражает форма на -ed: terrified."
+        }
+      ],
+      "video": {
+        "n": "Present Perfect с for и since",
+        "u": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect-simple-continuous",
+        "d": "Разбор употребления for и since с примерами и тестами."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Движение, фразовые глаголы и пассив",
+      "goal": "Описывать движение, правильно расставлять слова во фразовых глаголах и говорить о действии, когда деятель неважен.",
+      "map": [
+        {
+          "id": "10A",
+          "g": "выражение движения",
+          "v": "спорт и движение"
+        },
+        {
+          "id": "10B",
+          "g": "порядок слов во фразовых глаголах",
+          "v": "фразовые глаголы"
+        },
+        {
+          "id": "10C",
+          "g": "пассивный залог",
+          "v": "национальности"
+        }
+      ],
+      "words": [
+        {
+          "w": "across",
+          "lvl": "B1",
+          "ipa": "/əˈkrɒs/",
+          "pos": "предлог",
+          "tr": "через, поперёк",
+          "def": "С одной стороны на другую.",
+          "ex": "She ran across the road."
+        },
+        {
+          "w": "towards",
+          "lvl": "B1",
+          "ipa": "/təˈwɔːdz/",
+          "pos": "предлог",
+          "tr": "по направлению к",
+          "def": "В сторону чего-то, не обязательно достигая.",
+          "ex": "He walked towards the station."
+        },
+        {
+          "w": "through",
+          "lvl": "A2",
+          "ipa": "/θruː/",
+          "pos": "предлог",
+          "tr": "сквозь, через",
+          "def": "Внутрь и наружу с другой стороны.",
+          "ex": "We drove through the tunnel."
+        },
+        {
+          "w": "jump",
+          "lvl": "A1",
+          "ipa": "/dʒʌmp/",
+          "pos": "глаг.",
+          "tr": "прыгать",
+          "def": "Оттолкнуться и оторваться от земли.",
+          "ex": "The cat jumped onto the table."
+        },
+        {
+          "w": "climb",
+          "lvl": "A2",
+          "ipa": "/klaɪm/",
+          "pos": "глаг.",
+          "tr": "взбираться, лезть",
+          "def": "Подниматься вверх руками и ногами. Буква b не читается.",
+          "ex": "They climbed up the hill slowly."
+        },
+        {
+          "w": "throw",
+          "lvl": "A2",
+          "ipa": "/θrəʊ/",
+          "pos": "глаг.",
+          "tr": "бросать",
+          "def": "Отправить предмет по воздуху. Формы: throw, threw, thrown.",
+          "ex": "He threw the ball to me."
+        },
+        {
+          "w": "score",
+          "lvl": "A2",
+          "ipa": "/skɔːr/",
+          "pos": "глаг./сущ.",
+          "tr": "забивать; счёт",
+          "def": "Заработать очко в игре; либо результат матча.",
+          "ex": "She scored twice in the game."
+        },
+        {
+          "w": "put off",
+          "lvl": "B1",
+          "ipa": "/pʊt ɒf/",
+          "pos": "фраз. глаг.",
+          "tr": "откладывать",
+          "def": "Перенести на более поздний срок.",
+          "ex": "They put the meeting off again."
+        },
+        {
+          "w": "give up",
+          "lvl": "B1",
+          "ipa": "/ɡɪv ʌp/",
+          "pos": "фраз. глаг.",
+          "tr": "бросать, сдаваться",
+          "def": "Прекратить попытки или отказаться от привычки.",
+          "ex": "He gave up smoking last year."
+        },
+        {
+          "w": "look up",
+          "lvl": "B1",
+          "ipa": "/lʊk ʌp/",
+          "pos": "фраз. глаг.",
+          "tr": "искать в словаре",
+          "def": "Найти информацию в книге или интернете.",
+          "ex": "Look this word up later."
+        },
+        {
+          "w": "work out",
+          "lvl": "B1",
+          "ipa": "/wɜːk aʊt/",
+          "pos": "фраз. глаг.",
+          "tr": "вычислять; тренироваться",
+          "def": "Понять после размышления; либо заниматься спортом.",
+          "ex": "I cannot work out the answer."
+        },
+        {
+          "w": "nationality",
+          "lvl": "B1",
+          "ipa": "/ˌnæʃ.ənˈæl.ə.ti/",
+          "pos": "сущ.",
+          "tr": "гражданство, национальность",
+          "def": "Принадлежность к стране.",
+          "ex": "What nationality is your teacher?"
+        }
+      ],
+      "rules": [
+        {
+          "t": "Порядок слов во фразовых глаголах",
+          "body": "Многие фразовые глаголы разделяемые: дополнение может стоять и после частицы, и между глаголом и частицей. Turn the radio on и turn on the radio одинаково верны. Но если дополнение выражено местоимением, оно обязано встать в середину: только turn it on, никогда turn on it. Неразделяемые фразовые глаголы, вроде look after и get on with, дополнение внутрь не пускают.",
+          "ex": [
+            [
+              "Put off the meeting.",
+              "Дополнение после частицы"
+            ],
+            [
+              "Put the meeting off.",
+              "То же самое, порядок другой"
+            ],
+            [
+              "Put it off until Friday.",
+              "Местоимение только в середину"
+            ],
+            [
+              "She looks after her mother.",
+              "Неразделяемый: after не оторвать"
+            ]
+          ]
+        },
+        {
+          "t": "Пассивный залог",
+          "body": "Пассив строится из формы be и третьей формы глагола. Его берут, когда деятель неизвестен, неважен или очевиден: важно само действие или то, над чем оно совершено. Если деятеля всё же нужно назвать, его вводят предлогом by. Время показывает именно форма be: is made, was made, has been made, will be made.",
+          "ex": [
+            [
+              "The bridge was built in 1890.",
+              "Кто строил — неважно"
+            ],
+            [
+              "This car is made in Japan.",
+              "Настоящее время, форма is"
+            ],
+            [
+              "The book was written by a doctor.",
+              "Деятель введён через by"
+            ],
+            [
+              "The letters have been sent.",
+              "Present Perfect в пассиве"
+            ]
+          ]
+        }
+      ],
+      "text": {
+        "title": "The Wall",
+        "body": "There is a low stone wall at the end of our street. Nobody knows who built it or when. It is not marked on any map and it does not divide anything: you can simply walk around it. Children climb over it, dogs run through the gap in the middle, and every summer somebody paints it a different colour. Last year it was painted bright yellow by a group of students. The council put off removing it for three years and then quietly gave up. I looked the street up in an old book at the library and found nothing. I have worked out only one thing: the wall was there before the houses.",
+        "glossary": [
+          [
+            "low",
+            "низкая"
+          ],
+          [
+            "stone",
+            "каменная"
+          ],
+          [
+            "divide",
+            "разделять"
+          ],
+          [
+            "gap",
+            "проём"
+          ],
+          [
+            "council",
+            "городской совет"
+          ],
+          [
+            "removing",
+            "снос"
+          ]
+        ],
+        "questions": [
+          {
+            "q": "Why 'it was painted by a group of students'?",
+            "options": [
+              "The action matters more than the doer",
+              "Students are unknown",
+              "It is a mistake"
+            ],
+            "a": 0,
+            "why": "Пассив ставит в центр действие, а деятеля при необходимости вводят через by."
+          },
+          {
+            "q": "Which is correct: 'I looked the street up' or 'I looked up it'?",
+            "options": [
+              "Both are fine",
+              "Only the first",
+              "Only the second"
+            ],
+            "a": 1,
+            "why": "Существительное можно ставить и так, и так, но местоимение только в середину: look it up."
+          },
+          {
+            "q": "What did the narrator find out?",
+            "options": [
+              "Who built the wall",
+              "When it was painted",
+              "That the wall came before the houses"
+            ],
+            "a": 2,
+            "why": "the wall was there before the houses — единственное, что удалось выяснить."
+          }
+        ]
+      },
+      "drills": [
+        {
+          "prompt": "Turn the television ___.",
+          "options": [
+            "off it",
+            "off",
+            "it off"
+          ],
+          "a": 1,
+          "why": "С существительным частица может стоять после него или до."
+        },
+        {
+          "prompt": "I do not need this. Throw ___ away.",
+          "options": [
+            "away it",
+            "it away",
+            "away"
+          ],
+          "a": 1,
+          "why": "Местоимение обязано стоять между глаголом и частицей."
+        },
+        {
+          "prompt": "This bridge ___ in 1890.",
+          "options": [
+            "built",
+            "was built",
+            "is building"
+          ],
+          "a": 1,
+          "why": "Пассив в прошедшем: was плюс третья форма."
+        },
+        {
+          "prompt": "These cars ___ in Germany.",
+          "options": [
+            "make",
+            "are made",
+            "are making"
+          ],
+          "a": 1,
+          "why": "Пассив в настоящем: are плюс третья форма."
+        },
+        {
+          "prompt": "She ran ___ the road without looking.",
+          "options": [
+            "across",
+            "through",
+            "towards"
+          ],
+          "a": 0,
+          "why": "С одной стороны дороги на другую — across."
+        },
+        {
+          "prompt": "He gave ___ smoking two years ago.",
+          "options": [
+            "up",
+            "off",
+            "out"
+          ],
+          "a": 0,
+          "why": "Бросить привычку — give up."
+        }
+      ],
+      "video": {
+        "n": "Пассивный залог — разбор и тесты",
+        "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/passives",
+        "d": "Как строится пассив во всех основных временах, когда его берут и как вводят деятеля через by."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Раньше было иначе",
+      "goal": "Говорить о прошлых привычках, о неуверенных предположениях и о сходстве между людьми.",
+      "map": [
+        {
+          "id": "11A",
+          "g": "used to",
+          "v": "школьные предметы"
+        },
+        {
+          "id": "11B",
+          "g": "might",
+          "v": "образование существительных"
+        },
+        {
+          "id": "11C",
+          "g": "so и neither со вспомогательными",
+          "v": "сходства и различия"
+        }
+      ],
+      "words": [
+        {
+          "w": "subject",
+          "lvl": "A2",
+          "ipa": "/ˈsʌb.dʒekt/",
+          "pos": "сущ.",
+          "tr": "учебный предмет",
+          "def": "Дисциплина в школе или университете.",
+          "ex": "My favourite subject was history."
+        },
+        {
+          "w": "maths",
+          "lvl": "A1",
+          "ipa": "/mæθs/",
+          "pos": "сущ.",
+          "tr": "математика",
+          "def": "Наука о числах. В США — math, без s.",
+          "ex": "I was terrible at maths."
+        },
+        {
+          "w": "chemistry",
+          "lvl": "A2",
+          "ipa": "/ˈkem.ɪ.stri/",
+          "pos": "сущ.",
+          "tr": "химия",
+          "def": "Наука о веществах и их превращениях.",
+          "ex": "We studied chemistry for three years."
+        },
+        {
+          "w": "degree",
+          "lvl": "B1",
+          "ipa": "/dɪˈɡriː/",
+          "pos": "сущ.",
+          "tr": "учёная степень, диплом",
+          "def": "Квалификация после университета.",
+          "ex": "She has a degree in law."
+        },
+        {
+          "w": "term",
+          "lvl": "A2",
+          "ipa": "/tɜːm/",
+          "pos": "сущ.",
+          "tr": "учебный семестр, четверть",
+          "def": "Часть учебного года.",
+          "ex": "The new term starts in September."
+        },
+        {
+          "w": "similar",
+          "lvl": "A2",
+          "ipa": "/ˈsɪm.ɪ.lər/",
+          "pos": "прил.",
+          "tr": "похожий",
+          "def": "Почти такой же. Дальше идёт предлог to.",
+          "ex": "Her voice is similar to yours."
+        },
+        {
+          "w": "difference",
+          "lvl": "A2",
+          "ipa": "/ˈdɪf.ər.əns/",
+          "pos": "сущ.",
+          "tr": "различие, разница",
+          "def": "То, чем одно не похоже на другое.",
+          "ex": "There is no difference between them."
+        },
+        {
+          "w": "both",
+          "lvl": "A2",
+          "ipa": "/bəʊθ/",
+          "pos": "мест.",
+          "tr": "оба, и тот и другой",
+          "def": "Два предмета или человека вместе.",
+          "ex": "Both of my sisters live abroad."
+        },
+        {
+          "w": "improvement",
+          "lvl": "B1",
+          "ipa": "/ɪmˈpruːv.mənt/",
+          "pos": "сущ.",
+          "tr": "улучшение",
+          "def": "Изменение к лучшему. От improve плюс -ment.",
+          "ex": "There is a clear improvement here."
+        },
+        {
+          "w": "decision",
+          "lvl": "A2",
+          "ipa": "/dɪˈsɪʒ.ən/",
+          "pos": "сущ.",
+          "tr": "решение",
+          "def": "Выбор, который сделан. От decide плюс -sion.",
+          "ex": "It was a difficult decision."
+        },
+        {
+          "w": "choice",
+          "lvl": "A2",
+          "ipa": "/tʃɔɪs/",
+          "pos": "сущ.",
+          "tr": "выбор",
+          "def": "Возможность выбрать. От choose.",
+          "ex": "We had no other choice."
+        },
+        {
+          "w": "knowledge",
+          "lvl": "B1",
+          "ipa": "/ˈnɒl.ɪdʒ/",
+          "pos": "сущ.",
+          "tr": "знания",
+          "def": "То, что человек знает. Неисчисляемое.",
+          "ex": "His knowledge of history is impressive."
+        }
+      ],
+      "rules": [
+        {
+          "t": "used to и might",
+          "body": "used to описывает то, что было привычным раньше и прекратилось. Форма одна для всех лиц, дальше идёт начальная форма глагола. В отрицании и вопросе окончание уходит к did: didn't use to, без -d. might означает неуверенное предположение: возможно, но не факт. После might глагол идёт без to и без -s.",
+          "ex": [
+            [
+              "I used to smoke.",
+              "Раньше было, теперь нет"
+            ],
+            [
+              "She didn't use to like coffee.",
+              "В отрицании use без -d"
+            ],
+            [
+              "Did you use to live here?",
+              "В вопросе тоже use"
+            ],
+            [
+              "He might be at home now.",
+              "Предположение, глагол без to"
+            ]
+          ]
+        },
+        {
+          "t": "so и neither",
+          "body": "Короткий способ сказать «я тоже». После утверждения: so плюс вспомогательный плюс подлежащее, с обратным порядком слов. После отрицания: neither плюс вспомогательный плюс подлежащее, причём второго отрицания уже не нужно. Вспомогательный берётся тот же, что в первой фразе: be, do, have или модальный.",
+          "ex": [
+            [
+              "I'm tired. — So am I.",
+              "После be идёт so am I"
+            ],
+            [
+              "I like jazz. — So do I.",
+              "Обычный глагол даёт so do I"
+            ],
+            [
+              "I can't swim. — Neither can I.",
+              "После отрицания — neither"
+            ],
+            [
+              "I haven't seen it. — Neither have I.",
+              "Вспомогательный тот же: have"
+            ]
+          ]
+        }
+      ],
+      "text": {
+        "title": "School Subjects",
+        "body": "I used to hate chemistry. Every Tuesday afternoon for three years I sat at the back and understood nothing. My friend Olia sat next to me and understood everything, which did not help. She went on to take a degree in it. I did not use to think about this much, but last term my daughter came home and said she was terrible at maths. I told her I was terrible at chemistry and she said, quite seriously, that this was not the same thing. She might be right. What I remember is not the subject but the feeling of being the slowest person in the room. She does not have that feeling yet, and I would like to keep it that way.",
+        "glossary": [
+          [
+            "at the back",
+            "на задней парте"
+          ],
+          [
+            "went on to",
+            "в итоге пошла"
+          ],
+          [
+            "quite seriously",
+            "совершенно серьёзно"
+          ],
+          [
+            "the same thing",
+            "то же самое"
+          ],
+          [
+            "slowest",
+            "самый медленный"
+          ],
+          [
+            "keep it that way",
+            "чтобы так и осталось"
+          ]
+        ],
+        "questions": [
+          {
+            "q": "What does 'I used to hate chemistry' mean?",
+            "options": [
+              "He hates it now",
+              "He hated it in the past, not now",
+              "He has always hated it"
+            ],
+            "a": 1,
+            "why": "used to описывает прошлую привычку или состояние, которых больше нет."
+          },
+          {
+            "q": "Why 'did not use to' and not 'did not used to'?",
+            "options": [
+              "The -d moves to did",
+              "It is a typo",
+              "Both are correct"
+            ],
+            "a": 0,
+            "why": "В отрицании и вопросе окончание уходит к did, поэтому use остаётся без -d."
+          },
+          {
+            "q": "What does the narrator remember most?",
+            "options": [
+              "The chemistry lessons",
+              "The feeling of being slowest",
+              "His friend Olia"
+            ],
+            "a": 1,
+            "why": "What I remember is not the subject but the feeling of being the slowest person."
+          }
+        ]
+      },
+      "drills": [
+        {
+          "prompt": "I ___ live in Moscow, but now I live here.",
+          "options": [
+            "use to",
+            "used to",
+            "am used to"
+          ],
+          "a": 1,
+          "why": "Прошлая привычка в утверждении — used to."
+        },
+        {
+          "prompt": "She didn't ___ like fish.",
+          "options": [
+            "used to",
+            "use to",
+            "uses to"
+          ],
+          "a": 1,
+          "why": "После did окончание уходит к нему, остаётся use."
+        },
+        {
+          "prompt": "He ___ be late, the traffic is bad.",
+          "options": [
+            "might",
+            "mights",
+            "might to"
+          ],
+          "a": 0,
+          "why": "might не меняется и не берёт to."
+        },
+        {
+          "prompt": "I'm hungry. — So ___ I.",
+          "options": [
+            "do",
+            "am",
+            "have"
+          ],
+          "a": 1,
+          "why": "В первой фразе форма be, значит и в ответе am."
+        },
+        {
+          "prompt": "I don't like horror films. — ___ do I.",
+          "options": [
+            "So",
+            "Neither",
+            "Either"
+          ],
+          "a": 1,
+          "why": "После отрицания идёт neither, второго not не нужно."
+        },
+        {
+          "prompt": "Her coat is similar ___ mine.",
+          "options": [
+            "with",
+            "to",
+            "as"
+          ],
+          "a": 1,
+          "why": "similar всегда идёт с предлогом to."
+        }
+      ],
+      "video": {
+        "n": "Грамматика B1–B2: used to, might и другие темы",
+        "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2",
+        "d": "Раздел с уроками и тестами по грамматике уровня B1–B2."
+      }
+    },
+    {
+      "n": 12,
+      "title": "Что было до и кто что сказал",
+      "goal": "Расставлять события прошлого по порядку и пересказывать чужие слова.",
+      "map": [
+        {
+          "id": "12A",
+          "g": "Past Perfect",
+          "v": "выражения времени"
+        },
+        {
+          "id": "12B",
+          "g": "косвенная речь",
+          "v": "say или tell"
+        },
+        {
+          "id": "12C",
+          "g": "вопросы без вспомогательных",
+          "v": "повторение вопросительных слов"
+        }
+      ],
+      "words": [
+        {
+          "w": "by the time",
+          "lvl": "B1",
+          "ipa": "/baɪ ðə taɪm/",
+          "pos": "фраза",
+          "tr": "к тому моменту, когда",
+          "def": "Указывает, что к этому моменту всё уже случилось.",
+          "ex": "By the time we arrived, everyone had left."
+        },
+        {
+          "w": "previously",
+          "lvl": "B1",
+          "ipa": "/ˈpriː.vi.əs.li/",
+          "pos": "нареч.",
+          "tr": "ранее, до этого",
+          "def": "В более раннее время, чем обсуждаемое.",
+          "ex": "He had previously worked in Rome."
+        },
+        {
+          "w": "afterwards",
+          "lvl": "B1",
+          "ipa": "/ˈɑːf.tə.wədz/",
+          "pos": "нареч.",
+          "tr": "потом, после этого",
+          "def": "Позже описанного момента.",
+          "ex": "We had dinner and talked afterwards."
+        },
+        {
+          "w": "mention",
+          "lvl": "B1",
+          "ipa": "/ˈmen.ʃən/",
+          "pos": "глаг.",
+          "tr": "упоминать",
+          "def": "Сказать о чём-то коротко, между делом.",
+          "ex": "She mentioned it only once."
+        },
+        {
+          "w": "admit",
+          "lvl": "B1",
+          "ipa": "/ədˈmɪt/",
+          "pos": "глаг.",
+          "tr": "признавать",
+          "def": "Согласиться, что сделал или что это правда.",
+          "ex": "He admitted taking the money."
+        },
+        {
+          "w": "deny",
+          "lvl": "B1",
+          "ipa": "/dɪˈnaɪ/",
+          "pos": "глаг.",
+          "tr": "отрицать",
+          "def": "Утверждать, что этого не было. Дальше идёт -ing.",
+          "ex": "She denied knowing about it."
+        },
+        {
+          "w": "explain",
+          "lvl": "A2",
+          "ipa": "/ɪkˈspleɪn/",
+          "pos": "глаг.",
+          "tr": "объяснять",
+          "def": "Сделать понятным. Объясняют кому-то через to.",
+          "ex": "Can you explain this to me?"
+        },
+        {
+          "w": "reply",
+          "lvl": "A2",
+          "ipa": "/rɪˈplaɪ/",
+          "pos": "глаг./сущ.",
+          "tr": "отвечать; ответ",
+          "def": "Сказать или написать в ответ.",
+          "ex": "He never replied to my message."
+        },
+        {
+          "w": "announce",
+          "lvl": "B1",
+          "ipa": "/əˈnaʊns/",
+          "pos": "глаг.",
+          "tr": "объявлять",
+          "def": "Сообщить официально и публично.",
+          "ex": "They announced the results yesterday."
+        },
+        {
+          "w": "complain",
+          "lvl": "B1",
+          "ipa": "/kəmˈpleɪn/",
+          "pos": "глаг.",
+          "tr": "жаловаться",
+          "def": "Выражать недовольство. Дальше about.",
+          "ex": "She complained about the noise."
+        },
+        {
+          "w": "whether",
+          "lvl": "B1",
+          "ipa": "/ˈweð.ər/",
+          "pos": "союз",
+          "tr": "ли",
+          "def": "Вводит косвенный вопрос без вопросительного слова.",
+          "ex": "He asked whether I was coming."
+        },
+        {
+          "w": "apparently",
+          "lvl": "B1",
+          "ipa": "/əˈpær.ənt.li/",
+          "pos": "нареч.",
+          "tr": "по-видимому, как говорят",
+          "def": "Судя по тому, что известно или что рассказали.",
+          "ex": "Apparently they moved to Spain."
+        }
+      ],
+      "rules": [
+        {
+          "t": "Past Perfect",
+          "body": "Past Perfect строится из had и третьей формы глагола и нужен ровно для одного: показать, что одно прошедшее событие случилось раньше другого. Само по себе, без второй точки отсчёта, оно не употребляется. Часто идёт со словами by the time, already, before, after, previously. Форма had одна для всех лиц.",
+          "ex": [
+            [
+              "When I arrived, the train had left.",
+              "Поезд ушёл раньше, чем я приехал"
+            ],
+            [
+              "By the time we called, she had gone.",
+              "by the time задаёт точку отсчёта"
+            ],
+            [
+              "He had never seen the sea before.",
+              "Раньше того момента в прошлом"
+            ],
+            [
+              "They had already eaten when we came.",
+              "already между had и глаголом"
+            ]
+          ]
+        },
+        {
+          "t": "Косвенная речь, say или tell",
+          "body": "При пересказе чужих слов время обычно сдвигается на шаг назад: настоящее становится прошедшим, Past Simple становится Past Perfect, will становится would. Меняются и местоимения. Разница между say и tell чисто грамматическая: tell требует после себя человека, say — нет. He told me that… но He said that…, без адресата.",
+          "ex": [
+            [
+              "'I am tired.' — He said he was tired.",
+              "Настоящее сдвинулось в прошедшее"
+            ],
+            [
+              "'I will call.' — She said she would call.",
+              "will превратилось в would"
+            ],
+            [
+              "He told me he was late.",
+              "tell требует адресата: told me"
+            ],
+            [
+              "He said he was late.",
+              "say идёт без адресата"
+            ]
+          ]
+        }
+      ],
+      "text": {
+        "title": "What He Told Me",
+        "body": "When I got to the office on Monday, my colleague had already cleared his desk. Nobody had mentioned anything to me. I asked him whether he was leaving and he said he had handed in his notice on Friday afternoon. Apparently the director had known for two weeks. He told me he was not angry, and that he had previously thought about going anyway. Then he complained for ten minutes about the coffee machine, which he had never liked. We had lunch afterwards and he explained the whole thing properly. By the time I got home I had decided that I would probably do the same thing within a year.",
+        "glossary": [
+          [
+            "cleared his desk",
+            "освободил стол"
+          ],
+          [
+            "handed in his notice",
+            "подал заявление"
+          ],
+          [
+            "notice",
+            "заявление об уходе"
+          ],
+          [
+            "angry",
+            "злой"
+          ],
+          [
+            "properly",
+            "как следует"
+          ],
+          [
+            "within a year",
+            "в течение года"
+          ]
+        ],
+        "questions": [
+          {
+            "q": "Which happened first?",
+            "options": [
+              "He cleared his desk",
+              "The narrator arrived",
+              "They had lunch"
+            ],
+            "a": 0,
+            "why": "had already cleared — Past Perfect показывает, что это случилось до прихода рассказчика."
+          },
+          {
+            "q": "Why 'he told me' and not 'he said me'?",
+            "options": [
+              "Tell requires a person after it",
+              "Say is informal",
+              "Both are correct"
+            ],
+            "a": 0,
+            "why": "tell требует адресата: told me. say идёт без него."
+          },
+          {
+            "q": "What did the narrator decide?",
+            "options": [
+              "To stay for years",
+              "To probably leave within a year",
+              "To buy a coffee machine"
+            ],
+            "a": 1,
+            "why": "I had decided that I would probably do the same thing within a year."
+          }
+        ]
+      },
+      "drills": [
+        {
+          "prompt": "When we arrived, the film ___ already started.",
+          "options": [
+            "has",
+            "had",
+            "was"
+          ],
+          "a": 1,
+          "why": "Событие раньше другого прошедшего — Past Perfect с had."
+        },
+        {
+          "prompt": "By the time she called, I ___ home.",
+          "options": [
+            "had gone",
+            "have gone",
+            "went"
+          ],
+          "a": 0,
+          "why": "by the time задаёт точку отсчёта, до которой всё уже случилось."
+        },
+        {
+          "prompt": "He ___ me he was tired.",
+          "options": [
+            "said",
+            "told",
+            "says"
+          ],
+          "a": 1,
+          "why": "Перед адресатом me идёт told."
+        },
+        {
+          "prompt": "She ___ that she would come later.",
+          "options": [
+            "told",
+            "said",
+            "told to"
+          ],
+          "a": 1,
+          "why": "Без адресата используется said."
+        },
+        {
+          "prompt": "'I am busy.' — He said he ___ busy.",
+          "options": [
+            "is",
+            "was",
+            "will be"
+          ],
+          "a": 1,
+          "why": "В косвенной речи настоящее сдвигается в прошедшее."
+        },
+        {
+          "prompt": "He asked ___ I wanted coffee.",
+          "options": [
+            "that",
+            "whether",
+            "what"
+          ],
+          "a": 1,
+          "why": "Косвенный вопрос без вопросительного слова вводится через whether."
+        }
+      ],
+      "video": {
+        "n": "Косвенная речь: вопросы",
+        "u": "https://learnenglish.britishcouncil.org/free-resources/grammar/b1-b2/reported-speech-questions",
+        "d": "Как меняются времена и порядок слов при пересказе чужих вопросов, с упражнениями."
+      }
+    }
+  ]
+}

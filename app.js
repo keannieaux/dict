@@ -1,4 +1,4 @@
-const BUILD = 'v15';   /* номер сборки — виден внизу вкладки «Ещё» */
+const BUILD = 'v16';   /* номер сборки — виден внизу вкладки «Ещё» */
 
 /* ================= вспомогательное ================= */
 const $  = s => document.querySelector(s);
@@ -608,9 +608,10 @@ function renderMore(){
 /* Состояние курса — чтобы сразу было видно, загрузился он или нет. */
 function courseInfo(){
   if (typeof course === 'undefined' || course === null) return 'курс не загружен';
-  if (course.failed) return 'course.json не читается';
-  return course.courses.map(c =>
+  if (course.failed) return 'ни одна часть курса не читается';
+  const s = course.courses.map(c =>
     (c.id === 'elem' ? 'Elem' : 'Pre-Int') + ' ' + c.units.length).join(' · ') + ' юнитов';
+  return course.missing ? s + ' · не хватает частей: ' + course.missing : s;
 }
 
 /* ================= переключение разделов ================= */
