@@ -2,7 +2,7 @@
 const $  = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 
-let words = [], grammar = [], links = [];
+let words = [], grammar = [], links = [], a2pack = null;
 
 function esc(s){
   return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -523,6 +523,7 @@ function show(v){
   if (v === 'lesson') renderLesson();
   if (v === 'test')   renderTest();
   if (v === 'dict')   guide();
+  if (v === 'a2' && window.renderA2) renderA2();
 }
 $('#tabbar').addEventListener('click', e => {
   const b = e.target.closest('button'); if (b) show(b.dataset.v);
@@ -534,11 +535,13 @@ store.load();
 Promise.all([
   fetch('words.json').then(r => r.json()),
   fetch('grammar.json').then(r => r.json()).catch(() => []),
-  fetch('links.json').then(r => r.json()).catch(() => [])
-]).then(([w, g, l]) => {
+  fetch('links.json').then(r => r.json()).catch(() => []),
+  fetch('a2.json').then(r => r.json()).catch(() => null)
+]).then(([w, g, l, a]) => {
   words = w.sort((a, b) => a.w.localeCompare(b.w));
-  grammar = g; links = l;
+  grammar = g; links = l; a2pack = a;
   buildRail(); renderDict(); renderRules(); renderMore();
+  if (window.initA2) initA2(a2pack);
 }).catch(() => {
   $('#list').innerHTML = '<p class="blank"><b>Словарь не загрузился</b>' +
     'Файл words.json должен лежать рядом с index.html, а сайт — открываться по http или https.</p>';

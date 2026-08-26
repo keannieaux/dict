@@ -1,14 +1,16 @@
 /* Меняйте номер версии каждый раз, когда правите любой файл —
    иначе iPhone продолжит показывать старую сохранённую копию. */
-const VERSION = 'dict-v2';
+const VERSION = 'dict-v3';
 const ASSETS = [
   './',
   './index.html',
   './style.css',
   './app.js',
+  './a2.js',
   './words.json',
   './grammar.json',
   './links.json',
+  './a2.json',
   './manifest.webmanifest',
   './icon-180.png',
   './icon-192.png',

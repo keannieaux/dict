@@ -170,6 +170,26 @@ mark{background:linear-gradient(var(--mark),var(--mark)) no-repeat center/100% 6
 .tabbar button.on{color:var(--ink)}
 .tabbar button.on svg{stroke-width:2.1}
 
+/* ===== A2 ===== */
+.a2tabs{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 14px}
+.a2opts{display:grid;gap:8px;margin-top:16px}
+.a2opt{text-align:left;background:var(--paper);border:1px solid var(--rule);border-radius:9px;
+  padding:12px 13px;font-size:17px;cursor:pointer}
+.a2opt:active{border-color:var(--ink)}
+.a2opt.ok{background:var(--mark);border-color:var(--mark);color:#191C2B}
+.a2opt.no{border-color:var(--wrong);color:var(--wrong)}
+.a2opt:disabled{cursor:default;opacity:.95}
+.a2gap{display:inline-block;min-width:46px;border-bottom:2px solid var(--ink)}
+.a2q{border-top:1px solid var(--rule);padding-top:14px;margin-top:14px}
+.a2q:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.a2write{width:100%;resize:vertical;background:var(--paper);border:1px solid var(--rule);
+  border-radius:9px;padding:12px;margin-top:14px;font:inherit;line-height:1.5;outline:none}
+.a2write:focus{border-color:var(--ink)}
+.a2check{display:flex;gap:9px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--rule);cursor:pointer}
+.a2check:last-child{border-bottom:0}
+.a2check input{margin-top:4px;accent-color:var(--ink)}
+.a2check span{font-size:16px}
+
 .blank{margin:60px 26px;text-align:center;color:var(--ink-soft);font-size:16px}
 .blank b{display:block;color:var(--ink);font-size:19px;margin-bottom:6px}
 .stat{font-family:var(--cond);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
