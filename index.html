@@ -35,10 +35,20 @@
   <main id="list"></main>
 </section>
 
-<!-- ============ УРОК ============ -->
-<section class="view" id="view-lesson" hidden>
+<!-- ============ КУРС ============ -->
+<section class="view" id="view-course" hidden>
   <header class="masthead">
-    <div class="eyebrow"><b>Урок</b><b id="lessonStat"></b></div>
+    <div class="eyebrow"><b>Курс</b><b id="courseStat"></b></div>
+    <h1 class="h1" id="courseTitle">Курс</h1>
+    <p class="sub" id="courseSub"></p>
+  </header>
+  <div class="pad" id="courseBody"></div>
+</section>
+
+<!-- ============ ПОВТОР ============ -->
+<section class="view" id="view-review" hidden>
+  <header class="masthead">
+    <div class="eyebrow"><b>Повтор</b><b id="lessonStat"></b></div>
     <h1 class="h1" id="lessonTitle">Занятие на сегодня</h1>
     <p class="sub" id="lessonSub"></p>
   </header>
@@ -55,34 +65,18 @@
   <div class="pad" id="testBody"></div>
 </section>
 
-<!-- ============ ПРАВИЛА ============ -->
-<section class="view" id="view-rules" hidden>
-  <header class="masthead">
-    <div class="eyebrow"><b>Правила</b><b id="rulesCount"></b></div>
-    <h1 class="h1">Грамматика</h1>
-    <p class="sub">Коротко о том, что чаще всего путают</p>
-  </header>
-  <div class="pad" id="rulesBody"></div>
-</section>
-
-<!-- ============ МАТЕРИАЛЫ ============ -->
+<!-- ============ ЕЩЁ: правила и материалы ============ -->
 <section class="view" id="view-more" hidden>
   <header class="masthead">
-    <div class="eyebrow"><b>Материалы</b><b></b></div>
-    <h1 class="h1">Читать и смотреть</h1>
-    <p class="sub">Внешние источники, бесплатные и по уровням</p>
+    <div class="eyebrow"><b>Ещё</b><b id="rulesCount"></b></div>
+    <h1 class="h1">Правила и материалы</h1>
+    <p class="sub">Справочник по грамматике и внешние источники</p>
   </header>
-  <div class="pad" id="moreBody"></div>
-</section>
-
-<!-- ============ A2 ============ -->
-<section class="view" id="view-a2" hidden>
-  <header class="masthead">
-    <div class="eyebrow"><b>A2</b><b id="a2Stat"></b></div>
-    <h1 class="h1">Практика A2</h1>
-    <p class="sub" id="a2Sub">Темы, истории, правила в деле, письмо и видео</p>
-  </header>
-  <div class="pad" id="a2Body"></div>
+  <div class="pad">
+    <div class="cat">Грамматика</div>
+    <div id="rulesBody"></div>
+    <div id="moreBody"></div>
+  </div>
 </section>
 
 <!-- ============ ПАНЕЛЬ ============ -->
@@ -90,24 +84,21 @@
   <button data-v="dict" class="on">
     <svg viewBox="0 0 24 24"><path d="M4 4h10a3 3 0 013 3v13H7a3 3 0 01-3-3z"/><path d="M17 7h3v13H7"/></svg>
     Словарь</button>
-  <button data-v="lesson">
+  <button data-v="course">
     <svg viewBox="0 0 24 24"><path d="M12 5v15"/><path d="M3 5h6a3 3 0 013 3"/><path d="M21 5h-6a3 3 0 00-3 3"/><path d="M3 5v13h6"/><path d="M21 5v13h-6"/></svg>
-    Урок</button>
+    Курс</button>
+  <button data-v="review">
+    <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 11-2.3-5.6"/><path d="M20 4v4h-4"/></svg>
+    Повтор</button>
   <button data-v="test">
     <svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M9 10h6"/><path d="M9 14h4"/></svg>
     Тест</button>
-  <button data-v="rules">
-    <svg viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h13"/></svg>
-    Правила</button>
   <button data-v="more">
-    <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M10 9l5 3-5 3z"/></svg>
-    Материалы</button>
-  <button data-v="a2">
-    <svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 8h8"/><path d="M8 12h5"/><path d="M8 16h7"/></svg>
-    A2</button>
+    <svg viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h13"/></svg>
+    Ещё</button>
 </nav>
 
 <script src="app.js"></script>
-<script src="a2.js"></script>
+<script src="course.js"></script>
 </body>
 </html>

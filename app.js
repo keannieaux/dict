@@ -2,7 +2,7 @@
 const $  = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 
-let words = [], grammar = [], links = [], a2pack = null, coursepack = null;
+let words = [], grammar = [], links = [];
 
 function esc(s){
   return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -50,44 +50,18 @@ function learnedCount(){
 }
 
 /* ================= озвучка ================= */
-/* По умолчанию берём нейтральный en-US: на iPhone он обычно ровнее,
-   чем случайный en-GB. Настройки можно поменять через window.setTTS. */
-const TTSKEY = 'dict-tts-v1';
-let tts = { lang: 'en-US', rate: 0.84 };
-try { tts = Object.assign(tts, JSON.parse(localStorage.getItem(TTSKEY) || '{}')); } catch(e){}
-function setTTS(patch){
-  tts = Object.assign(tts, patch || {});
-  try { localStorage.setItem(TTSKEY, JSON.stringify(tts)); } catch(e){}
-}
-function pickVoice(lang){
-  if (!('speechSynthesis' in window)) return null;
-  const bad = /zarvox|trinoid|whisper|wobble|boing|bubbles|cellos|albert|bells|hysterical|good news|organ|novelty/i;
-  const vs = speechSynthesis.getVoices().filter(v => v.lang && !bad.test(v.name || ''));
-  const norm = s => String(s).replace('_', '-').toLowerCase();
-  const want = norm(lang);
-  const exact = vs.filter(v => norm(v.lang).startsWith(want));
-  const nice = /samantha|alex|aria|jenny|guy|sonia|libby|google us english|microsoft|natural|siri/i;
-  return exact.find(v => nice.test(v.name || ''))
-      || exact.find(v => /google|microsoft|natural|siri/i.test(v.name || ''))
-      || exact[0]
-      || vs.find(v => norm(v.lang).startsWith('en'))
-      || null;
-}
-function speak(text, lang = tts.lang){
+function speak(text, lang = 'en-GB'){
   if (!('speechSynthesis' in window)) return;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = lang;
-  u.rate = tts.rate;
-  const v = pickVoice(lang);
+  u.rate = 0.88;
+  const v = speechSynthesis.getVoices().find(v => v.lang && v.lang.replace('_','-').startsWith(lang))
+         || speechSynthesis.getVoices().find(v => v.lang && v.lang.startsWith('en'));
   if (v) u.voice = v;
   speechSynthesis.speak(u);
 }
-if ('speechSynthesis' in window){
-  speechSynthesis.getVoices();
-  speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
-}
-window.setTTS = setTTS;
+if ('speechSynthesis' in window) speechSynthesis.getVoices();
 
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-say]');
@@ -487,7 +461,7 @@ function renderTest(){
       </div>` : ''}`;
     test = null;
     $('#retest').addEventListener('click', () => { renderTest(); });
-    $('#toLesson').addEventListener('click', () => show('lesson'));
+    $('#toLesson').addEventListener('click', () => show('review'));
     return;
   }
 
@@ -546,10 +520,9 @@ function show(v){
   $$('.view').forEach(s => s.hidden = (s.id !== 'view-' + v));
   $$('#tabbar button').forEach(b => b.classList.toggle('on', b.dataset.v === v));
   window.scrollTo({top: 0});
-  if (v === 'lesson') renderLesson();
+  if (v === 'review') renderLesson();
   if (v === 'test')   renderTest();
   if (v === 'dict')   guide();
-  if (v === 'a2' && window.renderA2) renderA2();
 }
 $('#tabbar').addEventListener('click', e => {
   const b = e.target.closest('button'); if (b) show(b.dataset.v);
@@ -558,17 +531,14 @@ $('#tabbar').addEventListener('click', e => {
 /* ================= запуск ================= */
 store.load();
 
-Promise.all([
+window.appReady = Promise.all([
   fetch('words.json').then(r => r.json()),
   fetch('grammar.json').then(r => r.json()).catch(() => []),
-  fetch('links.json').then(r => r.json()).catch(() => []),
-  fetch('a2.json').then(r => r.json()).catch(() => null),
-  fetch('course.json').then(r => r.json()).catch(() => null)
-]).then(([w, g, l, a, c]) => {
+  fetch('links.json').then(r => r.json()).catch(() => [])
+]).then(([w, g, l]) => {
   words = w.sort((a, b) => a.w.localeCompare(b.w));
-  grammar = g; links = l; a2pack = a; coursepack = c;
+  grammar = g; links = l;
   buildRail(); renderDict(); renderRules(); renderMore();
-  if (window.initA2) initA2(a2pack, coursepack);
 }).catch(() => {
   $('#list').innerHTML = '<p class="blank"><b>Словарь не загрузился</b>' +
     'Файл words.json должен лежать рядом с index.html, а сайт — открываться по http или https.</p>';
