@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>Читалка — английский по книгам</title>
+<meta name="description" content="Чтение адаптированных книг с переводом слов по контексту, личным словарём и тестами.">
+<meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141821" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Читалка">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <button class="icon-btn" id="backBtn" hidden aria-label="Назад">‹</button>
+  <h1 class="topbar-title" id="topTitle">Читалка</h1>
+  <button class="icon-btn" id="settingsBtn" aria-label="Настройки">Aa</button>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<nav class="tabbar" id="tabbar">
+  <a href="#/library" data-tab="library"><span class="tab-mark"></span>Книги</a>
+  <a href="#/dictionary" data-tab="dictionary"><span class="tab-mark"></span>Словарь</a>
+  <a href="#/test" data-tab="test"><span class="tab-mark"></span>Тест</a>
+</nav>
+
+<!-- Карточка слова -->
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-scrim" data-close></div>
+  <section class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetWord">
+    <div class="sheet-grip" data-close></div>
+    <div class="sheet-head">
+      <div>
+        <h2 id="sheetWord" class="sheet-word"></h2>
+        <p class="sheet-ipa" id="sheetIpa"></p>
+      </div>
+      <button class="say-btn" id="sayBtn" aria-label="Произнести">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <div class="sheet-body" id="sheetBody"></div>
+
+    <label class="field">
+      <span class="field-label">Перевод — можно поправить под смысл</span>
+      <textarea id="sheetTranslation" rows="2" placeholder="Свой перевод"></textarea>
+    </label>
+    <div class="chips" id="sheetVariants"></div>
+
+    <div class="sheet-actions">
+      <button class="btn ghost" data-close>Закрыть</button>
+      <button class="btn primary" id="saveWordBtn">Добавить в словарь</button>
+    </div>
+  </section>
+</div>
+
+<!-- Настройки чтения -->
+<div class="sheet" id="prefs" hidden>
+  <div class="sheet-scrim" data-close-prefs></div>
+  <section class="sheet-card" role="dialog" aria-modal="true" aria-label="Настройки">
+    <div class="sheet-grip" data-close-prefs></div>
+    <h2 class="sheet-word">Как читать</h2>
+
+    <label class="field">
+      <span class="field-label">Размер текста</span>
+      <input type="range" id="fontRange" min="16" max="26" step="1">
+    </label>
+
+    <label class="field">
+      <span class="field-label">Оформление</span>
+      <div class="segment" id="themeSeg">
+        <button data-theme="auto">Как в системе</button>
+        <button data-theme="light">Светлое</button>
+        <button data-theme="dark">Тёмное</button>
+      </div>
+    </label>
+
+    <label class="switch">
+      <input type="checkbox" id="markKnown">
+      <span>Подсвечивать слова из словаря</span>
+    </label>
+
+    <div class="sheet-actions">
+      <button class="btn primary" data-close-prefs>Готово</button>
+    </div>
+  </section>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>

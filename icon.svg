@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Читалка">
+  <rect width="512" height="512" fill="#FBFAF7"/>
+  <rect x="76" y="280" width="360" height="62" fill="#F0D65C"/>
+  <text x="256" y="330" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif"
+        font-size="230" fill="#18212B">Aa</text>
+</svg>
