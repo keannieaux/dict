@@ -1,9 +1,15 @@
 /* Простой офлайн-кэш. Меняй VERSION, когда правишь файлы — иначе Safari отдаст старую версию. */
-const VERSION = 'reader-v1';
+const VERSION = 'reader-v2';
 const SHELL = [
   './', './index.html', './app.css', './app.js',
-  './manifest.webmanifest', './books/index.json', './books/sample.json',
-  './icons/icon.svg'
+  './manifest.webmanifest', './icons/icon.svg',
+  './books/index.json',
+  './books/mary-poppins.json',
+  './books/dead-mans-island.json',
+  './books/huck-finn.json',
+  './books/anne-green-gables.json',
+  './books/canterville.json',
+  './books/hampton-house.json',
 ];
 
 self.addEventListener('install', e => {
